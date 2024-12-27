@@ -37,3 +37,9 @@ function love.update(dt) -- every frame
         ball.visible = false
     end
 end
+
+function love.keypressed(k)
+	if k == 'escape' then
+		love.event.push('quit') -- Quit the game.
+	end	
+end
