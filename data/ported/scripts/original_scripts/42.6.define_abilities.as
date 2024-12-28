@@ -7,52 +7,53 @@ function addNewMove(a, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s)
    _root["KRINABILITYB" + MoveCount] = new Array();
    short2 = _root["KRINABILITYB" + MoveCount];
    short[0] = a; // Ability Name
-   short[1] = MoveCount;
+   short[1] = MoveCount; //Move ID
    short[2] = c;
    short[3] = d;
    short[4] = e;
    short[5] = f; //Focus cost
    short[6] = g; //Life cost LIFEU
    short[7] = h; //Cooldown
-   short[8] = i;
+   short[8] = i; //"useNum". Maybe times it can be placed on the hotbar.
    short[9] = j; //use hint: spdVar1 = mTarget.SPEEDU / (mCaster.SPEEDU * mAry1[9]); 
    short[10] = k; //Attack type example values: "Melee", "Shock", "Missile", controls the attack and take-damage animations
-   short[11] = l; //Set caster color (Hex value)
-   short[12] = m;
-   short[13] = n; //BUFF APPLIED BY MOVE also attached as a movie? //BATTLESCREEN.attachMovie(mAry1[13],"b1",-9);
+   short[11] = l; //Attack color (color shown for weapon swipe, missile or shock)
+   short[12] = m; //Attack type (animation played when attacking)
+   short[13] = n; //Boom type (animation played when the spell hits, presumably)
    short[14] = o;
    short[15] = p;
-   short[16] = q; //use hint: mCaster.LIFEN -= mAry1[6] + Math.round(mCaster.LIFEU * mAry1[16]);
-   short[17] = _root.KrinLang[KLangChoosen].SKILLNAME[r]; //Ability name, translated
+   short[16] = q; //Life cost: percentage of total life;
+   short[17] = _root.KrinLang[KLangChoosen].SKILLNAME[r]; //Ability name, translated.. "ToolTipTitle", strictly
    short[18] = s; //sound effect to play
    s = undefined;
    short2[0] = "Physical";
    short2[1] = 0;
-   short2[2] = 0;
+   short2[2] = 0; // Attack for percent of strength
    short2[3] = 0;
    short2[4] = 0;
    short2[5] = 0;
    short2[6] = 0;
    short2[7] = 0;
    short2[8] = 1;
-   short2[9] = 0;
+   short2[9] = 0; //TODO FIND THESE VALUES SOMEWHERE NEAR HERE IN THE CODE:  healGuesserK = IDKM2[10] * ((IDKC.STRENGTHU + IDKM2[1]) * IDKM2[2] + (IDKC.MAGICU + IDKM2[3]) * IDKM2[4] + (IDKC.SPE
    short2[10] = 1;
-   short2[11] = 0;
+   short2[11] = 0; // Focus Coefficient 1. This is MULTIPLIED to the final number before adding #25
    short2[12] = 0;
-   short2[13] = 0;
-   short2[14] = 1;
+   short2[13] = 0; // Buff ID to apply????
+   short2[14] = 1; // Buff apply chance (will apply if random number is over this value)
    short2[15] = new Array();
-   short2[15] = [0];
-   short2[16] = 0;
-   short2[17] = "No Tooltip assigned";
-   short2[18] = "Costs "; //tooltip 3, cost
+   short2[15] = [0]; // Buff types this ability can dispell
+   short2[16] = 0; // How many buffs this will try to dispell
+   short2[17] = "No Tooltip assigned"; // Description of behavior. i.e. "Hit the target." "Shield the target", "Poison the target" and so on.
+   short2[18] = "Costs "; // Tooltip 3, cost
    short2[19] = 1;
    short2[20] = 0;
-   short2[21] = 0;
-   short2[22] = 1;
-   short2[23] = "Physical";
-   short2[24] = 0;
-   short2[25] = 1;
+   short2[21] = 0; // Spell targets self (1 for true, 0 false)
+   short2[22] = 1; // Chance to dispell a buff
+   short2[23] = "Physical"; // Buff enemy has
+   short2[24] = 0; // Number needed of buff enemy has in order to do move (i.e. enemy needs 1 shadow buff for you to attack them)
+   short2[25] = 1; // Focus Coefficient 2. This is ADDED to the final number.
+   //Focus Coefficients are used in this formula: focusCoEF = IDKM2[25] + IDKC.FOCUSN / 100 * IDKM2[11];
    if(f > 0)
    {
       short2[18] += f + " Focus";
@@ -93,7 +94,7 @@ addNewMove("Leading Strike",0,1,0,0,0,0,1,2,"Melee","0x0066FF","Attack","BOOM_SP
 _root.hackMove[2] = 1.7;
 _root.hackMove[21] = 1;
 _root.hackMove[13] = "PREPARED";
-_root.hackMove[17] = krinABC1[28] + "170%" + krinABC2[28];
+_root.hackMove[17] = krinABC1[28] + "170%" + krinABC2[28]; //"Attack the enemy for " + 170% + " of your Strength, and restores 50 Focus to you. ";
 addNewMove("Auto Swing",0,1,0,0,0,0,8,1,"Melee","0xFF0000","Attack","BOOM_SLASH2","Full Damage",1,0,1,"sfx_hit4");
 _root.hackMove[2] = 1.7;
 _root.hackMove[6] = 1.7;
