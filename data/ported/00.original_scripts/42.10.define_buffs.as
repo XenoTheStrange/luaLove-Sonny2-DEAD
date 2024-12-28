@@ -554,8 +554,8 @@ _root.hackMove2[25] = BUFF_DESC1[386];
 addNewBuffKrin("FIRESAM2",BUFF_NAME[387],"Fire");
 _root.hackMove2[16] = 15;
 _root.hackMove2[14] = 50;
-_root.hackMove2[32] = 0.5;
-_root.hackMove2[20] = -1;
+_root.hackMove2[32] = 0.5; // buff dispel chance
+_root.hackMove2[20] = -1; // should buff self
 _root.hackMove2[25] = BUFF_DESC1[387];
 addNewBuffKrin("FINAL_FLAWED",BUFF_NAME[388],"Shadow");
 _root.hackMove2[16] = 99;

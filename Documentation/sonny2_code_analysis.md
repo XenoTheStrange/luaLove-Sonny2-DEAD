@@ -4,7 +4,7 @@ This describes scripts found in ./game/data/ported/original_scripts which are la
 # Frame Scripts
 ## Frame 1:
 1. Load some language data (define it)
-   Display the English and dutch flags as language select.
+   
 ## Frame 4:
 1. Tries to load and play an ad
 2. Displays text "Loading"
@@ -44,6 +44,7 @@ This frame contains like 21 scripts, generally function definitions and stuff. I
 9. Defines "AImoveAdder" which appears to decide what ability the AI should use next and filter based on many conditions. Also defines "LowerCD" which is self-explanatory. Not sure why it's here in particlular.
    EDIT: That is exactly what it does, using values from unit definitions and rebranding several "aggression values" to things like `FocusRegenLimit`
 10. Defines functions to add and apply buffs, then appears to define specific buffs and/or attach them to existing moves (hackMove()) but that's unclear without looking further.
+   Defines `changeForm()` function which uses `dressChar()` to set the armors for characters in combat
 11. Appears to handle the menu to choose an ability during combat via "addMoveForPlayer". Also defines "checkBuffsOnUnit" which checks how many buffs are on that unit against some value passed in. Probably used for AI behavior.
 12. Defines AI behavior mode names and a set of 5 values to go with each mode. The values may be used to check against some other set of values to decide what the AI should do. Upon further inspection the values corrospond to the following:
     ```javascript
@@ -175,12 +176,10 @@ if(IDKM[14] == "Full Damage")
 ...
 "KRINABILITY2":["Auto Swing",2,0,1,0,0,0,0,8,1,"Melee","0xFF0000","Attack","BOOM_SLASH2","Full Damage",1,0,"Integrity","sfx_hit4"]
 ```
-it's 0 indexed so "Full Damage" is indeed the value at IDKM[14]
-
 ... ok so here's something curious, executeMove is only used _twice_ in the entire game under a couple of conditions. Here's the code:
 
 ```javascript
-               if(!mAry2[20])
+               if(!mAry2[20]) // If this returns false the attack hits all enemies
                {
                   _root.executeMove(mAry1,mAry2,mCaster,mTarget);
                }

@@ -8,36 +8,38 @@ function addNewMove(a, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s)
    short2 = _root["KRINABILITYB" + MoveCount];
    short[0] = a; // Ability Name
    short[1] = MoveCount; //Move ID
-   short[2] = c;
-   short[3] = d;
-   short[4] = e;
+   short[2] = c; // Can target friendlies?
+   short[3] = d; // If set to 1, ai will target the weakest enemy (healthwise, including shields)
+   short[4] = e; // Can target self?
    short[5] = f; //Focus cost
    short[6] = g; //Life cost LIFEU
    short[7] = h; //Cooldown
    short[8] = i; //"useNum". Maybe times it can be placed on the hotbar.
    short[9] = j; //use hint: spdVar1 = mTarget.SPEEDU / (mCaster.SPEEDU * mAry1[9]); 
-   short[10] = k; //Attack type example values: "Melee", "Shock", "Missile", controls the attack and take-damage animations
+   short[10] = k; //Attack type example values: "Melee", "Shock", "Missile", controls the attack and take-damage animations "DispelF"
    short[11] = l; //Attack color (color shown for weapon swipe, missile or shock)
    short[12] = m; //Attack type (animation played when attacking)
    short[13] = n; //Boom type (animation played when the spell hits, presumably)
-   short[14] = o;
+   short[14] = o; //"Full Damage", "Heal", "Focus" what to ADD to the entity (adding damage is taking damage)
    short[15] = p;
    short[16] = q; //Life cost: percentage of total life;
    short[17] = _root.KrinLang[KLangChoosen].SKILLNAME[r]; //Ability name, translated.. "ToolTipTitle", strictly
    short[18] = s; //sound effect to play
    s = undefined;
    short2[0] = "Physical";
-   short2[1] = 0;
-   short2[2] = 0; // Attack for percent of strength
-   short2[3] = 0;
-   short2[4] = 0;
-   short2[5] = 0;
-   short2[6] = 0;
-   short2[7] = 0;
-   short2[8] = 1;
-   short2[9] = 0; //TODO FIND THESE VALUES SOMEWHERE NEAR HERE IN THE CODE:  healGuesserK = IDKM2[10] * ((IDKC.STRENGTHU + IDKM2[1]) * IDKM2[2] + (IDKC.MAGICU + IDKM2[3]) * IDKM2[4] + (IDKC.SPE
-   short2[10] = 1;
-   short2[11] = 0; // Focus Coefficient 1. This is MULTIPLIED to the final number before adding #25
+   //ABILITY SCALING WITH STATS:
+   //example formula: unit.health += short2[10] * ((STRENGTHU + short2[1]) * short2[2] + (MAGICU + short2[3]) * short2[4] + (SPEEDU + short2[5]) * short2[6] + FOCUSN * short2[11] + short2[9]);
+   short2[1] = 0; // Strength + this
+   short2[2] = 0; // Strength * this
+   short2[3] = 0; // Magic + this
+   short2[4] = 0; // Magic * this
+   short2[5] = 0; // Speed + this
+   short2[6] = 0; // Speed * this
+   short2[7] = 0; // Perception scaling for critical hits
+   short2[8] = 1; // Speed scaling for critical hits
+   short2[9] = 0; // Modify equation by a flat value (uses addition)
+   short2[10] = 1; // Health * this
+   short2[11] = 0; // Flat focus scaling
    short2[12] = 0;
    short2[13] = 0; // Buff ID to apply????
    short2[14] = 1; // Buff apply chance (will apply if random number is over this value)
@@ -47,13 +49,14 @@ function addNewMove(a, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s)
    short2[17] = "No Tooltip assigned"; // Description of behavior. i.e. "Hit the target." "Shield the target", "Poison the target" and so on.
    short2[18] = "Costs "; // Tooltip 3, cost
    short2[19] = 1;
-   short2[20] = 0;
+   short2[20] = 0; // Hits all characters in target team
    short2[21] = 0; // Spell targets self (1 for true, 0 false)
    short2[22] = 1; // Chance to dispell a buff
    short2[23] = "Physical"; // Buff enemy has
    short2[24] = 0; // Number needed of buff enemy has in order to do move (i.e. enemy needs 1 shadow buff for you to attack them)
    short2[25] = 1; // Focus Coefficient 2. This is ADDED to the final number.
    //Focus Coefficients are used in this formula: focusCoEF = IDKM2[25] + IDKC.FOCUSN / 100 * IDKM2[11];
+   //Frame 42.11 contains mAry5 and mAry6 which map to more of these values
    if(f > 0)
    {
       short2[18] += f + " Focus";

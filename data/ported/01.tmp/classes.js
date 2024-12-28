@@ -1,0 +1,107 @@
+if(classerKrin == 0) // Psychological
+    {
+       Krin.startSkill1 = 1; // Leading Strike
+       Krin.startSkill2 = 6; // Destroy
+       Krin.abilityXer[0] = {ID:100,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Vicious Strike 
+       Krin.abilityXer[1] = {ID:0,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:1,BUFFNAME:"INTEGRITY"}; // 
+       Krin.abilityXer[2] = {ID:126,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Animalism
+       Krin.abilityXer[3] = {ID:133,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Acid Slash
+       Krin.abilityXer[4] = {ID:104,LEVELMIN:1,LEVELSCALE:1,TIER:2,PRESKILL:[0],CLASSIFY:0,BUFFNAME:0}; // Break
+       Krin.abilityXer[5] = {ID:120,LEVELMIN:1,LEVELSCALE:1,TIER:3,PRESKILL:[1],CLASSIFY:0,BUFFNAME:0}; // Adrenaline
+       Krin.abilityXer[6] = {ID:130,LEVELMIN:1,LEVELSCALE:1,TIER:3,PRESKILL:[2],CLASSIFY:0,BUFFNAME:0}; // Enrage
+       Krin.abilityXer[7] = {ID:138,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[3],CLASSIFY:0,BUFFNAME:0}; // Corrosion
+       Krin.abilityXer[8] = {ID:110,LEVELMIN:1,LEVELSCALE:1,TIER:2,PRESKILL:[4],CLASSIFY:0,BUFFNAME:0}; // Disrupt
+       Krin.abilityXer[9] = {ID:106,LEVELMIN:1,LEVELSCALE:1,TIER:2,PRESKILL:[4],CLASSIFY:0,BUFFNAME:0}; // WWound
+       Krin.abilityXer[10] = {ID:123,LEVELMIN:1,LEVELSCALE:1,TIER:3,PRESKILL:[5],CLASSIFY:0,BUFFNAME:0}; // Reform
+       Krin.abilityXer[11] = {ID:142,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[7],CLASSIFY:0,BUFFNAME:0}; // Envenom
+       Krin.abilityXer[12] = {ID:0,LEVELMIN:4,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:1,BUFFNAME:"SAVAGERY"}; // 
+       Krin.abilityXer[13] = {ID:112,LEVELMIN:4,LEVELSCALE:1,TIER:4,PRESKILL:[9],CLASSIFY:0,BUFFNAME:0}; // Cripple
+       Krin.abilityXer[14] = {ID:146,LEVELMIN:4,LEVELSCALE:1,TIER:4,PRESKILL:[11],CLASSIFY:0,BUFFNAME:0}; // Infect
+       Krin.abilityXer[15] = {ID:154,LEVELMIN:4,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Anesthetic
+       Krin.abilityXer[16] = {ID:116,LEVELMIN:6,LEVELSCALE:1,TIER:1,PRESKILL:[12],CLASSIFY:0,BUFFNAME:0}; // Predator Form
+       Krin.abilityXer[17] = {ID:167,LEVELMIN:6,LEVELSCALE:1,TIER:3,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Carapace
+       Krin.abilityXer[18] = {ID:150,LEVELMIN:6,LEVELSCALE:1,TIER:4,PRESKILL:[14],CLASSIFY:0,BUFFNAME:0}; // Poison Overload
+       Krin.abilityXer[19] = {ID:158,LEVELMIN:6,LEVELSCALE:1,TIER:1,PRESKILL:[15],CLASSIFY:0,BUFFNAME:0}; // Toxicant Form
+       Krin.abilityXer[20] = {ID:117,LEVELMIN:8,LEVELSCALE:1,TIER:3,PRESKILL:[16],CLASSIFY:0,BUFFNAME:0}; // Exposure
+       Krin.abilityXer[21] = {ID:159,LEVELMIN:8,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Sharp Senses
+       Krin.abilityXer[22] = {ID:0,LEVELMIN:8,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:1,BUFFNAME:"MARATHON"}; // 
+       Krin.abilityXer[23] = {ID:0,LEVELMIN:8,LEVELSCALE:1,TIER:4,PRESKILL:[19],CLASSIFY:1,BUFFNAME:"ACIDIC"}; // 
+       Krin.abilityXer[24] = {ID:163,LEVELMIN:10,LEVELSCALE:1,TIER:4,PRESKILL:[21],CLASSIFY:0,BUFFNAME:0}; // Shadow Blend
+       Krin.abilityXer[25] = {ID:0,LEVELMIN:10,LEVELSCALE:1,TIER:3,PRESKILL:[-1],CLASSIFY:1,BUFFNAME:"EVOLUTION"}; // 
+       Krin.abilityXer[26] = {ID:173,LEVELMIN:10,LEVELSCALE:1,TIER:1,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; //Subversion 
+       Krin.abilityXer[27] = {ID:170,LEVELMIN:10,LEVELSCALE:1,TIER:3,PRESKILL:[22],CLASSIFY:0,BUFFNAME:0}; // Crystallize
+    }
+    if(classerKrin == 1) // Biological
+    {
+       Krin.startSkill1 = 478;
+       Krin.startSkill2 = 479;
+       Krin.abilityXer[0] = {ID:400,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Dark Echoes
+       Krin.abilityXer[1] = {ID:404,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Placebo
+       Krin.abilityXer[2] = {ID:408,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Nerve Shock
+       Krin.abilityXer[3] = {ID:412,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Terrify
+       Krin.abilityXer[4] = {ID:416,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[0],CLASSIFY:0,BUFFNAME:0}; // Empower
+       Krin.abilityXer[5] = {ID:420,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Betrayal
+       Krin.abilityXer[6] = {ID:424,LEVELMIN:1,LEVELSCALE:1,TIER:2,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Traumatize
+       Krin.abilityXer[7] = {ID:426,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[3],CLASSIFY:0,BUFFNAME:0}; // Determination
+       Krin.abilityXer[8] = {ID:430,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[4],CLASSIFY:0,BUFFNAME:0}; // Guardian State
+       Krin.abilityXer[9] = {ID:434,LEVELMIN:1,LEVELSCALE:1,TIER:3,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Shock Therapy
+       Krin.abilityXer[10] = {ID:475,LEVELMIN:1,LEVELSCALE:9,TIER:2,PRESKILL:[5,7],CLASSIFY:0,BUFFNAME:0}; // Retrograde
+       Krin.abilityXer[11] = {ID:463,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Solitary Confinement
+       Krin.abilityXer[12] = {ID:0,LEVELMIN:4,LEVELSCALE:1,TIER:5,PRESKILL:[8],CLASSIFY:1,BUFFNAME:"TENACITY"}; // 
+       Krin.abilityXer[13] = {ID:437,LEVELMIN:4,LEVELSCALE:1,TIER:4,PRESKILL:[9],CLASSIFY:0,BUFFNAME:0}; // High Voltage
+       Krin.abilityXer[14] = {ID:0,LEVELMIN:4,LEVELSCALE:1,TIER:1,PRESKILL:[10],CLASSIFY:1,BUFFNAME:"OVERDRIVE"}; // 
+       Krin.abilityXer[15] = {ID:441,LEVELMIN:4,LEVELSCALE:1,TIER:3,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Insecurity
+       Krin.abilityXer[16] = {ID:448,LEVELMIN:6,LEVELSCALE:1,TIER:4,PRESKILL:[13],CLASSIFY:0,BUFFNAME:0}; // Electric Discharge
+       Krin.abilityXer[17] = {ID:0,LEVELMIN:6,LEVELSCALE:1,TIER:5,PRESKILL:[-1],CLASSIFY:1,BUFFNAME:"CHARGEDBLOOD"}; // 
+       Krin.abilityXer[18] = {ID:444,LEVELMIN:6,LEVELSCALE:1,TIER:4,PRESKILL:[13],CLASSIFY:0,BUFFNAME:0}; // Electron Charge
+       Krin.abilityXer[19] = {ID:452,LEVELMIN:6,LEVELSCALE:1,TIER:4,PRESKILL:[14],CLASSIFY:0,BUFFNAME:0}; // Epiphany
+       Krin.abilityXer[20] = {ID:477,LEVELMIN:8,LEVELSCALE:1,TIER:1,PRESKILL:[16],CLASSIFY:0,BUFFNAME:0}; // Wraith Form
+       Krin.abilityXer[21] = {ID:456,LEVELMIN:8,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Nightmare
+       Krin.abilityXer[22] = {ID:460,LEVELMIN:8,LEVELSCALE:1,TIER:2,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Haunt
+       Krin.abilityXer[23] = {ID:462,LEVELMIN:8,LEVELSCALE:1,TIER:1,PRESKILL:[19],CLASSIFY:0,BUFFNAME:0}; // Psychopath Form
+       Krin.abilityXer[24] = {ID:470,LEVELMIN:10,LEVELSCALE:1,TIER:3,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Dark Lullaby
+       Krin.abilityXer[25] = {ID:467,LEVELMIN:10,LEVELSCALE:1,TIER:1,PRESKILL:[21],CLASSIFY:0,BUFFNAME:0}; // Ultimatum
+       Krin.abilityXer[26] = {ID:468,LEVELMIN:10,LEVELSCALE:1,TIER:2,PRESKILL:[22],CLASSIFY:0,BUFFNAME:0}; // Sacrifice
+       Krin.abilityXer[27] = {ID:473,LEVELMIN:10,LEVELSCALE:1,TIER:2,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Superconductor
+    }
+    if(classerKrin == 2) // Hydraulic
+    {
+       Krin.startSkill1 = 276;
+       Krin.startSkill2 = 277;
+       Krin.abilityXer[0] = {ID:200,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Frost
+       Krin.abilityXer[1] = {ID:204,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Hypothermia
+       Krin.abilityXer[2] = {ID:253,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Impair
+       Krin.abilityXer[3] = {ID:257,LEVELMIN:1,LEVELSCALE:0,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Bloodshed
+       Krin.abilityXer[4] = {ID:208,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Mind Freeze
+       Krin.abilityXer[5] = {ID:228,LEVELMIN:1,LEVELSCALE:1,TIER:3,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Restore
+       Krin.abilityXer[6] = {ID:0,LEVELMIN:1,LEVELSCALE:1,TIER:1,PRESKILL:[2],CLASSIFY:1,BUFFNAME:"HOTBLOOD"}; // 
+       Krin.abilityXer[7] = {ID:261,LEVELMIN:1,LEVELSCALE:1,TIER:3,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Regulate
+       Krin.abilityXer[8] = {ID:212,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[4],CLASSIFY:0,BUFFNAME:0}; // Flash Freeze
+       Krin.abilityXer[9] = {ID:231,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[5],CLASSIFY:0,BUFFNAME:0}; // Reconstruct
+       Krin.abilityXer[10] = {ID:235,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Safe Guard
+       Krin.abilityXer[11] = {ID:264,LEVELMIN:1,LEVELSCALE:1,TIER:4,PRESKILL:[6,7],CLASSIFY:0,BUFFNAME:0}; // Wreck
+       Krin.abilityXer[12] = {ID:216,LEVELMIN:4,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Vascular Arrest
+       Krin.abilityXer[13] = {ID:239,LEVELMIN:4,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Ice Wall
+       Krin.abilityXer[14] = {ID:243,LEVELMIN:4,LEVELSCALE:1,TIER:4,PRESKILL:[9,10],CLASSIFY:0,BUFFNAME:0}; // Mirage
+       Krin.abilityXer[15] = {ID:268,LEVELMIN:4,LEVELSCALE:1,TIER:4,PRESKILL:[11],CLASSIFY:0,BUFFNAME:0}; // Demolish
+       Krin.abilityXer[16] = {ID:220,LEVELMIN:6,LEVELSCALE:1,TIER:4,PRESKILL:[13],CLASSIFY:0,BUFFNAME:0}; // Glacier
+       Krin.abilityXer[17] = {ID:247,LEVELMIN:6,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Dead Man's Plea
+       Krin.abilityXer[18] = {ID:0,LEVELMIN:6,LEVELSCALE:1,TIER:5,PRESKILL:[14],CLASSIFY:1,BUFFNAME:"STIFFUPPER"}; // 
+       Krin.abilityXer[19] = {ID:272,LEVELMIN:6,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Decimate
+       Krin.abilityXer[20] = {ID:0,LEVELMIN:8,LEVELSCALE:1,TIER:5,PRESKILL:[16],CLASSIFY:1,BUFFNAME:"CRYSTALICE"}; // 
+       Krin.abilityXer[21] = {ID:0,LEVELMIN:8,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:1,BUFFNAME:"COLDNEU"}; // 
+       Krin.abilityXer[22] = {ID:0,LEVELMIN:8,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:1,BUFFNAME:"WARMNEU"}; // 
+       Krin.abilityXer[23] = {ID:0,LEVELMIN:8,LEVELSCALE:1,TIER:4,PRESKILL:[19],CLASSIFY:1,BUFFNAME:"LASTINGPAIN"}; // 
+       Krin.abilityXer[24] = {ID:224,LEVELMIN:10,LEVELSCALE:1,TIER:4,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Shatter
+       Krin.abilityXer[25] = {ID:251,LEVELMIN:10,LEVELSCALE:1,TIER:1,PRESKILL:[21],CLASSIFY:0,BUFFNAME:0}; // Guardian Form
+       Krin.abilityXer[26] = {ID:252,LEVELMIN:10,LEVELSCALE:1,TIER:1,PRESKILL:[22],CLASSIFY:0,BUFFNAME:0}; // Avenger Form
+       Krin.abilityXer[27] = {ID:173,LEVELMIN:10,LEVELSCALE:1,TIER:1,PRESKILL:[-1],CLASSIFY:0,BUFFNAME:0}; // Subversion
+    }
+
+//  function a (arr) {
+//     for (i=0;i<arr.length;i++){
+//         console.log(abs["KRINABILITY"+arr[i] ][0])
+//     }
+// }
+// helper function to get the names of these abilities.
+// The ones used by the player really should be seperated from other variants used by enemies
