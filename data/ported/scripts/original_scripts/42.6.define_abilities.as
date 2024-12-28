@@ -1,28 +1,30 @@
+//This is some jank system of piecing text together based on ability attributes, and I am not a fan.
+//I might just run this and extract the data with javascript to get things in a more usable, constructed form.
 function addNewMove(a, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s)
 {
    _root["KRINABILITY" + MoveCount] = new Array();
    short = _root["KRINABILITY" + MoveCount];
    _root["KRINABILITYB" + MoveCount] = new Array();
    short2 = _root["KRINABILITYB" + MoveCount];
-   short[0] = a;
+   short[0] = a; // Ability Name
    short[1] = MoveCount;
    short[2] = c;
    short[3] = d;
    short[4] = e;
-   short[5] = f;
-   short[6] = g;
-   short[7] = h;
+   short[5] = f; //Focus cost
+   short[6] = g; //Life cost LIFEU
+   short[7] = h; //Cooldown
    short[8] = i;
-   short[9] = j;
-   short[10] = k;
-   short[11] = l;
+   short[9] = j; //use hint: spdVar1 = mTarget.SPEEDU / (mCaster.SPEEDU * mAry1[9]); 
+   short[10] = k; //Attack type example values: "Melee", "Shock", "Missile", controls the attack and take-damage animations
+   short[11] = l; //Set caster color (Hex value)
    short[12] = m;
-   short[13] = n;
+   short[13] = n; //BUFF APPLIED BY MOVE also attached as a movie? //BATTLESCREEN.attachMovie(mAry1[13],"b1",-9);
    short[14] = o;
    short[15] = p;
-   short[16] = q;
-   short[17] = _root.KrinLang[KLangChoosen].SKILLNAME[r];
-   short[18] = s;
+   short[16] = q; //use hint: mCaster.LIFEN -= mAry1[6] + Math.round(mCaster.LIFEU * mAry1[16]);
+   short[17] = _root.KrinLang[KLangChoosen].SKILLNAME[r]; //Ability name, translated
+   short[18] = s; //sound effect to play
    s = undefined;
    short2[0] = "Physical";
    short2[1] = 0;
@@ -43,7 +45,7 @@ function addNewMove(a, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s)
    short2[15] = [0];
    short2[16] = 0;
    short2[17] = "No Tooltip assigned";
-   short2[18] = "Costs ";
+   short2[18] = "Costs "; //tooltip 3, cost
    short2[19] = 1;
    short2[20] = 0;
    short2[21] = 0;
