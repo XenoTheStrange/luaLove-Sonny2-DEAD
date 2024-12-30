@@ -49,3 +49,8 @@ function love.conf(t)
     t.modules.video = true              -- Enable the video module (boolean)
     t.modules.window = true             -- Enable the window module (boolean)
 end
+
+-- Game engine configuration
+return {
+    game_data_directory = "sonny2"
+}

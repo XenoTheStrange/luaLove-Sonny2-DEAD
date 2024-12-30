@@ -21,7 +21,7 @@ function addNewMove(a, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s)
    short[12] = m; //Attack type (animation played when attacking)
    short[13] = n; //Boom type (animation played when the spell hits, presumably)
    short[14] = o; //"Full Damage", "Heal", "Focus" what to ADD to the entity (adding damage is taking damage)
-   short[15] = p;
+   short[15] = p; TODO TODO TODO TODO 
    short[16] = q; //Life cost: percentage of total life;
    short[17] = _root.KrinLang[KLangChoosen].SKILLNAME[r]; //Ability name, translated.. "ToolTipTitle", strictly
    short[18] = s; //sound effect to play
@@ -40,7 +40,7 @@ function addNewMove(a, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s)
    short2[9] = 0; // Modify equation by a flat value (uses addition)
    short2[10] = 1; // Health * this
    short2[11] = 0; // Flat focus scaling
-   short2[12] = 0;
+   short2[12] = 0; TODO TODO TODO TODO 
    short2[13] = 0; // Buff ID to apply????
    short2[14] = 1; // Buff apply chance (will apply if random number is over this value)
    short2[15] = new Array();
@@ -48,7 +48,7 @@ function addNewMove(a, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s)
    short2[16] = 0; // How many buffs this will try to dispell
    short2[17] = "No Tooltip assigned"; // Description of behavior. i.e. "Hit the target." "Shield the target", "Poison the target" and so on.
    short2[18] = "Costs "; // Tooltip 3, cost
-   short2[19] = 1;
+   short2[19] = 1; TODO TODO TODO TODO 
    short2[20] = 0; // Hits all characters in target team
    short2[21] = 0; // Spell targets self (1 for true, 0 false)
    short2[22] = 1; // Chance to dispell a buff
