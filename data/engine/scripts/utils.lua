@@ -19,5 +19,13 @@ return {
         for key, value in pairs(o) do
             print(key, value)
         end
+    end,
+    set_defaults = function(object, defaults)
+        for key, value in pairs(defaults) do
+            print(key, value)
+            if object[key] == nil then
+                object[key] = defaults[key]
+            end
+        end
     end
 }

@@ -9,44 +9,45 @@ scripts = {}
 state = {
     sprites_to_draw = {}
 }
+flux = require("flux")
 
 -- Runs on program start. Load game data.
 function love.load()
     engine.restart_game()  
     state.sprites_to_draw = {data.characters.ball} 
     print("START")
-    engine.utils.tp(data.characters)
+
+    data.animations.bounce_ball(data.characters.ball)
 end
+
 
 function love.draw()
     -- I'm using pairs here so the data structure can be labeled and this will ignore it _. Good for labeling body part pieces.
-    if state.sprites_to_draw ~= nil then
         for _, sprite in ipairs(state.sprites_to_draw) do
             for _, piece in pairs(sprite.parts) do
                 if piece.visible == true then
+                    if piece.tint then
+                       love.graphics.setColor(piece.tint)
+                    end
                     love.graphics.draw(
                             piece.sprite, 
                             sprite.x + piece.x, 
-                            sprite.y + piece.y
+                            sprite.y + piece.y,
+                            piece.angle * (math.pi / 180), -- turn our degree angle into radians for love2d
+                            piece.scale_x,
+                            piece.scale_y,
+                            piece.sprite:getWidth() / 2, -- Origin centered
+                            piece.sprite:getHeight() / 2
                         )
                 end
             end
         end
-    end
 end
 
 -- Runs each frame. Used to update states.
 function love.update(dt)
+    flux.update(dt) -- Needed to use flux
     -- This should pretty much call an update function tied to whatever scene we're in at the moment. TODO
-
-    -- Tmp code to move objects slightly so I can see them reset with the game state
-    if state.sprites_to_draw ~= nil then
-        for _, sprite in pairs(state.sprites_to_draw) do
-            sprite.x = sprite.x + 50 * dt
-            sprite.y = sprite.y + 50 * dt
-        end
-    end
-
 end
 
 

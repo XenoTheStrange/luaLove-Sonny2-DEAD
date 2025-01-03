@@ -1,5 +1,0 @@
-return {
-    models = {},
-    animations = {},
-    characters = {}
-}
