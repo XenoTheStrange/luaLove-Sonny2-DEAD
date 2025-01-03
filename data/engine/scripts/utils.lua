@@ -20,12 +20,25 @@ return {
             print(key, value)
         end
     end,
-    set_defaults = function(object, defaults)
+    set_defaults = function(table, defaults)
+        if type(table) ~= "table" then 
+            return 
+        end
         for key, value in pairs(defaults) do
-            print(key, value)
-            if object[key] == nil then
-                object[key] = defaults[key]
+            if table[key] == nil then
+                table[key] = value
             end
         end
+    end,
+
+    set_defaults_foreach_in = function(table, defaults)
+        if type(table) ~= "table" then  return end
+        for key, value in pairs(table) do
+            engine.utils.set_defaults(value, defaults)
+        end
     end
+    
+
+    
+    
 }

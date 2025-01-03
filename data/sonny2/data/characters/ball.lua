@@ -2,7 +2,6 @@ ball = {
     name = "ball",
     x = 400,
     y = 0,
-    model = "ball",
     parts = {
         base = {
             angle = 15,
@@ -19,10 +18,5 @@ ball = {
         }
     }
 }
-
-
-for _, part in pairs(ball.parts) do
-    engine.utils.set_defaults(part, {visible = true, x=0, y=0, angle=0, scale_x=1, scale_y=1, sprite=sprites.debug.missing})
-end
 
 return ball

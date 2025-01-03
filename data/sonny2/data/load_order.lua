@@ -1,0 +1,5 @@
+return {
+    "models",
+    "animations",
+    "characters"
+}

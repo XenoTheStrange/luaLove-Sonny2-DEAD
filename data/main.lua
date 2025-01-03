@@ -13,21 +13,25 @@ flux = require("flux")
 
 -- Runs on program start. Load game data.
 function love.load()
-    engine.restart_game()  
-    state.sprites_to_draw = {data.characters.ball} 
-    print("START")
-
-    data.animations.bounce_ball(data.characters.ball)
+    love.graphics.setBackgroundColor(255, 255, 255)  -- White
+    engine.restart_game()
+    scripts.init()
+    state.sprites_to_draw = {data.characters.ninja, data.characters.ball}
 end
 
-
 function love.draw()
-    -- I'm using pairs here so the data structure can be labeled and this will ignore it _. Good for labeling body part pieces.
+    -- sprites to draw must contain numbered entires where parts have keys so they can be named (must be named)
+        if state.sprites_to_draw == nil then 
+            return -- prevent crash at start :|
+        end
+        
         for _, sprite in ipairs(state.sprites_to_draw) do
             for _, piece in pairs(sprite.parts) do
                 if piece.visible == true then
                     if piece.tint then
                        love.graphics.setColor(piece.tint)
+                    else 
+                        love.graphics.setColor(1, 1, 1, 1)
                     end
                     love.graphics.draw(
                             piece.sprite, 
