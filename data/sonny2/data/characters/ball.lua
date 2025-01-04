@@ -1,19 +1,20 @@
 ball = {
     name = "ball",
-    x = 400,
-    y = 0,
+    x = 500,
+    y = 500,
     parts = {
         base = {
-            angle = 15,
-            tint = {0.2,0.6,0.8,1},
+            angle = 18,
+            tint = {0.2,0.8,0.8,1},
             sprite=sprites.debug.ball
         },
         left = {
             x=-100,
+            angle = 65
         },
         right = {
             x=100,
-            angle=45,
+            angle=86,
             tint={0.2, 0, 0.2, 1}
         }
     }

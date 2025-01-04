@@ -44,10 +44,8 @@ return {
                 local key = item:gsub("%.png$", "")
                 output[key] = love.graphics.newImage(full_path)
             elseif item:match("%.svg$") then
-                -- Remove the ".svg" extension for the key
-                local key = item:gsub("%.svg$", "")
-                print("Loading SVG from: " .. full_path)
-                output[key] = engine.load_svg_as_image_data(full_path, 100, 100)
+                -- Placeholder for handling other image formats
+                print("Found an svg at \"" .. full_path .."\", Please convert to png manually.")
             end
         end
     end,
@@ -99,8 +97,9 @@ return {
         end
     end,
 
-    load_svg_as_image_data = function()
-        -- TODO CAIRO
-    end
+    -- load_svg_as_image_data = function(imagePath, imgWidth, imgHeight)
+    --     IDEA ABANDONED. Tove didn't render shit right nor work the way I wanted, svglover failed trying to interpret text as RGB data, 
+    --     2 days is long enough to be frustrated about this. I'll just pre-render the bitches as png.
+    -- end
     
 }
