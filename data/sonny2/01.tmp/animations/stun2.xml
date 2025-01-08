@@ -1,0 +1,1812 @@
+<item type="FrameLabelTag" name="stun2" namedAnchor="false"/>
+    <item type="PlaceObject3Tag" characterId="165" depth="33" placeFlagHasCacheAsBitmap="false" placeFlagHasCharacter="true" placeFlagHasClassName="false" placeFlagHasClipActions="false" placeFlagHasClipDepth="false" placeFlagHasColorTransform="false" placeFlagHasFilterList="true" placeFlagHasImage="false" placeFlagHasMatrix="true" placeFlagHasName="false" placeFlagHasRatio="true" placeFlagHasVisible="false" placeFlagMove="false" placeFlagOpaqueBackground="false" ratio="239" reserved="false" visible="0">
+        <matrix type="MATRIX" hasRotate="false" hasScale="false" rotateSkew0="0.0" rotateSkew1="0.0" scaleX="0.0" scaleY="0.0" translateX="256" translateY="-380"/>
+        <item type="GLOWFILTER" blurX="12.0" blurY="12.0" compositeSource="true" id="2" innerGlow="false" knockout="false" passes="1" strength="2.6992188">
+            <glowColor type="RGBA" alpha="255" blue="255" green="0" red="0"/>
+        </item>
+
+    </item>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.22477722" rotateSkew1="0.22477722" scaleX="0.9701843" scaleY="0.9701843" translateX="-109" translateY="395"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95628357" rotateSkew1="-0.9562683" scaleX="-0.2827301" scaleY="-0.2827301" translateX="371" translateY="685"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70588684" rotateSkew1="-0.70588684" scaleX="0.70358276" scaleY="0.70358276" translateX="-34" translateY="-122"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24531555" rotateSkew1="-0.24531555" scaleX="0.9616699" scaleY="0.9616699" translateX="-89" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8596802" rotateSkew1="-0.8596802" scaleX="0.4830017" scaleY="0.4830017" translateX="209" translateY="-133"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.41012573" rotateSkew1="-0.41012573" scaleX="0.9070282" scaleY="0.9070282" translateX="-12" translateY="133"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98651123" rotateSkew1="-0.98651123" scaleX="0.081588745" scaleY="0.081588745" translateX="-187" translateY="706"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29362488" rotateSkew1="0.24467468" scaleX="1.1524811" scaleY="0.9604645" translateX="-61" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9948578" rotateSkew1="-0.9948578" scaleX="0.07032776" scaleY="0.07032776" translateX="-464" translateY="774"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29855347" rotateSkew1="0.29855347" scaleX="0.7345581" scaleY="0.7345581" translateX="280" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92674255" rotateSkew1="0.7722931" scaleX="-0.23239136" scaleY="-0.19363403" translateX="89" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11779785" rotateSkew1="0.11779785" scaleX="0.7879486" scaleY="0.7879486" translateX="416" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7519531" rotateSkew1="-0.7519531" scaleX="-0.26661682" scaleY="-0.26661682" translateX="530" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17294312" rotateSkew1="0.17294312" scaleX="-0.7777405" scaleY="0.7777405" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.31004333" rotateSkew1="-0.31004333" scaleX="0.73095703" scaleY="0.73095703" translateX="146" translateY="168"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.20724487" rotateSkew1="0.20724487" scaleX="0.9732361" scaleY="0.9732361" translateX="-110" translateY="396"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9561157" rotateSkew1="-0.95610046" scaleX="-0.27990723" scaleY="-0.27990723" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70495605" rotateSkew1="-0.70495605" scaleX="0.7020416" scaleY="0.7020416" translateX="-32" translateY="-119"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24453735" rotateSkew1="-0.24453735" scaleX="0.96102905" scaleY="0.96102905" translateX="-87" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8625946" rotateSkew1="-0.8625946" scaleX="0.47468567" scaleY="0.47468567" translateX="213" translateY="-130"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.41697693" rotateSkew1="-0.41697693" scaleX="0.9024048" scaleY="0.9024048" translateX="-10" translateY="134"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.986496" rotateSkew1="-0.986496" scaleX="0.07861328" scaleY="0.07861328" translateX="-188" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29296875" rotateSkew1="0.24412537" scaleX="1.1516418" scaleY="0.95973206" translateX="-62" translateY="531"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9946594" rotateSkew1="-0.9946594" scaleX="0.06976318" scaleY="0.06976318" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2973938" rotateSkew1="0.2973938" scaleX="0.73399353" scaleY="0.73399353" translateX="281" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9261627" rotateSkew1="0.77178955" scaleX="-0.23143005" scaleY="-0.19285583" translateX="90" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117767334" rotateSkew1="0.117767334" scaleX="0.7875519" scaleY="0.7875519" translateX="416" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7511139" rotateSkew1="-0.7511139" scaleX="-0.2664032" scaleY="-0.2664032" translateX="529" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.1725769" rotateSkew1="0.1725769" scaleX="-0.77723694" scaleY="0.77723694" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30775452" rotateSkew1="-0.30775452" scaleX="0.7308655" scaleY="0.7308655" translateX="146" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.19021606" rotateSkew1="0.19021606" scaleX="0.9766083" scaleY="0.9766083" translateX="-112" translateY="396"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9560852" rotateSkew1="-0.95606995" scaleX="-0.27986145" scaleY="-0.27986145" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70487976" rotateSkew1="-0.70487976" scaleX="0.7020111" scaleY="0.7020111" translateX="-30" translateY="-117"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.2445221" rotateSkew1="-0.2445221" scaleX="0.96099854" scaleY="0.96099854" translateX="-85" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8665924" rotateSkew1="-0.8665924" scaleX="0.46720886" scaleY="0.46720886" translateX="216" translateY="-128"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.42477417" rotateSkew1="-0.42477417" scaleX="0.89863586" scaleY="0.89863586" translateX="-9" translateY="134"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9864807" rotateSkew1="-0.9864807" scaleX="0.07858276" scaleY="0.07858276" translateX="-188" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29293823" rotateSkew1="0.24412537" scaleX="1.1515808" scaleY="0.95970154" translateX="-62" translateY="531"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99464417" rotateSkew1="-0.99464417" scaleX="0.069747925" scaleY="0.069747925" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29736328" rotateSkew1="0.29736328" scaleX="0.73394775" scaleY="0.73394775" translateX="282" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9261017" rotateSkew1="0.77175903" scaleX="-0.23143005" scaleY="-0.19284058" translateX="91" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117767334" rotateSkew1="0.117767334" scaleX="0.78752136" scaleY="0.78752136" translateX="416" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7510681" rotateSkew1="-0.7510681" scaleX="-0.26638794" scaleY="-0.26638794" translateX="529" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17256165" rotateSkew1="0.17256165" scaleX="-0.7772064" scaleY="0.7772064" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30770874" rotateSkew1="-0.30770874" scaleX="0.73080444" scaleY="0.73080444" translateX="146" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.17315674" rotateSkew1="0.17315674" scaleX="0.9796753" scaleY="0.9796753" translateX="-112" translateY="396"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9560547" rotateSkew1="-0.9560394" scaleX="-0.27981567" scaleY="-0.27981567" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70484924" rotateSkew1="-0.70484924" scaleX="0.7019348" scaleY="0.7019348" translateX="-28" translateY="-116"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.2445221" rotateSkew1="-0.2445221" scaleX="0.960968" scaleY="0.960968" translateX="-82" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.87049866" rotateSkew1="-0.87049866" scaleX="0.45970154" scaleY="0.45970154" translateX="219" translateY="-126"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.43252563" rotateSkew1="-0.43252563" scaleX="0.8948364" scaleY="0.8948364" translateX="-7" translateY="135"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98643494" rotateSkew1="-0.98643494" scaleX="0.07852173" scaleY="0.07852173" translateX="-188" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29289246" rotateSkew1="0.2441101" scaleX="1.151535" scaleY="0.959671" translateX="-63" translateY="531"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29730225" rotateSkew1="0.29730225" scaleX="0.733902" scaleY="0.733902" translateX="283" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9260559" rotateSkew1="0.77175903" scaleX="-0.23138428" scaleY="-0.19282532" translateX="91" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75105286" rotateSkew1="-0.75105286" scaleX="-0.26638794" scaleY="-0.26638794" translateX="529" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17254639" rotateSkew1="0.17254639" scaleX="-0.77719116" scaleY="0.77719116" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30766296" rotateSkew1="-0.30766296" scaleX="0.73075867" scaleY="0.73075867" translateX="146" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.15603638" rotateSkew1="0.15603638" scaleX="0.9824829" scaleY="0.9824829" translateX="-113" translateY="397"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9560089" rotateSkew1="-0.95599365" scaleX="-0.27980042" scaleY="-0.27980042" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70477295" rotateSkew1="-0.70477295" scaleX="0.7018585" scaleY="0.7018585" translateX="-26" translateY="-114"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24450684" rotateSkew1="-0.24450684" scaleX="0.96092224" scaleY="0.96092224" translateX="-80" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8743439" rotateSkew1="-0.8743439" scaleX="0.4521942" scaleY="0.4521942" translateX="222" translateY="-123"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.44023132" rotateSkew1="-0.44023132" scaleX="0.8909302" scaleY="0.8909302" translateX="-5" translateY="135"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98643494" rotateSkew1="-0.98643494" scaleX="0.07849121" scaleY="0.07849121" translateX="-189" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2929077" rotateSkew1="0.24407959" scaleX="1.1515198" scaleY="0.95962524" translateX="-63" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9946289" rotateSkew1="-0.9946289" scaleX="0.06971741" scaleY="0.06971741" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29730225" rotateSkew1="0.29730225" scaleX="0.7338562" scaleY="0.7338562" translateX="284" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92607117" rotateSkew1="0.77171326" scaleX="-0.23136902" scaleY="-0.19281006" translateX="92" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117767334" rotateSkew1="0.117767334" scaleX="0.78749084" scaleY="0.78749084" translateX="416" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7509918" rotateSkew1="-0.7509918" scaleX="-0.26635742" scaleY="-0.26635742" translateX="529" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17254639" rotateSkew1="0.17254639" scaleX="-0.7771454" scaleY="0.7771454" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3076172" rotateSkew1="-0.3076172" scaleX="0.7307434" scaleY="0.7307434" translateX="146" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.13887024" rotateSkew1="0.13887024" scaleX="0.9849396" scaleY="0.9849396" translateX="-114" translateY="397"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9559784" rotateSkew1="-0.95596313" scaleX="-0.27973938" scaleY="-0.27972412" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7047119" rotateSkew1="-0.7047119" scaleX="0.70181274" scaleY="0.70181274" translateX="-24" translateY="-112"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24447632" rotateSkew1="-0.24447632" scaleX="0.9608917" scaleY="0.9608917" translateX="-78" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8766327" rotateSkew1="-0.8766327" scaleX="0.4474945" scaleY="0.4474945" translateX="222" translateY="-120"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.44792175" rotateSkew1="-0.44792175" scaleX="0.88694763" scaleY="0.88694763" translateX="-4" translateY="135"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9864197" rotateSkew1="-0.9864197" scaleX="0.07846069" scaleY="0.07846069" translateX="-190" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2928772" rotateSkew1="0.24406433" scaleX="1.1514587" scaleY="0.9595947" translateX="-64" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99461365" rotateSkew1="-0.99461365" scaleX="0.069732666" scaleY="0.069732666" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29725647" rotateSkew1="0.29725647" scaleX="0.7338257" scaleY="0.7338257" translateX="285" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9260254" rotateSkew1="0.77168274" scaleX="-0.23136902" scaleY="-0.1927948" translateX="93" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117752075" rotateSkew1="0.117752075" scaleX="0.7874756" scaleY="0.7874756" translateX="416" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7509613" rotateSkew1="-0.7509613" scaleX="-0.26635742" scaleY="-0.26635742" translateX="529" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17253113" rotateSkew1="0.17253113" scaleX="-0.77711487" scaleY="0.77711487" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3075714" rotateSkew1="-0.3075714" scaleX="0.7307129" scaleY="0.7307129" translateX="146" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.121673584" rotateSkew1="0.121673584" scaleX="0.9871063" scaleY="0.9871063" translateX="-113" translateY="398"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9559326" rotateSkew1="-0.95591736" scaleX="-0.27967834" scaleY="-0.2796631" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70466614" rotateSkew1="-0.70466614" scaleX="0.7017212" scaleY="0.7017212" translateX="-22" translateY="-110"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24446106" rotateSkew1="-0.24446106" scaleX="0.9608612" scaleY="0.9608612" translateX="-76" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8803711" rotateSkew1="-0.8803711" scaleX="0.4399109" scaleY="0.4399109" translateX="225" translateY="-117"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.4555664" rotateSkew1="-0.4555664" scaleX="0.8829193" scaleY="0.8829193" translateX="-2" translateY="135"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9864197" rotateSkew1="-0.9864197" scaleX="0.078430176" scaleY="0.078430176" translateX="-191" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29286194" rotateSkew1="0.24406433" scaleX="1.1514282" scaleY="0.9595642" translateX="-64" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9945984" rotateSkew1="-0.9945984" scaleX="0.06971741" scaleY="0.06971741" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29725647" rotateSkew1="0.29725647" scaleX="0.7337799" scaleY="0.7337799" translateX="286" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92601013" rotateSkew1="0.7716522" scaleX="-0.2313385" scaleY="-0.19277954" translateX="94" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117752075" rotateSkew1="0.117752075" scaleX="0.7874603" scaleY="0.7874603" translateX="416" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7509155" rotateSkew1="-0.7509155" scaleX="-0.26631165" scaleY="-0.26631165" translateX="529" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17253113" rotateSkew1="0.17253113" scaleX="-0.7770996" scaleY="0.7770996" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3075409" rotateSkew1="-0.3075409" scaleX="0.73065186" scaleY="0.73065186" translateX="146" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.10443115" rotateSkew1="0.10443115" scaleX="0.9889679" scaleY="0.9889679" translateX="-115" translateY="397"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9559021" rotateSkew1="-0.9559021" scaleX="-0.27964783" scaleY="-0.27963257" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70462036" rotateSkew1="-0.70462036" scaleX="0.7016754" scaleY="0.7016754" translateX="-20" translateY="-108"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24443054" rotateSkew1="-0.24443054" scaleX="0.96084595" scaleY="0.96084595" translateX="-74" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.88404846" rotateSkew1="-0.88404846" scaleX="0.432312" scaleY="0.432312" translateX="229" translateY="-114"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.4631958" rotateSkew1="-0.4631958" scaleX="0.8788147" scaleY="0.8788147" translateX="-1" translateY="135"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9864044" rotateSkew1="-0.9864044" scaleX="0.0783844" scaleY="0.0783844" translateX="-192" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29284668" rotateSkew1="0.24404907" scaleX="1.1513672" scaleY="0.95951843" translateX="-64" translateY="531"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99458313" rotateSkew1="-0.99458313" scaleX="0.06971741" scaleY="0.06971741" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2972107" rotateSkew1="0.2972107" scaleX="0.7337494" scaleY="0.7337494" translateX="287" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9259491" rotateSkew1="0.77163696" scaleX="-0.23132324" scaleY="-0.19276428" translateX="95" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117752075" rotateSkew1="0.117752075" scaleX="0.7874298" scaleY="0.7874298" translateX="416" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75090027" rotateSkew1="-0.75090027" scaleX="-0.26631165" scaleY="-0.26631165" translateX="529" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17251587" rotateSkew1="0.17251587" scaleX="-0.7770691" scaleY="0.7770691" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30749512" rotateSkew1="-0.30749512" scaleX="0.7306366" scaleY="0.7306366" translateX="146" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.08718872" rotateSkew1="0.08718872" scaleX="0.9905853" scaleY="0.9905853" translateX="-117" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95588684" rotateSkew1="-0.9558716" scaleX="-0.2795868" scaleY="-0.2795868" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70454407" rotateSkew1="-0.70454407" scaleX="0.7016144" scaleY="0.7016144" translateX="-18" translateY="-107"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24441528" rotateSkew1="-0.24441528" scaleX="0.9607849" scaleY="0.9607849" translateX="-71" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8876343" rotateSkew1="-0.8876343" scaleX="0.42468262" scaleY="0.42468262" translateX="232" translateY="-110"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.46788025" rotateSkew1="-0.46788025" scaleX="0.87620544" scaleY="0.87620544" translateX="0" translateY="135"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9863739" rotateSkew1="-0.9863739" scaleX="0.07835388" scaleY="0.07835388" translateX="-192" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29281616" rotateSkew1="0.24401855" scaleX="1.1513367" scaleY="0.95947266" translateX="-64" translateY="531"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99458313" rotateSkew1="-0.99458313" scaleX="0.06970215" scaleY="0.06970215" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29718018" rotateSkew1="0.29718018" scaleX="0.73368835" scaleY="0.73368835" translateX="288" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9259033" rotateSkew1="0.7715912" scaleX="-0.23129272" scaleY="-0.19274902" translateX="95" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117752075" rotateSkew1="0.117752075" scaleX="0.78741455" scaleY="0.78741455" translateX="416" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7508545" rotateSkew1="-0.7508545" scaleX="-0.2662964" scaleY="-0.2662964" translateX="529" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17251587" rotateSkew1="0.17251587" scaleX="-0.7770386" scaleY="0.7770386" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30743408" rotateSkew1="-0.30743408" scaleX="0.7306061" scaleY="0.7306061" translateX="146" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.06990051" rotateSkew1="0.06990051" scaleX="0.99183655" scaleY="0.99183655" translateX="-118" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95584106" rotateSkew1="-0.9558258" scaleX="-0.27954102" scaleY="-0.27954102" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70448303" rotateSkew1="-0.70448303" scaleX="0.7015381" scaleY="0.7015381" translateX="-16" translateY="-105"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24441528" rotateSkew1="-0.24441528" scaleX="0.96073914" scaleY="0.96073914" translateX="-69" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.89115906" rotateSkew1="-0.89115906" scaleX="0.41700745" scaleY="0.41700745" translateX="236" translateY="-107"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.4754486" rotateSkew1="-0.4754486" scaleX="0.8720093" scaleY="0.8720093" translateX="2" translateY="136"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9863739" rotateSkew1="-0.9863739" scaleX="0.078308105" scaleY="0.078308105" translateX="-193" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29281616" rotateSkew1="0.24401855" scaleX="1.1512909" scaleY="0.9594116" translateX="-65" translateY="531"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9945679" rotateSkew1="-0.9945679" scaleX="0.06968689" scaleY="0.06968689" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2971344" rotateSkew1="0.2971344" scaleX="0.7336426" scaleY="0.7336426" translateX="289" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9258728" rotateSkew1="0.77156067" scaleX="-0.23127747" scaleY="-0.19273376" translateX="96" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117752075" rotateSkew1="0.117752075" scaleX="0.78741455" scaleY="0.78741455" translateX="416" translateY="741"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7508087" rotateSkew1="-0.7508087" scaleX="-0.26628113" scaleY="-0.26628113" translateX="529" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17250061" rotateSkew1="0.17250061" scaleX="-0.77700806" scaleY="0.77700806" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30740356" rotateSkew1="-0.30740356" scaleX="0.7305908" scaleY="0.7305908" translateX="146" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.052581787" rotateSkew1="0.052581787" scaleX="0.9928131" scaleY="0.9928131" translateX="-117" translateY="398"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9557953" rotateSkew1="-0.9557953" scaleX="-0.2795105" scaleY="-0.27949524" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7044525" rotateSkew1="-0.7044525" scaleX="0.70147705" scaleY="0.70147705" translateX="-14" translateY="-103"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24438477" rotateSkew1="-0.24438477" scaleX="0.9607086" scaleY="0.9607086" translateX="-67" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.89463806" rotateSkew1="-0.89463806" scaleX="0.4092865" scaleY="0.4092865" translateX="239" translateY="-105"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.4829712" rotateSkew1="-0.4829712" scaleX="0.8677368" scaleY="0.8677368" translateX="4" translateY="136"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9863739" rotateSkew1="-0.9863739" scaleX="0.07827759" scaleY="0.07827759" translateX="-194" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2928009" rotateSkew1="0.2440033" scaleX="1.1512299" scaleY="0.9594116" translateX="-65" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9945526" rotateSkew1="-0.9945526" scaleX="0.06967163" scaleY="0.06967163" translateX="-462" translateY="776"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29711914" rotateSkew1="0.29711914" scaleX="0.7336273" scaleY="0.7336273" translateX="291" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.925827" rotateSkew1="0.77153015" scaleX="-0.23124695" scaleY="-0.1927185" translateX="97" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11773682" rotateSkew1="0.11773682" scaleX="0.7873688" scaleY="0.7873688" translateX="416" translateY="741"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75076294" rotateSkew1="-0.75076294" scaleX="-0.26626587" scaleY="-0.26626587" translateX="529" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17248535" rotateSkew1="0.17248535" scaleX="-0.77697754" scaleY="0.77697754" translateX="106" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3073578" rotateSkew1="-0.3073578" scaleX="0.7305145" scaleY="0.7305145" translateX="146" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.03527832" rotateSkew1="0.03527832" scaleX="0.9934845" scaleY="0.9934845" translateX="-118" translateY="398"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9557648" rotateSkew1="-0.9557648" scaleX="-0.27944946" scaleY="-0.27944946" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7043915" rotateSkew1="-0.7043915" scaleX="0.701416" scaleY="0.701416" translateX="-12" translateY="-101"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24435425" rotateSkew1="-0.24435425" scaleX="0.9606476" scaleY="0.9606476" translateX="-65" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8980713" rotateSkew1="-0.8980713" scaleX="0.40156555" scaleY="0.40156555" translateX="242" translateY="-102"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.490448" rotateSkew1="-0.490448" scaleX="0.86343384" scaleY="0.86343384" translateX="6" translateY="136"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9863739" rotateSkew1="-0.9863739" scaleX="0.07823181" scaleY="0.07823181" translateX="-195" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29278564" rotateSkew1="0.24397278" scaleX="1.1511993" scaleY="0.95936584" translateX="-66" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99453735" rotateSkew1="-0.99453735" scaleX="0.06967163" scaleY="0.06967163" translateX="-462" translateY="776"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29708862" rotateSkew1="0.29708862" scaleX="0.73358154" scaleY="0.73358154" translateX="291" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92581177" rotateSkew1="0.7715149" scaleX="-0.23123169" scaleY="-0.19268799" translateX="98" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11773682" rotateSkew1="0.11773682" scaleX="0.7873535" scaleY="0.7873535" translateX="416" translateY="741"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7507324" rotateSkew1="-0.7507324" scaleX="-0.2662506" scaleY="-0.2662506" translateX="530" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17248535" rotateSkew1="0.17248535" scaleX="-0.776947" scaleY="0.776947" translateX="106" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.307312" rotateSkew1="-0.307312" scaleX="0.730484" scaleY="0.730484" translateX="146" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.017959595" rotateSkew1="0.017959595" scaleX="0.9938507" scaleY="0.9938507" translateX="-119" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95570374" rotateSkew1="-0.955719" scaleX="-0.2794037" scaleY="-0.2794037" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70433044" rotateSkew1="-0.70433044" scaleX="0.70132446" scaleY="0.70132446" translateX="-10" translateY="-100"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24435425" rotateSkew1="-0.24435425" scaleX="0.9606018" scaleY="0.9606018" translateX="-62" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.90008545" rotateSkew1="-0.90008545" scaleX="0.39675903" scaleY="0.39675903" translateX="245" translateY="-99"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.49787903" rotateSkew1="-0.49787903" scaleX="0.85902405" scaleY="0.85902405" translateX="8" translateY="137"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98635864" rotateSkew1="-0.98635864" scaleX="0.078201294" scaleY="0.078201294" translateX="-195" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2927704" rotateSkew1="0.24395752" scaleX="1.151123" scaleY="0.9593048" translateX="-66" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99453735" rotateSkew1="-0.99453735" scaleX="0.06965637" scaleY="0.06965637" translateX="-462" translateY="776"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29707336" rotateSkew1="0.29707336" scaleX="0.7335205" scaleY="0.7335205" translateX="292" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92578125" rotateSkew1="0.7714691" scaleX="-0.23121643" scaleY="-0.19268799" translateX="98" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75068665" rotateSkew1="-0.75068665" scaleX="-0.26623535" scaleY="-0.26623535" translateX="530" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17245483" rotateSkew1="0.17245483" scaleX="-0.7769165" scaleY="0.7769165" translateX="106" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30725098" rotateSkew1="-0.30725098" scaleX="0.73043823" scaleY="0.73043823" translateX="146" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-6.713867E-4" rotateSkew1="6.713867E-4" scaleX="0.99394226" scaleY="0.99394226" translateX="-120" translateY="400"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9556885" rotateSkew1="-0.9556885" scaleX="-0.27937317" scaleY="-0.27937317" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7042694" rotateSkew1="-0.7042694" scaleX="0.70129395" scaleY="0.70129395" translateX="-8" translateY="-98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24432373" rotateSkew1="-0.24432373" scaleX="0.96058655" scaleY="0.96058655" translateX="-60" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.90338135" rotateSkew1="-0.90338135" scaleX="0.3889923" scaleY="0.3889923" translateX="247" translateY="-96"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.5052948" rotateSkew1="-0.5052948" scaleX="0.85458374" scaleY="0.85458374" translateX="9" translateY="138"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9863434" rotateSkew1="-0.9863434" scaleX="0.07814026" scaleY="0.07814026" translateX="-196" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29273987" rotateSkew1="0.24395752" scaleX="1.1510925" scaleY="0.9592743" translateX="-67" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9945221" rotateSkew1="-0.9945221" scaleX="0.06965637" scaleY="0.06965637" translateX="-462" translateY="776"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29704285" rotateSkew1="0.29704285" scaleX="0.73347473" scaleY="0.73347473" translateX="293" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9257202" rotateSkew1="0.77145386" scaleX="-0.23121643" scaleY="-0.19267273" translateX="99" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11773682" rotateSkew1="0.11773682" scaleX="0.78733826" scaleY="0.78733826" translateX="416" translateY="741"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7506561" rotateSkew1="-0.7506561" scaleX="-0.2662201" scaleY="-0.2662201" translateX="530" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17245483" rotateSkew1="0.17245483" scaleX="-0.776886" scaleY="0.776886" translateX="106" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30722046" rotateSkew1="-0.30722046" scaleX="0.730423" scaleY="0.730423" translateX="147" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.013381958" rotateSkew1="-0.013381958" scaleX="0.99365234" scaleY="0.99365234" translateX="-121" translateY="401"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95565796" rotateSkew1="-0.95565796" scaleX="-0.27931213" scaleY="-0.2793274" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7042084" rotateSkew1="-0.7042084" scaleX="0.70121765" scaleY="0.70121765" translateX="-7" translateY="-97"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24433899" rotateSkew1="-0.24433899" scaleX="0.96055603" scaleY="0.96055603" translateX="-58" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9066162" rotateSkew1="-0.9066162" scaleX="0.38116455" scaleY="0.38116455" translateX="250" translateY="-94"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.5126648" rotateSkew1="-0.5126648" scaleX="0.8500519" scaleY="0.8500519" translateX="10" translateY="137"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9863281" rotateSkew1="-0.9863281" scaleX="0.07809448" scaleY="0.07809448" translateX="-197" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2927246" rotateSkew1="0.24394226" scaleX="1.1510315" scaleY="0.9592438" translateX="-67" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9945221" rotateSkew1="-0.9945221" scaleX="0.06964111" scaleY="0.06964111" translateX="-463" translateY="776"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2970276" rotateSkew1="0.2970276" scaleX="0.7334595" scaleY="0.7334595" translateX="294" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92570496" rotateSkew1="0.7714081" scaleX="-0.23118591" scaleY="-0.19265747" translateX="100" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11773682" rotateSkew1="0.11773682" scaleX="0.78730774" scaleY="0.78730774" translateX="416" translateY="741"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75057983" rotateSkew1="-0.75057983" scaleX="-0.2662201" scaleY="-0.2662201" translateX="530" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17243958" rotateSkew1="0.17243958" scaleX="-0.77685547" scaleY="0.77685547" translateX="106" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30717468" rotateSkew1="-0.30717468" scaleX="0.73039246" scaleY="0.73039246" translateX="147" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.030685425" rotateSkew1="-0.030685425" scaleX="0.99305725" scaleY="0.99305725" translateX="-121" translateY="400"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95562744" rotateSkew1="-0.9556427" scaleX="-0.2792511" scaleY="-0.27926636" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7041626" rotateSkew1="-0.7041626" scaleX="0.7011719" scaleY="0.7011719" translateX="-5" translateY="-95"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24429321" rotateSkew1="-0.24429321" scaleX="0.9605255" scaleY="0.9605255" translateX="-56" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9097748" rotateSkew1="-0.9097748" scaleX="0.3733673" scaleY="0.3733673" translateX="252" translateY="-92"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.519989" rotateSkew1="-0.519989" scaleX="0.845459" scaleY="0.845459" translateX="12" translateY="138"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98631287" rotateSkew1="-0.98631287" scaleX="0.078048706" scaleY="0.078048706" translateX="-198" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29270935" rotateSkew1="0.24391174" scaleX="1.1509857" scaleY="0.959198" translateX="-68" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99450684" rotateSkew1="-0.99450684" scaleX="0.06964111" scaleY="0.06964111" translateX="-463" translateY="776"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29699707" rotateSkew1="0.29699707" scaleX="0.73339844" scaleY="0.73339844" translateX="295" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9256592" rotateSkew1="0.77137756" scaleX="-0.23117065" scaleY="-0.19264221" translateX="101" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11773682" rotateSkew1="0.11773682" scaleX="0.7872925" scaleY="0.7872925" translateX="416" translateY="741"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7505493" rotateSkew1="-0.7505493" scaleX="-0.26620483" scaleY="-0.26620483" translateX="530" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17243958" rotateSkew1="0.17243958" scaleX="-0.77682495" scaleY="0.77682495" translateX="106" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30714417" rotateSkew1="-0.30714417" scaleX="0.7303467" scaleY="0.7303467" translateX="147" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.047973633" rotateSkew1="-0.047973633" scaleX="0.992157" scaleY="0.992157" translateX="-122" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9555969" rotateSkew1="-0.9555969" scaleX="-0.27922058" scaleY="-0.27920532" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70410156" rotateSkew1="-0.70410156" scaleX="0.7010956" scaleY="0.7010956" translateX="-3" translateY="-93"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24427795" rotateSkew1="-0.24427795" scaleX="0.96051025" scaleY="0.96051025" translateX="-54" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9128723" rotateSkew1="-0.9128723" scaleX="0.3655243" scaleY="0.3655243" translateX="255" translateY="-88"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.52726746" rotateSkew1="-0.52726746" scaleX="0.84085083" scaleY="0.84085083" translateX="14" translateY="137"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98631287" rotateSkew1="-0.98631287" scaleX="0.07801819" scaleY="0.07801819" translateX="-200" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2926941" rotateSkew1="0.24391174" scaleX="1.1509705" scaleY="0.9591675" translateX="-68" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9944916" rotateSkew1="-0.9944916" scaleX="0.069625854" scaleY="0.069625854" translateX="-463" translateY="776"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2969513" rotateSkew1="0.2969513" scaleX="0.7333832" scaleY="0.7333832" translateX="296" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9256134" rotateSkew1="0.7713318" scaleX="-0.23114014" scaleY="-0.19262695" translateX="102" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7505188" rotateSkew1="-0.7505188" scaleX="-0.26617432" scaleY="-0.26617432" translateX="530" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17242432" rotateSkew1="0.17242432" scaleX="-0.77679443" scaleY="0.77679443" translateX="106" translateY="386"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3070984" rotateSkew1="-0.3070984" scaleX="0.73031616" scaleY="0.73031616" translateX="147" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.06523132" rotateSkew1="-0.06523132" scaleX="0.99098206" scaleY="0.99098206" translateX="-123" translateY="400"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95555115" rotateSkew1="-0.95555115" scaleX="-0.27915955" scaleY="-0.27915955" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70402527" rotateSkew1="-0.70402527" scaleX="0.70103455" scaleY="0.70103455" translateX="-1" translateY="-92"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24427795" rotateSkew1="-0.24427795" scaleX="0.9604645" scaleY="0.9604645" translateX="-51" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.91589355" rotateSkew1="-0.91589355" scaleX="0.3576355" scaleY="0.3576355" translateX="257" translateY="-85"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.5345001" rotateSkew1="-0.5345001" scaleX="0.8361206" scaleY="0.8361206" translateX="16" translateY="137"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9862976" rotateSkew1="-0.9862976" scaleX="0.07797241" scaleY="0.07797241" translateX="-200" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29267883" rotateSkew1="0.24391174" scaleX="1.1509094" scaleY="0.95910645" translateX="-69" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29692078" rotateSkew1="0.29692078" scaleX="0.73332214" scaleY="0.73332214" translateX="297" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92559814" rotateSkew1="0.7713318" scaleX="-0.23112488" scaleY="-0.19259644" translateX="102" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11772156" rotateSkew1="0.11772156" scaleX="0.78726196" scaleY="0.78726196" translateX="416" translateY="741"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.750473" rotateSkew1="-0.750473" scaleX="-0.26617432" scaleY="-0.26617432" translateX="530" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17242432" rotateSkew1="0.17242432" scaleX="-0.7767639" scaleY="0.7767639" translateX="106" translateY="386"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3070526" rotateSkew1="-0.3070526" scaleX="0.73028564" scaleY="0.73028564" translateX="147" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.082473755" rotateSkew1="-0.082473755" scaleX="0.9894867" scaleY="0.9894867" translateX="-123" translateY="401"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9555054" rotateSkew1="-0.9555054" scaleX="-0.27911377" scaleY="-0.27912903" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7039795" rotateSkew1="-0.7039795" scaleX="0.70095825" scaleY="0.70095825" translateX="1" translateY="-90"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24424744" rotateSkew1="-0.24424744" scaleX="0.96043396" scaleY="0.96043396" translateX="-49" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.91770935" rotateSkew1="-0.91770935" scaleX="0.35273743" scaleY="0.35273743" translateX="261" translateY="-83"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.5417023" rotateSkew1="-0.5417023" scaleX="0.8313446" scaleY="0.8313446" translateX="17" translateY="139"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9862671" rotateSkew1="-0.9862671" scaleX="0.07795715" scaleY="0.07795715" translateX="-201" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29266357" rotateSkew1="0.24391174" scaleX="1.1508636" scaleY="0.9590912" translateX="-69" translateY="530"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9944763" rotateSkew1="-0.9944763" scaleX="0.069610596" scaleY="0.069610596" translateX="-463" translateY="776"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29689026" rotateSkew1="0.29689026" scaleX="0.7332916" scaleY="0.7332916" translateX="298" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9255829" rotateSkew1="0.77130127" scaleX="-0.23110962" scaleY="-0.19259644" translateX="103" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11772156" rotateSkew1="0.11772156" scaleX="0.7872467" scaleY="0.7872467" translateX="416" translateY="741"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75042725" rotateSkew1="-0.75042725" scaleX="-0.26615906" scaleY="-0.26615906" translateX="530" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.1723938" rotateSkew1="0.1723938" scaleX="-0.77671814" scaleY="0.77671814" translateX="106" translateY="386"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30700684" rotateSkew1="-0.30700684" scaleX="0.73023987" scaleY="0.73023987" translateX="147" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.10028076" rotateSkew1="-0.10028076" scaleX="0.9879608" scaleY="0.9879608" translateX="-124" translateY="400"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9561615" rotateSkew1="-0.9561615" scaleX="-0.27996826" scaleY="-0.279953" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7050171" rotateSkew1="-0.7050171" scaleX="0.7021332" scaleY="0.7021332" translateX="4" translateY="-88"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24456787" rotateSkew1="-0.24456787" scaleX="0.9610748" scaleY="0.9610748" translateX="-47" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9215851" rotateSkew1="-0.9215851" scaleX="0.34536743" scaleY="0.34536743" translateX="264" translateY="-81"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.55010986" rotateSkew1="-0.55010986" scaleX="0.82748413" scaleY="0.82748413" translateX="19" translateY="139"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.986496" rotateSkew1="-0.986496" scaleX="0.07867432" scaleY="0.07867432" translateX="-202" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2929535" rotateSkew1="0.24415588" scaleX="1.1516876" scaleY="0.95977783" translateX="-71" translateY="531"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9946747" rotateSkew1="-0.9946747" scaleX="0.06976318" scaleY="0.06976318" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29742432" rotateSkew1="0.29742432" scaleX="0.7340088" scaleY="0.7340088" translateX="299" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9262085" rotateSkew1="0.7718353" scaleX="-0.23144531" scaleY="-0.1928711" translateX="104" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117767334" rotateSkew1="0.117767334" scaleX="0.7875824" scaleY="0.7875824" translateX="416" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7511749" rotateSkew1="-0.7511749" scaleX="-0.2664032" scaleY="-0.2664032" translateX="529" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.1725769" rotateSkew1="0.1725769" scaleX="-0.77723694" scaleY="0.77723694" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3078003" rotateSkew1="-0.3078003" scaleX="0.73088074" scaleY="0.73088074" translateX="146" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.08268738" rotateSkew1="-0.08268738" scaleX="0.9894562" scaleY="0.9894562" translateX="-123" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95552063" rotateSkew1="-0.9555054" scaleX="-0.27912903" scaleY="-0.2791443" translateX="371" translateY="683"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70396423" rotateSkew1="-0.70396423" scaleX="0.7009735" scaleY="0.7009735" translateX="2" translateY="-90"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.2442627" rotateSkew1="-0.2442627" scaleX="0.9604187" scaleY="0.9604187" translateX="-49" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9188843" rotateSkew1="-0.9188843" scaleX="0.34965515" scaleY="0.34965515" translateX="261" translateY="-84"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.54177856" rotateSkew1="-0.54177856" scaleX="0.83128357" scaleY="0.83128357" translateX="17" translateY="141"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9862976" rotateSkew1="-0.9862976" scaleX="0.07797241" scaleY="0.07797241" translateX="-200" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29266357" rotateSkew1="0.24391174" scaleX="1.1508636" scaleY="0.9590912" translateX="-69" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9944763" rotateSkew1="-0.9944763" scaleX="0.069610596" scaleY="0.069610596" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29689026" rotateSkew1="0.29689026" scaleX="0.7332916" scaleY="0.7332916" translateX="299" translateY="493"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9255676" rotateSkew1="0.77130127" scaleX="-0.23109436" scaleY="-0.19259644" translateX="103" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11772156" rotateSkew1="0.11772156" scaleX="0.7872162" scaleY="0.7872162" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75042725" rotateSkew1="-0.75042725" scaleX="-0.26617432" scaleY="-0.26617432" translateX="528" translateY="621"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.1723938" rotateSkew1="0.1723938" scaleX="-0.77674866" scaleY="0.77674866" translateX="108" translateY="388"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30700684" rotateSkew1="-0.30700684" scaleX="0.73023987" scaleY="0.73023987" translateX="145" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.06567383" rotateSkew1="-0.06567383" scaleX="0.99095154" scaleY="0.99095154" translateX="-122" translateY="400"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95555115" rotateSkew1="-0.9555664" scaleX="-0.27919006" scaleY="-0.27919006" translateX="371" translateY="683"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70402527" rotateSkew1="-0.70402527" scaleX="0.7010193" scaleY="0.7010193" translateX="0" translateY="-91"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.2442627" rotateSkew1="-0.2442627" scaleX="0.9604492" scaleY="0.9604492" translateX="-51" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9159851" rotateSkew1="-0.9159851" scaleX="0.3574829" scaleY="0.3574829" translateX="259" translateY="-87"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.5346832" rotateSkew1="-0.5346832" scaleX="0.83599854" scaleY="0.83599854" translateX="16" translateY="141"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98631287" rotateSkew1="-0.98631287" scaleX="0.07800293" scaleY="0.07800293" translateX="-199" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29266357" rotateSkew1="0.243927" scaleX="1.1508942" scaleY="0.9591217" translateX="-69" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9944916" rotateSkew1="-0.9944916" scaleX="0.069625854" scaleY="0.069625854" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29690552" rotateSkew1="0.29690552" scaleX="0.7333069" scaleY="0.7333069" translateX="297" translateY="494"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92559814" rotateSkew1="0.7713165" scaleX="-0.23110962" scaleY="-0.19259644" translateX="103" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11773682" rotateSkew1="0.11773682" scaleX="0.7872467" scaleY="0.7872467" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75045776" rotateSkew1="-0.75045776" scaleX="-0.26615906" scaleY="-0.26615906" translateX="528" translateY="621"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17240906" rotateSkew1="0.17240906" scaleX="-0.7767639" scaleY="0.7767639" translateX="108" translateY="388"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30703735" rotateSkew1="-0.30703735" scaleX="0.73028564" scaleY="0.73028564" translateX="145" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.048614502" rotateSkew1="-0.048614502" scaleX="0.99212646" scaleY="0.99212646" translateX="-121" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9555969" rotateSkew1="-0.9555969" scaleX="-0.27922058" scaleY="-0.27922058" translateX="371" translateY="683"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70407104" rotateSkew1="-0.70407104" scaleX="0.7010803" scaleY="0.7010803" translateX="-2" translateY="-93"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.2442627" rotateSkew1="-0.2442627" scaleX="0.96047974" scaleY="0.96047974" translateX="-53" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9129944" rotateSkew1="-0.9129944" scaleX="0.36523438" scaleY="0.36523438" translateX="256" translateY="-90"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.52749634" rotateSkew1="-0.52749634" scaleX="0.8406372" scaleY="0.8406372" translateX="14" translateY="140"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9863281" rotateSkew1="-0.9863281" scaleX="0.07803345" scaleY="0.07803345" translateX="-199" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29267883" rotateSkew1="0.24394226" scaleX="1.15094" scaleY="0.9591522" translateX="-68" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29693604" rotateSkew1="0.29693604" scaleX="0.7333679" scaleY="0.7333679" translateX="296" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9256134" rotateSkew1="0.77134705" scaleX="-0.23114014" scaleY="-0.19259644" translateX="102" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11773682" rotateSkew1="0.11773682" scaleX="0.7872772" scaleY="0.7872772" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7505188" rotateSkew1="-0.7505188" scaleX="-0.26618958" scaleY="-0.26618958" translateX="529" translateY="621"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17240906" rotateSkew1="0.17240906" scaleX="-0.77679443" scaleY="0.77679443" translateX="108" translateY="388"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30706787" rotateSkew1="-0.30706787" scaleX="0.7303009" scaleY="0.7303009" translateX="145" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.034820557" rotateSkew1="-0.034820557" scaleX="0.99287415" scaleY="0.99287415" translateX="-120" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95562744" rotateSkew1="-0.9556122" scaleX="-0.27926636" scaleY="-0.2792511" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7041321" rotateSkew1="-0.7041321" scaleX="0.7011261" scaleY="0.7011261" translateX="-4" translateY="-95"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24427795" rotateSkew1="-0.24427795" scaleX="0.9605255" scaleY="0.9605255" translateX="-55" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.90989685" rotateSkew1="-0.90989685" scaleX="0.37301636" scaleY="0.37301636" translateX="254" translateY="-91"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.5230713" rotateSkew1="-0.5230713" scaleX="0.84350586" scaleY="0.84350586" translateX="13" translateY="140"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9863434" rotateSkew1="-0.9863434" scaleX="0.07807922" scaleY="0.07807922" translateX="-198" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2926941" rotateSkew1="0.243927" scaleX="1.1509705" scaleY="0.95918274" translateX="-68" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9944916" rotateSkew1="-0.9944916" scaleX="0.06964111" scaleY="0.06964111" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2969818" rotateSkew1="0.2969818" scaleX="0.73339844" scaleY="0.73339844" translateX="295" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9256439" rotateSkew1="0.77137756" scaleX="-0.23114014" scaleY="-0.19262695" translateX="101" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11772156" rotateSkew1="0.11772156" scaleX="0.7872772" scaleY="0.7872772" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7505493" rotateSkew1="-0.7505493" scaleX="-0.26620483" scaleY="-0.26620483" translateX="529" translateY="621"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17243958" rotateSkew1="0.17243958" scaleX="-0.77682495" scaleY="0.77682495" translateX="108" translateY="388"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30711365" rotateSkew1="-0.30711365" scaleX="0.73031616" scaleY="0.73031616" translateX="145" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.017730713" rotateSkew1="-0.017730713" scaleX="0.9935303" scaleY="0.9935303" translateX="-120" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9556732" rotateSkew1="-0.9556427" scaleX="-0.27928162" scaleY="-0.27928162" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7041931" rotateSkew1="-0.7041931" scaleX="0.70118713" scaleY="0.70118713" translateX="-5" translateY="-97"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24432373" rotateSkew1="-0.24432373" scaleX="0.9605713" scaleY="0.9605713" translateX="-57" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9080353" rotateSkew1="-0.9080353" scaleX="0.3777771" scaleY="0.3777771" translateX="249" translateY="-94"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.51586914" rotateSkew1="-0.51586914" scaleX="0.84806824" scaleY="0.84806824" translateX="12" translateY="139"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9863434" rotateSkew1="-0.9863434" scaleX="0.07809448" scaleY="0.07809448" translateX="-197" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29270935" rotateSkew1="0.24395752" scaleX="1.1510162" scaleY="0.9592285" translateX="-67" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99450684" rotateSkew1="-0.99450684" scaleX="0.06964111" scaleY="0.06964111" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29699707" rotateSkew1="0.29699707" scaleX="0.7334442" scaleY="0.7334442" translateX="294" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9256897" rotateSkew1="0.7713928" scaleX="-0.23117065" scaleY="-0.19262695" translateX="100" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11773682" rotateSkew1="0.11773682" scaleX="0.78730774" scaleY="0.78730774" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7505951" rotateSkew1="-0.7505951" scaleX="-0.26620483" scaleY="-0.26620483" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17242432" rotateSkew1="0.17242432" scaleX="-0.77685547" scaleY="0.77685547" translateX="108" translateY="388"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30717468" rotateSkew1="-0.30715942" scaleX="0.73039246" scaleY="0.73039246" translateX="145" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="6.2561035E-4" rotateSkew1="-6.2561035E-4" scaleX="0.9938812" scaleY="0.9938812" translateX="-118" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9556732" rotateSkew1="-0.9556885" scaleX="-0.2793274" scaleY="-0.2793274" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70425415" rotateSkew1="-0.70425415" scaleX="0.7012634" scaleY="0.7012634" translateX="-7" translateY="-98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24430847" rotateSkew1="-0.24430847" scaleX="0.96058655" scaleY="0.96058655" translateX="-60" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9048767" rotateSkew1="-0.9048767" scaleX="0.38549805" scaleY="0.38549805" translateX="247" translateY="-98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.5086212" rotateSkew1="-0.5086212" scaleX="0.8525543" scaleY="0.8525543" translateX="10" translateY="139"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9863434" rotateSkew1="-0.9863434" scaleX="0.078125" scaleY="0.078125" translateX="-196" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29270935" rotateSkew1="0.24397278" scaleX="1.1510468" scaleY="0.95925903" translateX="-66" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99450684" rotateSkew1="-0.99450684" scaleX="0.06965637" scaleY="0.06965637" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29701233" rotateSkew1="0.29701233" scaleX="0.7334595" scaleY="0.7334595" translateX="293" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9257202" rotateSkew1="0.77142334" scaleX="-0.23118591" scaleY="-0.19264221" translateX="100" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11773682" rotateSkew1="0.11773682" scaleX="0.787323" scaleY="0.787323" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7506256" rotateSkew1="-0.7506256" scaleX="-0.2662201" scaleY="-0.2662201" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17245483" rotateSkew1="0.17245483" scaleX="-0.776886" scaleY="0.776886" translateX="108" translateY="388"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3072052" rotateSkew1="-0.3072052" scaleX="0.730423" scaleY="0.730423" translateX="145" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.013214111" rotateSkew1="0.013214111" scaleX="0.9938965" scaleY="0.9938965" translateX="-117" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.955719" rotateSkew1="-0.95573425" scaleX="-0.2794037" scaleY="-0.27938843" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7042999" rotateSkew1="-0.7042999" scaleX="0.70132446" scaleY="0.70132446" translateX="-9" translateY="-100"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24433899" rotateSkew1="-0.24433899" scaleX="0.9606323" scaleY="0.9606323" translateX="-62" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.90167236" rotateSkew1="-0.90167236" scaleX="0.39318848" scaleY="0.39318848" translateX="244" translateY="-100"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.50131226" rotateSkew1="-0.50131226" scaleX="0.8569946" scaleY="0.8569946" translateX="8" translateY="139"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98635864" rotateSkew1="-0.98635864" scaleX="0.07817078" scaleY="0.07817078" translateX="-196" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29275513" rotateSkew1="0.24397278" scaleX="1.1510925" scaleY="0.95928955" translateX="-65" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29704285" rotateSkew1="0.29704285" scaleX="0.7335205" scaleY="0.7335205" translateX="292" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.925766" rotateSkew1="0.7714691" scaleX="-0.23120117" scaleY="-0.19265747" translateX="99" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117752075" rotateSkew1="0.117752075" scaleX="0.787323" scaleY="0.787323" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7506714" rotateSkew1="-0.7506714" scaleX="-0.26623535" scaleY="-0.26623535" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17245483" rotateSkew1="0.17245483" scaleX="-0.77690125" scaleY="0.77690125" translateX="108" translateY="388"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30725098" rotateSkew1="-0.30725098" scaleX="0.7304535" scaleY="0.7304535" translateX="145" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.027053833" rotateSkew1="0.027053833" scaleX="0.99372864" scaleY="0.99372864" translateX="-117" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9557495" rotateSkew1="-0.9557495" scaleX="-0.27944946" scaleY="-0.2794342" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7043762" rotateSkew1="-0.7043762" scaleX="0.70137024" scaleY="0.70137024" translateX="-11" translateY="-102"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24435425" rotateSkew1="-0.24435425" scaleX="0.9606323" scaleY="0.9606323" translateX="-64" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.89834595" rotateSkew1="-0.89834595" scaleX="0.40083313" scaleY="0.40083313" translateX="241" translateY="-103"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.49398804" rotateSkew1="-0.49398804" scaleX="0.86135864" scaleY="0.86135864" translateX="7" translateY="139"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9863739" rotateSkew1="-0.9863739" scaleX="0.078201294" scaleY="0.078201294" translateX="-195" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2927704" rotateSkew1="0.24398804" scaleX="1.1511383" scaleY="0.9593353" translateX="-65" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9945221" rotateSkew1="-0.9945221" scaleX="0.06967163" scaleY="0.06967163" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29707336" rotateSkew1="0.29707336" scaleX="0.733551" scaleY="0.733551" translateX="291" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9257965" rotateSkew1="0.7714844" scaleX="-0.23123169" scaleY="-0.19268799" translateX="98" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11773682" rotateSkew1="0.11773682" scaleX="0.7873688" scaleY="0.7873688" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75068665" rotateSkew1="-0.75068665" scaleX="-0.2662506" scaleY="-0.2662506" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.1724701" rotateSkew1="0.1724701" scaleX="-0.77693176" scaleY="0.77693176" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3072815" rotateSkew1="-0.3072815" scaleX="0.730484" scaleY="0.730484" translateX="145" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.044143677" rotateSkew1="0.044143677" scaleX="0.9931793" scaleY="0.9931793" translateX="-116" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9557648" rotateSkew1="-0.95578" scaleX="-0.27947998" scaleY="-0.27947998" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7043915" rotateSkew1="-0.7043915" scaleX="0.701416" scaleY="0.701416" translateX="-13" translateY="-103"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.2443695" rotateSkew1="-0.2443695" scaleX="0.9606781" scaleY="0.9606781" translateX="-66" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8963165" rotateSkew1="-0.8963165" scaleX="0.4055481" scaleY="0.4055481" translateX="239" translateY="-103"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.48661804" rotateSkew1="-0.48661804" scaleX="0.86564636" scaleY="0.86564636" translateX="5" translateY="138"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98638916" rotateSkew1="-0.98638916" scaleX="0.07824707" scaleY="0.07824707" translateX="-194" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2928009" rotateSkew1="0.2440033" scaleX="1.1511688" scaleY="0.95936584" translateX="-64" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99453735" rotateSkew1="-0.99453735" scaleX="0.06967163" scaleY="0.06967163" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29711914" rotateSkew1="0.29711914" scaleX="0.7335968" scaleY="0.7335968" translateX="290" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9257965" rotateSkew1="0.77149963" scaleX="-0.23124695" scaleY="-0.19270325" translateX="97" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117752075" rotateSkew1="0.117752075" scaleX="0.78738403" scaleY="0.78738403" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75076294" rotateSkew1="-0.75076294" scaleX="-0.2662506" scaleY="-0.2662506" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.1724701" rotateSkew1="0.1724701" scaleX="-0.7769623" scaleY="0.7769623" translateX="107" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30732727" rotateSkew1="-0.30732727" scaleX="0.7305145" scaleY="0.7305145" translateX="145" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.06123352" rotateSkew1="0.06123352" scaleX="0.9923706" scaleY="0.9923706" translateX="-115" translateY="399"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9558258" rotateSkew1="-0.9558258" scaleX="-0.27952576" scaleY="-0.27952576" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7044678" rotateSkew1="-0.7044678" scaleX="0.7015228" scaleY="0.7015228" translateX="-15" translateY="-105"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24440002" rotateSkew1="-0.24440002" scaleX="0.9607239" scaleY="0.9607239" translateX="-68" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8929138" rotateSkew1="-0.8929138" scaleX="0.4131775" scaleY="0.4131775" translateX="237" translateY="-107"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.4792328" rotateSkew1="-0.4792328" scaleX="0.86990356" scaleY="0.86990356" translateX="5" translateY="137"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98638916" rotateSkew1="-0.98638916" scaleX="0.07827759" scaleY="0.07827759" translateX="-193" translateY="703"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29281616" rotateSkew1="0.24401855" scaleX="1.1512604" scaleY="0.9594116" translateX="-64" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9945526" rotateSkew1="-0.9945526" scaleX="0.06967163" scaleY="0.06967163" translateX="-463" translateY="775"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29714966" rotateSkew1="0.29714966" scaleX="0.73365784" scaleY="0.73365784" translateX="289" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9258728" rotateSkew1="0.7715454" scaleX="-0.2312622" scaleY="-0.1927185" translateX="97" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75079346" rotateSkew1="-0.75079346" scaleX="-0.26626587" scaleY="-0.26626587" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17248535" rotateSkew1="0.17248535" scaleX="-0.7769928" scaleY="0.7769928" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30737305" rotateSkew1="-0.30737305" scaleX="0.7305603" scaleY="0.7305603" translateX="145" translateY="170"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.07833862" rotateSkew1="0.07833862" scaleX="0.9912567" scaleY="0.9912567" translateX="-114" translateY="398"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95584106" rotateSkew1="-0.9558258" scaleX="-0.2795868" scaleY="-0.27957153" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70451355" rotateSkew1="-0.70451355" scaleX="0.70158386" scaleY="0.70158386" translateX="-17" translateY="-107"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24443054" rotateSkew1="-0.24443054" scaleX="0.96076965" scaleY="0.96076965" translateX="-70" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.88946533" rotateSkew1="-0.88946533" scaleX="0.4207611" scaleY="0.4207611" translateX="234" translateY="-110"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.4746399" rotateSkew1="-0.4746399" scaleX="0.8725128" scaleY="0.8725128" translateX="1" translateY="137"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9864044" rotateSkew1="-0.9864044" scaleX="0.078308105" scaleY="0.078308105" translateX="-193" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29283142" rotateSkew1="0.24403381" scaleX="1.1513062" scaleY="0.9594574" translateX="-64" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9945526" rotateSkew1="-0.9945526" scaleX="0.06968689" scaleY="0.06968689" translateX="-464" translateY="774"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29714966" rotateSkew1="0.29714966" scaleX="0.73368835" scaleY="0.73368835" translateX="288" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92588806" rotateSkew1="0.7715759" scaleX="-0.23129272" scaleY="-0.1927185" translateX="96" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117752075" rotateSkew1="0.117752075" scaleX="0.7873993" scaleY="0.7873993" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.750824" rotateSkew1="-0.750824" scaleX="-0.26628113" scaleY="-0.26628113" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17250061" rotateSkew1="0.17250061" scaleX="-0.7770233" scaleY="0.7770233" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30741882" rotateSkew1="-0.30741882" scaleX="0.73057556" scaleY="0.73057556" translateX="145" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.09536743" rotateSkew1="0.09536743" scaleX="0.9898529" scaleY="0.9898529" translateX="-114" translateY="398"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95588684" rotateSkew1="-0.9558563" scaleX="-0.27963257" scaleY="-0.27960205" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7045746" rotateSkew1="-0.7045746" scaleX="0.70162964" scaleY="0.70162964" translateX="-19" translateY="-108"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24441528" rotateSkew1="-0.24441528" scaleX="0.9608154" scaleY="0.9608154" translateX="-72" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8859253" rotateSkew1="-0.8859253" scaleX="0.42832947" scaleY="0.42832947" translateX="232" translateY="-112"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.46717834" rotateSkew1="-0.46717834" scaleX="0.8766632" scaleY="0.8766632" translateX="-1" translateY="135"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9864197" rotateSkew1="-0.9864197" scaleX="0.07835388" scaleY="0.07835388" translateX="-192" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29283142" rotateSkew1="0.24403381" scaleX="1.1513367" scaleY="0.9594879" translateX="-64" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9945679" rotateSkew1="-0.9945679" scaleX="0.06970215" scaleY="0.06970215" translateX="-464" translateY="774"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29718018" rotateSkew1="0.29718018" scaleX="0.73373413" scaleY="0.73373413" translateX="287" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9259186" rotateSkew1="0.77160645" scaleX="-0.23129272" scaleY="-0.19276428" translateX="95" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117752075" rotateSkew1="0.117752075" scaleX="0.7874298" scaleY="0.7874298" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75086975" rotateSkew1="-0.75086975" scaleX="-0.2662964" scaleY="-0.2662964" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17250061" rotateSkew1="0.17250061" scaleX="-0.77705383" scaleY="0.77705383" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3074646" rotateSkew1="-0.3074646" scaleX="0.7306061" scaleY="0.7306061" translateX="145" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.109176636" rotateSkew1="0.109176636" scaleX="0.98851013" scaleY="0.98851013" translateX="-112" translateY="398"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95591736" rotateSkew1="-0.95591736" scaleX="-0.2796631" scaleY="-0.2796631" translateX="372" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7046356" rotateSkew1="-0.7046356" scaleX="0.7016907" scaleY="0.7016907" translateX="-21" translateY="-110"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.2444458" rotateSkew1="-0.2444458" scaleX="0.96084595" scaleY="0.96084595" translateX="-74" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8823395" rotateSkew1="-0.8823395" scaleX="0.43585205" scaleY="0.43585205" translateX="228" translateY="-115"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.45965576" rotateSkew1="-0.45965576" scaleX="0.88072205" scaleY="0.88072205" translateX="-1" translateY="136"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98643494" rotateSkew1="-0.98643494" scaleX="0.07839966" scaleY="0.07839966" translateX="-191" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29286194" rotateSkew1="0.24407959" scaleX="1.1513672" scaleY="0.9595337" translateX="-63" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9945984" rotateSkew1="-0.9945984" scaleX="0.06971741" scaleY="0.06971741" translateX="-464" translateY="774"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29722595" rotateSkew1="0.29722595" scaleX="0.73376465" scaleY="0.73376465" translateX="286" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92596436" rotateSkew1="0.7716522" scaleX="-0.23130798" scaleY="-0.19276428" translateX="94" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117767334" rotateSkew1="0.117767334" scaleX="0.78744507" scaleY="0.78744507" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.750885" rotateSkew1="-0.750885" scaleX="-0.2662964" scaleY="-0.2662964" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17251587" rotateSkew1="0.17251587" scaleX="-0.77708435" scaleY="0.77708435" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30751038" rotateSkew1="-0.30751038" scaleX="0.73065186" scaleY="0.73065186" translateX="145" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.12617493" rotateSkew1="0.12617493" scaleX="0.98657227" scaleY="0.98657227" translateX="-112" translateY="397"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9559479" rotateSkew1="-0.9559479" scaleX="-0.27970886" scaleY="-0.27970886" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7046814" rotateSkew1="-0.7046814" scaleX="0.70176697" scaleY="0.70176697" translateX="-23" translateY="-112"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24447632" rotateSkew1="-0.24447632" scaleX="0.9608917" scaleY="0.9608917" translateX="-76" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8801117" rotateSkew1="-0.8801117" scaleX="0.44047546" scaleY="0.44047546" translateX="226" translateY="-118"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.45210266" rotateSkew1="-0.45210266" scaleX="0.8847351" scaleY="0.8847351" translateX="-4" translateY="137"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9864502" rotateSkew1="-0.9864502" scaleX="0.078445435" scaleY="0.078445435" translateX="-190" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29286194" rotateSkew1="0.24407959" scaleX="1.1514282" scaleY="0.95957947" translateX="-63" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2972412" rotateSkew1="0.2972412" scaleX="0.73379517" scaleY="0.73379517" translateX="285" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9259949" rotateSkew1="0.7716675" scaleX="-0.23135376" scaleY="-0.1927948" translateX="94" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117767334" rotateSkew1="0.117767334" scaleX="0.7874603" scaleY="0.7874603" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75094604" rotateSkew1="-0.75094604" scaleX="-0.2663269" scaleY="-0.2663269" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17251587" rotateSkew1="0.17251587" scaleX="-0.77711487" scaleY="0.77711487" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3075409" rotateSkew1="-0.3075409" scaleX="0.7306671" scaleY="0.7306671" translateX="145" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.14315796" rotateSkew1="0.14315796" scaleX="0.9843445" scaleY="0.9843445" translateX="-111" translateY="396"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9560089" rotateSkew1="-0.95599365" scaleX="-0.27973938" scaleY="-0.27972412" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7047272" rotateSkew1="-0.7047272" scaleX="0.70181274" scaleY="0.70181274" translateX="-24" translateY="-114"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24447632" rotateSkew1="-0.24447632" scaleX="0.960907" scaleY="0.960907" translateX="-78" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8764343" rotateSkew1="-0.8764343" scaleX="0.4479828" scaleY="0.4479828" translateX="223" translateY="-120"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.44456482" rotateSkew1="-0.44456482" scaleX="0.8886719" scaleY="0.8886719" translateX="-5" translateY="136"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9864502" rotateSkew1="-0.9864502" scaleX="0.07847595" scaleY="0.07847595" translateX="-190" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29289246" rotateSkew1="0.24407959" scaleX="1.1514893" scaleY="0.95961" translateX="-62" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99461365" rotateSkew1="-0.99461365" scaleX="0.069732666" scaleY="0.069732666" translateX="-464" translateY="774"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.297287" rotateSkew1="0.297287" scaleX="0.73384094" scaleY="0.73384094" translateX="284" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9260254" rotateSkew1="0.771698" scaleX="-0.23135376" scaleY="-0.19277954" translateX="93" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117767334" rotateSkew1="0.117767334" scaleX="0.78749084" scaleY="0.78749084" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7509918" rotateSkew1="-0.7509918" scaleX="-0.26635742" scaleY="-0.26635742" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17251587" rotateSkew1="0.17251587" scaleX="-0.7771301" scaleY="0.7771301" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30760193" rotateSkew1="-0.30760193" scaleX="0.7307129" scaleY="0.7307129" translateX="145" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.16009521" rotateSkew1="0.16009521" scaleX="0.98184204" scaleY="0.98184204" translateX="-110" translateY="395"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95602417" rotateSkew1="-0.95602417" scaleX="-0.2797699" scaleY="-0.27978516" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7047882" rotateSkew1="-0.7047882" scaleX="0.70188904" scaleY="0.70188904" translateX="-26" translateY="-115"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24450684" rotateSkew1="-0.24450684" scaleX="0.96092224" scaleY="0.96092224" translateX="-81" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8726654" rotateSkew1="-0.8726654" scaleX="0.45541382" scaleY="0.45541382" translateX="220" translateY="-122"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.43693542" rotateSkew1="-0.43693542" scaleX="0.89256287" scaleY="0.89256287" translateX="-6" translateY="136"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9864502" rotateSkew1="-0.9864502" scaleX="0.07850647" scaleY="0.07850647" translateX="-189" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29292297" rotateSkew1="0.24409485" scaleX="1.1514893" scaleY="0.95965576" translateX="-62" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9946289" rotateSkew1="-0.9946289" scaleX="0.069732666" scaleY="0.069732666" translateX="-464" translateY="774"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.297287" rotateSkew1="0.297287" scaleX="0.7338867" scaleY="0.7338867" translateX="283" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92607117" rotateSkew1="0.77171326" scaleX="-0.23138428" scaleY="-0.19281006" translateX="92" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7510071" rotateSkew1="-0.7510071" scaleX="-0.26634216" scaleY="-0.26634216" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17254639" rotateSkew1="0.17254639" scaleX="-0.7771454" scaleY="0.7771454" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.3076172" rotateSkew1="-0.3076172" scaleX="0.73075867" scaleY="0.73075867" translateX="145" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.17378235" rotateSkew1="0.17378235" scaleX="0.97961426" scaleY="0.97961426" translateX="-111" translateY="396"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9560394" rotateSkew1="-0.95602417" scaleX="-0.27983093" scaleY="-0.27981567" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7048645" rotateSkew1="-0.7048645" scaleX="0.7019501" scaleY="0.7019501" translateX="-28" translateY="-117"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24450684" rotateSkew1="-0.24450684" scaleX="0.960968" scaleY="0.960968" translateX="-83" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8688507" rotateSkew1="-0.8688507" scaleX="0.4628296" scaleY="0.4628296" translateX="217" translateY="-124"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.42933655" rotateSkew1="-0.42933655" scaleX="0.8963928" scaleY="0.8963928" translateX="-8" translateY="135"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98646545" rotateSkew1="-0.98646545" scaleX="0.078552246" scaleY="0.078552246" translateX="-188" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2929077" rotateSkew1="0.24412537" scaleX="1.1515503" scaleY="0.9596863" translateX="-61" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.99464417" rotateSkew1="-0.99464417" scaleX="0.069747925" scaleY="0.069747925" translateX="-464" translateY="774"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2973175" rotateSkew1="0.2973175" scaleX="0.73391724" scaleY="0.73391724" translateX="282" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9261017" rotateSkew1="0.7717438" scaleX="-0.23139954" scaleY="-0.19281006" translateX="91" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.117767334" rotateSkew1="0.117767334" scaleX="0.7875061" scaleY="0.7875061" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75105286" rotateSkew1="-0.75105286" scaleX="-0.26635742" scaleY="-0.26635742" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17253113" rotateSkew1="0.17253113" scaleX="-0.7771759" scaleY="0.7771759" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30767822" rotateSkew1="-0.30767822" scaleX="0.7307739" scaleY="0.7307739" translateX="145" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.19065857" rotateSkew1="0.19065857" scaleX="0.976532" scaleY="0.976532" translateX="-109" translateY="396"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9560852" rotateSkew1="-0.95606995" scaleX="-0.2798767" scaleY="-0.27986145" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.704895" rotateSkew1="-0.704895" scaleX="0.7020111" scaleY="0.7020111" translateX="-30" translateY="-119"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24453735" rotateSkew1="-0.24453735" scaleX="0.96099854" scaleY="0.96099854" translateX="-85" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8665161" rotateSkew1="-0.8665161" scaleX="0.46739197" scaleY="0.46739197" translateX="215" translateY="-128"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.4245758" rotateSkew1="-0.4245758" scaleX="0.8987274" scaleY="0.8987274" translateX="-9" translateY="134"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9864807" rotateSkew1="-0.9864807" scaleX="0.07858276" scaleY="0.07858276" translateX="-187" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29293823" rotateSkew1="0.24412537" scaleX="1.1515808" scaleY="0.95973206" translateX="-61" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29734802" rotateSkew1="0.29734802" scaleX="0.733963" scaleY="0.733963" translateX="281" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92611694" rotateSkew1="0.77175903" scaleX="-0.2314148" scaleY="-0.19282532" translateX="91" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11778259" rotateSkew1="0.11778259" scaleX="0.7875519" scaleY="0.7875519" translateX="415" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.75109863" rotateSkew1="-0.75109863" scaleX="-0.26637268" scaleY="-0.26637268" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17254639" rotateSkew1="0.17254639" scaleX="-0.7772064" scaleY="0.7772064" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.307724" rotateSkew1="-0.307724" scaleX="0.73083496" scaleY="0.73083496" translateX="145" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.2074585" rotateSkew1="0.2074585" scaleX="0.97320557" scaleY="0.97320557" translateX="-108" translateY="395"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9561157" rotateSkew1="-0.9561157" scaleX="-0.2799225" scaleY="-0.27990723" translateX="371" translateY="684"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70495605" rotateSkew1="-0.70495605" scaleX="0.70207214" scaleY="0.70207214" translateX="-32" translateY="-120"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24453735" rotateSkew1="-0.24453735" scaleX="0.96102905" scaleY="0.96102905" translateX="-87" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8625641" rotateSkew1="-0.8625641" scaleX="0.47476196" scaleY="0.47476196" translateX="212" translateY="-130"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.41688538" rotateSkew1="-0.41688538" scaleX="0.9024353" scaleY="0.9024353" translateX="-10" translateY="133"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.986496" rotateSkew1="-0.986496" scaleX="0.07861328" scaleY="0.07861328" translateX="-187" translateY="704"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29293823" rotateSkew1="0.24414062" scaleX="1.1516418" scaleY="0.95973206" translateX="-60" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9946594" rotateSkew1="-0.9946594" scaleX="0.06976318" scaleY="0.06976318" translateX="-464" translateY="774"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29737854" rotateSkew1="0.29737854" scaleX="0.7340088" scaleY="0.7340088" translateX="280" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.9261627" rotateSkew1="0.7718048" scaleX="-0.23143005" scaleY="-0.19284058" translateX="90" translateY="346"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7511139" rotateSkew1="-0.7511139" scaleX="-0.26638794" scaleY="-0.26638794" translateX="529" translateY="622"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.1725769" rotateSkew1="0.1725769" scaleX="-0.7772217" scaleY="0.7772217" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.30775452" rotateSkew1="-0.30775452" scaleX="0.7308502" scaleY="0.7308502" translateX="145" translateY="169"/>
+    </item>
+    <item type="ShowFrameTag" forceWriteAsLong="false"/>
+    <item type="DoActionTag" actionBytes="8c06007374756e32000600" forceWriteAsLong="true"/>
+    <item type="PlaceObject3Tag" depth="31" part="arm_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.22477722" rotateSkew1="0.22477722" scaleX="0.9701843" scaleY="0.9701843" translateX="-109" translateY="395"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="29" part="weapon_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.95628357" rotateSkew1="-0.9562683" scaleX="-0.2827301" scaleY="-0.2827301" translateX="371" translateY="685"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="27" part="shoulder" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.70588684" rotateSkew1="-0.70588684" scaleX="0.70358276" scaleY="0.70358276" translateX="-34" translateY="-122"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="25" part="arm_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.24531555" rotateSkew1="-0.24531555" scaleX="0.9616699" scaleY="0.9616699" translateX="-89" translateY="98"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="23" part="head" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.8596802" rotateSkew1="-0.8596802" scaleX="0.4830017" scaleY="0.4830017" translateX="209" translateY="-133"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="21" part="torso" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.41012573" rotateSkew1="-0.41012573" scaleX="0.9070282" scaleY="0.9070282" translateX="-12" translateY="133"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="19" part="leg_left_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.98651123" rotateSkew1="-0.98651123" scaleX="0.081588745" scaleY="0.081588745" translateX="-187" translateY="706"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="17" part="leg_left_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29362488" rotateSkew1="0.24467468" scaleX="1.1524811" scaleY="0.9604645" translateX="-61" translateY="532"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="15" part="foot_left" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.9948578" rotateSkew1="-0.9948578" scaleX="0.07032776" scaleY="0.07032776" translateX="-464" translateY="774"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="13" part="leg_right_lower" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.29855347" rotateSkew1="0.29855347" scaleX="0.7345581" scaleY="0.7345581" translateX="280" translateY="495"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="11" part="leg_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.92674255" rotateSkew1="0.7722931" scaleX="-0.23239136" scaleY="-0.19363403" translateX="89" translateY="347"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="9" part="foot_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="-0.11779785" rotateSkew1="0.11779785" scaleX="0.7879486" scaleY="0.7879486" translateX="416" translateY="742"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="7" part="weapon_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.7519531" rotateSkew1="-0.7519531" scaleX="-0.26661682" scaleY="-0.26661682" translateX="530" translateY="623"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="5" part="hand_right" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.17294312" rotateSkew1="0.17294312" scaleX="-0.7777405" scaleY="0.7777405" translateX="108" translateY="387"/>
+    </item>
+    <item type="PlaceObject3Tag" depth="3" part="arm_right_upper" >
+        <matrix type="MATRIX" hasRotate="true" hasScale="true" rotateSkew0="0.31004333" rotateSkew1="-0.31004333" scaleX="0.73095703" scaleY="0.73095703" translateX="146" translateY="168"/>
+    </item>
