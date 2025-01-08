@@ -96,10 +96,23 @@ return {
             end
         end
     end,
+    deep_copy = function(tbl)
+        local copy = {}
+        for k, v in pairs(tbl) do
+            if type(v) == "table" then
+                copy[k] = engine.deep_copy(v)
+            else
+                copy[k] = v
+            end
+        end
+        return copy
+    end
+    
 
     -- load_svg_as_image_data = function(imagePath, imgWidth, imgHeight)
     --     IDEA ABANDONED. Tove didn't render shit right nor work the way I wanted, svglover failed trying to interpret text as RGB data, 
     --     2 days is long enough to be frustrated about this. I'll just pre-render the bitches as png.
+    --     Consider retrying svglover and clean up the source svg files so they render properly???
     -- end
     
 }

@@ -16,7 +16,8 @@ flux = require("flux")
 function love.load()
     engine.restart_game()
     scripts.init()
-    state.sprites_to_draw = {data.characters.ninja}
+    state.sprites_to_draw = {data.characters.klima_soldier} -- TODO make a func that pushes things into the to_draw array and sorts it
+    love.graphics.setBackgroundColor(177/255,221/255,1,1)
 end
 
 function love.draw()
@@ -25,6 +26,7 @@ function love.draw()
     end
     
     -- Sort characters by z_index
+    -- TODO move this logic to a func that doesn't run every frame, but only when the array is modified
     table.sort(state.sprites_to_draw, function(a, b)
         return (a.z_index or 0) < (b.z_index or 0)  -- Default to 0 if no z_index is set
     end)
@@ -38,6 +40,7 @@ function love.draw()
         end
         
         -- Sort parts by z_index
+        -- TODO see above todo, sorting shouldn't happen every frame.
         table.sort(partsArray, function(a, b)
             return (a.z_index or 0) < (b.z_index or 0)
         end)
