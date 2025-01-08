@@ -58,7 +58,9 @@ function love.draw()
                     sprite.scale_x * piece.scale_x,  -- Apply both character and part scales
                     sprite.scale_y * piece.scale_y,  -- Apply both character and part scales
                     piece.sprite:getWidth() / 2, -- Origin centered
-                    piece.sprite:getHeight() / 2
+                    piece.sprite:getHeight() / 2,
+                    piece.shear_x,
+                    piece.shear_y
                 )               
             end
         end

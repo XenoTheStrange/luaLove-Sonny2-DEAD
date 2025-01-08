@@ -1,106 +1,150 @@
 return {
     name = "Humanoid",
     parts = {
-        drop_shadow = {
-            x = 0,
-            y = 0,
-            angle = 0,
-            sprite = sprites.drop_shadow,
-            visible = false
-        },
-        arm_left_upper = {
-            z_index = 0,
-            x = -25,
-            y = 85,
-            angle = 25,
-            visible = true
-        },
         arm_left_lower = {
-            z_index = 1,
-            x = 8,
-            y = 200,
-            angle = -60,
-            visible = true
-        },
-        weapon_left = {
-            x = 130,
-            y = 100,
-            z_index = 5,
-            angle = 25,
-            visible = true
-        },
-        foot_left = {
-            x = 100,
-            y = 500,
-            angle = 0,
-            visible = true
-        },
-        foot_right = {
+            z_index = 0,
+            scale_x = 0.68582153,
+            scale_y = 0.68582153,
+            x = -108,
+            y = -149,
+            shear_x = 0.7255249,
+            shear_y = -0.7255249,
+          },
+          weapon_left = {
+            z_index = 0,
+            scale_x = 0.86602783,
+            scale_y = 0.86602783,
+            x = 183,
+            y = -385,
+            shear_x = -0.5,
+            shear_y = 0.5,
+          },
+          shoulder = {
+            z_index = 0,
+            scale_x = 0.0,
+            scale_y = 0.0,
+            x = -91,
+            y = -541,
+            shear_x = 0.0,
+            shear_y = 0.0,
+          },
+          arm_left_upper = {
+            z_index = 0,
+            scale_x = 0.8786926,
+            scale_y = 0.8786926,
+            x = -142,
+            y = -400,
+            shear_x = -0.4694214,
+            shear_y = 0.4694214,
+          },
+          head = {
+            z_index = 0,
+            scale_x = 0.0,
+            scale_y = 0.0,
+            x = 95,
+            y = -676,
+            shear_x = 0.0,
+            shear_y = 0.0,
+          },
+          torso = {
+            z_index = 0,
+            scale_x = 0.9920654,
+            scale_y = 0.9920654,
+            x = 9,
+            y = -337,
+            shear_x = -0.1224823,
+            shear_y = 0.1224823,
+          },
+          leg_left_lower = {
+            z_index = 0,
+            scale_x = 0.9291229,
+            scale_y = 0.9291229,
+            x = -172,
+            y = 485,
+            shear_x = -0.36392212,
+            shear_y = 0.36392212,
+          },
+          leg_left_upper = {
+            z_index = 0,
+            scale_x = 1.1842194,
+            scale_y = 0.98687744,
+            x = -48,
+            y = 74,
+            shear_x = -0.13833618,
+            shear_y = 0.1659851,
+          },
+          foot_left = {
+            z_index = 0,
+            scale_x = 0.99798584,
+            scale_y = 0.99798584,
+            x = -221,
+            y = 748,
+            shear_x = 0.031204224,
+            shear_y = -0.031204224,
+          },
+          leg_right_lower = {
+            z_index = 0,
+            scale_x = 0.7989044,
+            scale_y = 0.7989044,
+            x = 186,
+            y = 429,
+            shear_x = -0.013000488,
+            shear_y = 0.013000488,
+          },
+          leg_right_upper = {
+            z_index = 0,
+            scale_x = 0.7887726,
+            scale_y = 0.6573181,
+            x = 119,
+            y = 95,
+            shear_x = 0.45335388,
+            shear_y = -0.5440216,
+          },
+          foot_right = {
+            z_index = 0,
+            scale_x = 0.7999878,
+            scale_y = 0.7999878,
+            x = 219,
+            y = 654,
+            shear_x = 0.0,
+            shear_y = 0.0,
+          },
+          weapon_right = {
+            z_index = 0,
+            scale_x = 0.75727844,
+            scale_y = 0.75727844,
+            x = 376,
+            y = -359,
+            shear_x = -0.2574005,
+            shear_y = 0.2574005,
+          },
+          arm_right_lower = {
+            z_index = 0,
+            scale_x = -0.7110443,
+            scale_y = 0.7110443,
+            x = 231,
+            y = -170,
+            shear_x = 0.36393738,
+            shear_y = 0.36393738,
+          },
+          arm_right_upper = {
+            z_index = 0,
+            scale_x = 0.795578,
+            scale_y = 0.795578,
+            x = 158,
+            y = -369,
+            shear_x = 0.03213501,
+            shear_y = -0.03213501,
+          },
+          drop_shadow = {
+            z_index = 0,
+            scale_x = 0.0,
+            scale_y = 0.0,
             x = 0,
-            y = 500,
-            angle = 0,
-            visible = false
-        },
-        leg_left_upper = {
-            x = 500,
-            y = 160,
-            angle = 0,
-            visible = false
-        },
-        leg_left_lower = {
-            x = 600,
-            y = 170,
-            angle = 0,
-            visible = true
-        },
-        leg_right_upper = {
-            x = 700,
-            y = 180,
-            angle = 0,
-            visible = false
-        },
-        leg_right_lower = {
-            x = 800,
-            y = 190,
-            angle = 0,
-            visible = false
-        },
-        torso = {
-            x = 60,
-            y = 100,
-            angle = 10,
-            visible = true
-        },
-        head = {
-            x = 110,
-            y = -80,
-            angle = 0,
-            visible = true
-        },
-        arm_right_upper = {
-            x = 0,
-            y = 0,
-            angle = 0,
-            visible = false
-        },
-        arm_right_lower = {
-            x = 120,
-            y = 90,
-            angle = 0,
-            visible = false
-        },
-        shoulder = {
-            x = 15,
-            y = -8,
-            z_index = 2,
-            angle = 5,
-            visible = true 
-        },
-        weapon_right = {
-            x = 1300,
-            y = 140,
-            angle = 0,
-            visible = false
-        }
+            y = 719,
+            shear_x = 0.0,
+            shear_y = 0.0,
+            sprite = sprites.drop_shadow,
+          }
     }
 }
