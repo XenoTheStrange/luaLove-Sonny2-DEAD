@@ -1,74 +1,57 @@
 -- Love2d main loop script
 package.path = "./data/packages/?/init.lua;" .. "./data/packages/?.lua;" .. "./?.lua;"
-config = require("conf")
 --package.path = ("./data/" .. config.game_data_directory .. "/data/?.lua;") .. ("./data/" .. config.game_data_directory .. "/?/init.lua;") .. package.path
 
-engine = require("engine/init")
-data = {}
-scripts = {}
-state = {
-    sprites_to_draw = {}
-}
-
+config = require("conf")
+engine = require("engine/engine")
 flux = require("flux")
 
 -- Runs on program start. Load game data.
 function love.load()
+    data = {}
+    scripts = {}
+    state = {
+        sprites_to_draw = {}
+    }
     engine.restart_game()
     scripts.init()
-    state.sprites_to_draw = {data.characters.klima_soldier} -- TODO make a func that pushes things into the to_draw array and sorts it
-    love.graphics.setBackgroundColor(177/255,221/255,1,1)
 end
 
 function love.draw()
     if state.sprites_to_draw == nil then 
-        return -- prevent crash at start :|
+        return
     end
-    
-    -- Sort characters by z_index
-    -- TODO move this logic to a func that doesn't run every frame, but only when the array is modified
-    table.sort(state.sprites_to_draw, function(a, b)
-        return (a.z_index or 0) < (b.z_index or 0)  -- Default to 0 if no z_index is set
-    end)
+    if config.show_fps then 
+        engine.show_fps()
+    end
 
-    -- Draw each character and their parts
     for _, sprite in ipairs(state.sprites_to_draw) do
-        -- Convert parts from a dictionary to an array
-        local partsArray = {}
-        for key, piece in pairs(sprite.parts) do
-            table.insert(partsArray, piece)
-        end
-        
-        -- Sort parts by z_index
-        -- TODO see above todo, sorting shouldn't happen every frame.
-        table.sort(partsArray, function(a, b)
-            return (a.z_index or 0) < (b.z_index or 0)
-        end)
-
-        -- Draw sorted parts
+        local partsArray = sprite.sorted_parts or {}
         for _, piece in ipairs(partsArray) do
             if piece.visible == true then
                 if piece.tint then
                     love.graphics.setColor(piece.tint)
                 else 
-                    love.graphics.setColor(1, 1, 1, 1) -- Prevent retaining the previous tint
+                    love.graphics.setColor(1, 1, 1, 1)
                 end
+
                 love.graphics.draw(
                     piece.sprite, 
-                    sprite.x + (piece.x * sprite.scale_x),  -- Adjust position based on character scale
-                    sprite.y + (piece.y * sprite.scale_y),  -- Adjust position based on character scale
-                    piece.angle * (math.pi / 180), -- turn our degree angle into radians for love2d
-                    sprite.scale_x * piece.scale_x,  -- Apply both character and part scales
-                    sprite.scale_y * piece.scale_y,  -- Apply both character and part scales
-                    piece.sprite:getWidth() / 2, -- Origin centered
+                    sprite.x + (piece.x * sprite.scale_x * config.global_sprite_scale),
+                    sprite.y + (piece.y * sprite.scale_y * config.global_sprite_scale),
+                    piece.angle * 0.017453292519943,
+                    sprite.scale_x * piece.scale_x * config.global_sprite_scale,
+                    sprite.scale_y * piece.scale_y * config.global_sprite_scale,
+                    piece.sprite:getWidth() / 2,
                     piece.sprite:getHeight() / 2,
                     piece.shear_x,
                     piece.shear_y
-                )               
+                )
             end
         end
     end
 end
+
 
 
 

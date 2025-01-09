@@ -32,7 +32,7 @@ return {
             z_index = 12,
             scale_x = 0.9,
             scale_y = 0.9,
-            x = 110,
+            x = 90,
             y = -694,
           },
           torso = {

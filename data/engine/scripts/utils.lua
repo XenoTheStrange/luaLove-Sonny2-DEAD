@@ -36,6 +36,10 @@ return {
         for key, value in pairs(table) do
             engine.utils.set_defaults(value, defaults)
         end
+    end,
+    -- Changes some numerical value in an object by some amount
+    shift = function(item, value, amount)
+        item[value] = item[value] + amount
     end
     
 

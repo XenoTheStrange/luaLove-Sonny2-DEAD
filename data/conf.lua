@@ -52,5 +52,7 @@ end
 
 -- Game engine configuration
 return {
-    game_data_directory = "sonny2"
+    game_data_directory = "sonny2",
+    show_fps = true,
+    global_sprite_scale = 1
 }

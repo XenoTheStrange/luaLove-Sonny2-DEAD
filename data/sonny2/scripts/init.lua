@@ -8,6 +8,11 @@ func = function()
     for _, character in pairs(data.characters) do
         engine.utils.set_defaults_foreach_in(character.parts, part_defaults)
     end
+
+    engine.draw(data.characters.klima_soldier)
+    --engine.draw(data.characters.zombie1)
+    love.graphics.setBackgroundColor(177/255,221/255,1,1)
+    config.global_sprite_scale = 0.5
 end
 
 return func

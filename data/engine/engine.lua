@@ -50,11 +50,6 @@ return {
         end
     end,
 
-    get_template = function()
-        print("Loading scripts...")
-        scripts = require(config.game_data_directory .. "/scripts")
-    end,
-
     populate_data = function(base_path, output, load_files, load_order)
         local items = love.filesystem.getDirectoryItems(base_path)
         local processed = {}
@@ -106,7 +101,36 @@ return {
             end
         end
         return copy
+    end,
+    show_fps = function()
+        love.graphics.setColor(1, 1, 1, 1) -- Reset color to white
+        love.graphics.print("FPS: " .. tostring(love.timer.getFPS()), 10, 10)
+    end,
+    draw = function(sprite)
+        if state.sprites_to_draw == nil then
+            state.sprites_to_draw = {}
+        end
+        -- Insert the sprite
+        table.insert(state.sprites_to_draw, sprite)
+        
+        -- Sort sprite's parts by z_index once
+        local partsArray = {}
+        for key, piece in pairs(sprite.parts) do
+            table.insert(partsArray, piece)
+        end
+        table.sort(partsArray, function(a, b)
+            return (a.z_index or 0) < (b.z_index or 0)
+        end)
+        
+        -- Store sorted parts back into the sprite
+        sprite.sorted_parts = partsArray
+    
+        -- Sort characters by z_index (if needed)
+        table.sort(state.sprites_to_draw, function(a, b)
+            return (a.z_index or 0) < (b.z_index or 0)
+        end)
     end
+    
     
 
     -- load_svg_as_image_data = function(imagePath, imgWidth, imgHeight)
