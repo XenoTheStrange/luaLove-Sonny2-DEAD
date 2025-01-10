@@ -6,13 +6,11 @@ config = require("conf")
 engine = require("engine/engine")
 flux = require("flux")
 
+local screen_width, screen_height = love.graphics.getDimensions()
+local aspect_ratio = screen_width / screen_height
+
 -- Runs on program start. Load game data.
 function love.load()
-    data = {}
-    scripts = {}
-    state = {
-        sprites_to_draw = {}
-    }
     engine.restart_game()
     scripts.init()
 end
@@ -47,9 +45,9 @@ function love.draw()
                 -- Now draw the piece, accounting for its local position relative to the sprite center
                 love.graphics.draw(
                     piece.sprite, 
-                    piece.x * sprite.scale_x * config.global_sprite_scale,
-                    piece.y * sprite.scale_y * config.global_sprite_scale,
-                    piece.angle * 0.017453292519943, -- piece rotation still applies
+                    (piece.x * sprite.scale_x * config.global_sprite_scale) * aspect_ratio,  -- Adjust for aspect ratio on x
+                    piece.y * sprite.scale_y * config.global_sprite_scale,  -- y remains unchanged
+                    piece.angle * 0.017453292519943,  -- piece rotation still applies
                     sprite.scale_x * piece.scale_x * config.global_sprite_scale,
                     sprite.scale_y * piece.scale_y * config.global_sprite_scale,
                     piece.sprite:getWidth() / 2,
@@ -57,6 +55,7 @@ function love.draw()
                     piece.shear_x,
                     piece.shear_y
                 )
+
 
                 -- Restore the previous transformation matrix
                 love.graphics.pop()
@@ -73,6 +72,11 @@ end
 function love.update(dt)
     flux.update(dt) -- Needed to use flux
     -- This should pretty much call an update function tied to whatever scene we're in at the moment. TODO
+    if state.updaters ~= nil then
+        for _, func in ipairs(state.updaters) do
+            func(dt)
+        end
+    end
 end
 
 

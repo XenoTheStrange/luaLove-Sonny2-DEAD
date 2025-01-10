@@ -4,7 +4,11 @@ return {
         data = {}
         scripts = {}
         sprites = {}
-        state = {}
+        sounds = {}
+        state = {
+            sprites_to_draw = {},
+            updaters = {}
+        }
 
         engine.utils = require("engine/scripts/utils") -- Engine is not hot reloaded btw
         engine.load_game_data()
@@ -12,19 +16,11 @@ return {
     
     load_game_data = function()
         engine.load_sprites(config.game_data_directory .. "/sprites", sprites)
-        print("Sprites: " .. engine.utils.tp(sprites))
+        engine.load_audio(config.game_data_directory .. "/sounds", sounds)
         --engine.load_scripts()
         data_folders_load_order = require(config.game_data_directory .. "/data/load_order")
         engine.populate_data(config.game_data_directory .. "/data", data, true, data_folders_load_order)
         engine.populate_data(config.game_data_directory .. "/scripts", scripts, true)
-        print("Scripts: " .. engine.utils.tp(scripts))
-
-    end,
-
-    load_structure = function()
-        print("Loading data structure from file at ./" .. config.game_data_directory .. "/data_structure")
-        data = require(config.game_data_directory .. "/data_structure")
-        
     end,
 
     load_sprites = function(base_path, output)
@@ -49,6 +45,26 @@ return {
             end
         end
     end,
+    load_audio = function(base_path, output)
+        -- Recursively load sprites from the base_path into the output table, using folder/filenames as keys and values
+        -- TODO Render svg files and load them like the pngs.
+        local items = love.filesystem.getDirectoryItems(base_path)
+        
+        for _, item in ipairs(items) do
+            local full_path = base_path .. "/" .. item
+
+            -- Check if the item is a directory or a file
+            if love.filesystem.getInfo(full_path, "directory") then
+                output[item] = {}
+                engine.load_sprites(full_path, output[item])
+            elseif item:match("%.mp3$") then
+                -- Remove the ".png" extension for the key
+                local key = item:gsub("%.mp3$", "")
+                output[key] = love.audio.newSource(full_path, "stream")
+            end
+        end
+    end,
+
 
     populate_data = function(base_path, output, load_files, load_order)
         local items = love.filesystem.getDirectoryItems(base_path)
@@ -106,6 +122,9 @@ return {
         love.graphics.setColor(1, 1, 1, 1) -- Reset color to white
         love.graphics.print("FPS: " .. tostring(love.timer.getFPS()), 10, 10)
     end,
+    clear = function()
+        state.sprites_to_draw = {}
+    end,
     draw = function(sprite)
         if state.sprites_to_draw == nil then
             state.sprites_to_draw = {}
@@ -130,6 +149,19 @@ return {
             return (a.z_index or 0) < (b.z_index or 0)
         end)
     end,
+    erase = function(sprite)
+        if state.sprites_to_draw == nil then
+            return -- Nothing to remove
+        end
+    
+        -- Find the sprite in the array and remove it
+        for i, s in ipairs(state.sprites_to_draw) do
+            if s == sprite then
+                table.remove(state.sprites_to_draw, i)
+                break -- Exit the loop after removing to avoid unnecessary iterations
+            end
+        end
+    end,
     draw_all = function(...)
         args = {...}
         for _, sprite in pairs(args) do
@@ -139,7 +171,31 @@ return {
     new = function(template)
         local tmp = engine.deep_copy(template)
         return tmp
-    end
+    end,
+    add_listener = function(func)
+        print("Adding updater function", func)
+        if state.updaters == nil then
+            state.updaters = {}
+        end
+        table.insert(state.updaters, func)
+    end,
+    remove_listener = function(func)
+        print("Removing updater function")
+        if state.updaters == nil then
+            return
+        end
+        for i, val in ipairs(state.updaters) do
+            if val == func then
+                table.remove(state.updaters, i)
+                break
+            end
+        end
+    end,
+    get_screen_center = function()
+        local screen_width, screen_height = love.graphics.getDimensions()
+        local center_x, center_y = screen_width / 2, screen_height / 2
+        return {x = center_x, y = center_y}
+    end,
     
 
     -- load_svg_as_image_data = function(imagePath, imgWidth, imgHeight)

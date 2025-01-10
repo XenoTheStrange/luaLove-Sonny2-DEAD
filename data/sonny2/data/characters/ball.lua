@@ -1,4 +1,4 @@
-ball = {
+local ball = {
     name = "ball",
     x = 500,
     y = 500,
