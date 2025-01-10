@@ -129,8 +129,17 @@ return {
         table.sort(state.sprites_to_draw, function(a, b)
             return (a.z_index or 0) < (b.z_index or 0)
         end)
+    end,
+    draw_all = function(...)
+        args = {...}
+        for _, sprite in pairs(args) do
+            engine.draw(sprite)
+        end
+    end,
+    new = function(template)
+        local tmp = engine.deep_copy(template)
+        return tmp
     end
-    
     
 
     -- load_svg_as_image_data = function(imagePath, imgWidth, imgHeight)

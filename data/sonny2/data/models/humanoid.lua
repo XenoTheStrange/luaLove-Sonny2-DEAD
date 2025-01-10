@@ -10,15 +10,6 @@ return {
             shear_x = 0.7218323,
             shear_y = -0.7218323,
           },
-          weapon_left = {
-            z_index = 15,
-            scale_x = 0.8659973,
-            scale_y = 0.8659973,
-            x = 182,
-            y = -382,
-            shear_x = -0.49710083,
-            shear_y = 0.4971161,
-          },
           arm_left_upper = {
             z_index = 13,
             scale_x = 0.8777771,
@@ -109,13 +100,24 @@ return {
             y = -358,
             shear_x = -0.25715637,
             shear_y = 0.25715637,
-            tint = {0.6,0.6,0.6,1}
+            tint = {0.6,0.6,0.6,1},
+            visible = false
+          },
+          weapon_left = {
+            z_index = 15,
+            scale_x = 0.8659973,
+            scale_y = 0.8659973,
+            x = 182,
+            y = -382,
+            shear_x = -0.49710083,
+            shear_y = 0.4971161,
+            visible = false
           },
           arm_right_lower = {
             z_index = 2,
             scale_x = -0.71032715,
             scale_y = 0.71032715,
-            x = 233,
+            x = 215,
             y = -169,
             shear_x = -0.3629303,
             shear_y = 0.3629303,

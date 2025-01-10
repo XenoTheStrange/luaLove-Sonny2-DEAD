@@ -35,11 +35,21 @@ function love.draw()
                     love.graphics.setColor(1, 1, 1, 1)
                 end
 
+                -- Save the current transformation matrix
+                love.graphics.push()
+
+                -- Translate to the sprite's position (before rotation)
+                love.graphics.translate(sprite.x, sprite.y)
+
+                -- Apply the global rotation of the sprite (sprite.angle)
+                love.graphics.rotate(sprite.angle * 0.017453292519943)
+
+                -- Now draw the piece, accounting for its local position relative to the sprite center
                 love.graphics.draw(
                     piece.sprite, 
-                    sprite.x + (piece.x * sprite.scale_x * config.global_sprite_scale),
-                    sprite.y + (piece.y * sprite.scale_y * config.global_sprite_scale),
-                    piece.angle * 0.017453292519943,
+                    piece.x * sprite.scale_x * config.global_sprite_scale,
+                    piece.y * sprite.scale_y * config.global_sprite_scale,
+                    piece.angle * 0.017453292519943, -- piece rotation still applies
                     sprite.scale_x * piece.scale_x * config.global_sprite_scale,
                     sprite.scale_y * piece.scale_y * config.global_sprite_scale,
                     piece.sprite:getWidth() / 2,
@@ -47,10 +57,14 @@ function love.draw()
                     piece.shear_x,
                     piece.shear_y
                 )
+
+                -- Restore the previous transformation matrix
+                love.graphics.pop()
             end
         end
     end
 end
+
 
 
 

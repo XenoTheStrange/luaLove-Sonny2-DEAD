@@ -20,13 +20,13 @@ return {
             print(key, value)
         end
     end,
-    set_defaults = function(table, defaults)
-        if type(table) ~= "table" then 
+    set_defaults = function(target, source)
+        if type(target) ~= "table" then 
             return 
         end
-        for key, value in pairs(defaults) do
-            if table[key] == nil then
-                table[key] = value
+        for key, value in pairs(source) do
+            if target[key] == nil then
+                target[key] = value
             end
         end
     end,
@@ -38,9 +38,18 @@ return {
         end
     end,
     -- Changes some numerical value in an object by some amount
-    shift = function(item, value, amount)
-        item[value] = item[value] + amount
+    add = function(item, amount)
+        item = item + amount
+    end,
+    -- Takes a table and maps values 1 layer down.
+    -- i.e. if "tmp" is an array containing part_name = sprite, 
+    -- engine.utils.map_to_key_in_table(tmp, "sprite", zombie1.parts)
+    -- will define the sprite for each part in zombie1.parts using values from tmp
+    map_to_key_in_table = function(source, key, target)
+    for name, value in pairs(source) do
+        target[name][key] = value
     end
+end
     
 
     

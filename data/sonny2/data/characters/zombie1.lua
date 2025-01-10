@@ -5,23 +5,31 @@ local zombie1 = {
     parts = engine.deep_copy(data.models.humanoid.parts)
 }
 
-zombie1.parts['arm_left_upper'].sprite = sprites.zombie1.arm
-zombie1.parts['arm_left_lower'].sprite = sprites.zombie1.hand
-zombie1.parts['leg_left_upper'].sprite = sprites.zombie1.arm
-zombie1.parts['foot_left'].sprite = sprites.zombie1.foot
-zombie1.parts['foot_right'].sprite = sprites.zombie1.foot
-zombie1.parts['leg_right_lower'].sprite = sprites.zombie1.arm
-zombie1.parts['leg_left_lower'].sprite = sprites.zombie1.arm
-zombie1.parts['leg_left_lower'].scale_y = 1.3
-zombie1.parts['leg_right_lower'].scale_y = 1.2
-zombie1.parts['foot_left'].x = zombie1.parts['foot_left'].x+100
-zombie1.parts['foot_right'].x = zombie1.parts['foot_right'].x+100
-zombie1.parts['leg_right_upper'].sprite = sprites.zombie1.arm
-zombie1.parts['torso'].sprite = sprites.zombie1.chest
-zombie1.parts['head'].sprite = sprites.zombie1.head
-zombie1.parts['arm_right_upper'].sprite = sprites.zombie1.arm
-zombie1.parts['arm_right_lower'].sprite = sprites.zombie1.arm
-zombie1.parts['weapon_right'].visible = false
-zombie1.parts['weapon_left'].visible = false
+local s = sprites.zombie1
+
+local tmp = {
+    arm_left_upper = s.arm,
+    arm_left_lower = s.hand,
+    leg_left_upper = s.arm,
+    foot_left = s.foot,
+    foot_right = s.foot,
+    leg_right_lower = s.arm,
+    leg_right_upper = s.arm,
+    leg_left_lower = s.arm,
+    head = s.head,
+    torso = s.chest,
+    arm_right_upper = s.arm,
+    arm_right_lower = s.hand
+
+}
+
+local p = zombie1.parts
+engine.utils.map_to_key_in_table(tmp, "sprite", p)
+
+
+engine.utils.add(p.leg_left_lower.scale_y, 0.3)
+engine.utils.add(p.leg_left_lower.scale_x, 0.3)
+engine.utils.add(p.foot_left.x, 100)
+engine.utils.add(p.foot_right.x, 100)
 
 return zombie1
