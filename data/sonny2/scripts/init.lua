@@ -11,7 +11,7 @@ return function()
     end
     config.global_sprite_scale = 1
 
-    -- Launch the intro cutscene (if enabled) otherwise go to the main menu
-    -- TODO: Work on main menu and basic structure of scenes.
+    -- Launch the intro cutscene
+    -- Proceeds to scene pre_title.lua
     data.animations.armorgames_intro()
 end
