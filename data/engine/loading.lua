@@ -23,6 +23,9 @@ return {
     load_file_data = function(file_info, output, handlers)
         local path = file_info.path
         local ext = path:match("([^%.]+)$")
+        if debug then
+            engine.log("d", "Loading file: " .. path)
+        end
     
         -- Check if it's a directory or file
         if love.filesystem.getInfo(path, "directory") then

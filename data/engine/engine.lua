@@ -11,18 +11,15 @@ return {
 
         engine.utils = require("engine/scripts/utils") -- Engine is not hot reloaded btw
         engine.loading = require("engine/loading")
-        engine.scenes = {}
-        
-        -- TODO move all this jazz to engine.scenes.load_game and init that
-        -- Once it runs and everything is loaded, that scene can pass control to data.scenes.init() or something, idk.
-        local data_folders_load_order = require(config.game_data_directory .. "/data/load_order")
-        engine.loading.simple_load("engine/scenes", engine.scenes)
-        engine.loading.simple_load(config.game_data_directory .. "/sounds", sounds)
-        engine.loading.simple_load(config.game_data_directory .. "/sprites", sprites)
-        engine.loading.simple_load(config.game_data_directory .. "/data", data, data_folders_load_order)
-        engine.loading.simple_load(config.game_data_directory .. "/scripts", scripts)
 
-        -- engine.load_game_data()
+        -- Order matters. Scenes depend on characters which depend on sprites.
+        engine.sprites = {}
+        engine.characters = {}
+        engine.scenes = {}
+        engine.loading.simple_load("engine/sprites", engine.sprites)
+        engine.loading.simple_load("engine/characters", engine.characters)
+        engine.loading.simple_load("engine/scenes", engine.scenes)
+        engine.scenes.load_game.init()
     end,
 
     deep_copy = function(tbl)
@@ -86,6 +83,22 @@ return {
             engine.draw(sprite)
         end
     end,
+    draw_text = function(func)
+        table.insert(state.love_draw_functions, func)
+    end,
+    erase_text = function(func)
+        if state.love_draw_functions == nil then
+            return -- Nothing to remove
+        end
+    
+        -- Find the sprite in the array and remove it
+        for i, s in ipairs(state.love_draw_functions) do
+            if s == func then
+                table.remove(state.love_draw_functions, i)
+                break -- Exit the loop after removing to avoid unnecessary iterations
+            end
+        end
+    end,
     new = function(template)
         local tmp = engine.deep_copy(template)
         return tmp
@@ -112,8 +125,22 @@ return {
         local center_x, center_y = screen_width / 2, screen_height / 2
         return {x = center_x, y = center_y}
     end,
+    log = function(level, msg)
+        local prefix
+        if level == "d" then
+            prefix = "[DEBUG] "
+        elseif level == "i" then
+            prefix = "[INFO] "
+        elseif level == "w" then
+            prefix = "[WARN] "
+        elseif level == "e" then
+            prefix = "[ERROR] "
+        elseif level == "c" then
+            prefix = "[CRITICAL] "
+        end
+        print(prefix .. msg)
+    end
     
-
     -- load_svg_as_image_data = function(imagePath, imgWidth, imgHeight)
     --     IDEA ABANDONED. Tove didn't render shit right nor work the way I wanted, svglover failed trying to interpret text as RGB data, 
     --     2 days is long enough to be frustrated about this. I'll just pre-render the bitches as png.

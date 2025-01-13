@@ -12,10 +12,14 @@ local aspect_ratio = screen_width / screen_height
 -- Runs on program start. Load game data.
 function love.load()
     engine.restart_game()
-    scripts.init()
 end
 
 function love.draw()
+    if state.love_draw_functions ~= nil then
+        for _, func in state.love_draw_functions do
+            func() --TODO
+        end
+    end
     if state.sprites_to_draw == nil then 
         return
     end
