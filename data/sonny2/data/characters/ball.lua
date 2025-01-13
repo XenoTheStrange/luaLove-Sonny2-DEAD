@@ -1,7 +1,7 @@
 local ball = {
     name = "ball",
-    x = 500,
-    y = 500,
+    x = 0,
+    y = 0,
     parts = {
         base = {
             angle = 18,

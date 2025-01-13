@@ -3,20 +3,19 @@ local frames = sprites.frame_animations.armorgames_intro
 
 coords = engine.get_screen_center()
 -- All the frames in this animation rendered offset so they need tweaked
-character.x = coords.x + 106
-character.y = coords.y - 50
+character.x = coords.x + 54
+character.y = coords.y - 30
 character.parts.base.sprite = frames["2"]
 
 
 local function start()
-    print("Playing armorgames intro sequence.")
-
     engine.draw(character)
     sounds["Armor Games Intro"]:play()
 end
 
 local function finish(listener)
     engine.remove_listener(listener)
+    engine.erase(character)
     data.scenes.pre_title.init()
 end
 
