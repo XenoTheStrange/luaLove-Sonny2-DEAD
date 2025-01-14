@@ -1,10 +1,12 @@
+-- This file is a stand-in for another loading screen that looks like the original. It should be renamed to load_game_debug.lua in the future.
+
 local function update_loading_bar(bar, num)
     bar.current = num
     bar.parts.bar.scale_x = num/bar.total
 end
 
 -- local loading_bar = engine.new(data.characters.loading_bar)
-local function tracked_load(path, table, load_order, loading_bar)
+local function tracked_load(path, table, load_order, loading_bar, files_per_yield)
     -- Get a list of files (use load order if needed)
     local data_files
     if load_order ~= nil then
@@ -23,7 +25,10 @@ local function tracked_load(path, table, load_order, loading_bar)
 
         -- Yield so the screen can be updated
         -- Every 10 files processed so the framerate isn't capping our load speed (as much at least)
-        if i % 10 == 1 then
+        if files_per_yield == nil then
+            files_per_yield = 10
+        end
+        if i % files_per_yield == 1 then
             coroutine.yield()
         end
     end
@@ -35,8 +40,7 @@ return {
         engine.loading.simple_load("engine/scenes", engine.scenes)
 
         local data_folders_load_order = require(config.game_data_directory .. "/data/load_order")
-
-        
+       
         -- Create a loading bars
         local bar1 = engine.new(engine.characters.loading_bar)
         local bar2 = engine.new(engine.characters.loading_bar)
@@ -60,9 +64,9 @@ return {
         bar3.x = center.x
         bar4.x = center.x
         bar1.y = center.y - barheight*2 -- Center then up 2 bar widths
-        bar2.y = center.y - barheight*1 -- Center then up 2 bar widths
-        bar3.y = center.y + barheight*1 -- Center then up 2 bar widths
-        bar4.y = center.y + barheight*2 -- Center then up 2 bar widths
+        bar2.y = center.y - barheight*1 -- Center then up 1 bar width
+        bar3.y = center.y + barheight*1 -- Center then down 1 bar width
+        bar4.y = center.y + barheight*2 -- Center then down 2 bar widths
         bar1.parts.bar.scale_x = 0
         bar2.parts.bar.scale_x = 0
         bar3.parts.bar.scale_x = 0
@@ -84,7 +88,7 @@ return {
             scripts.init()
         end
 
-        -- Queue up our loading bars
+        -- Queue up our loading routines and contine
         engine.queue_routine(load_sprites) 
         engine.queue_routine(load_sounds)
         engine.queue_routine(load_data)

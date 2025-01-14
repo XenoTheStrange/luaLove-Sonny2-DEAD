@@ -1,10 +1,11 @@
 -- Love2d main loop script
-package.path = "./data/packages/?/init.lua;" .. "./data/packages/?.lua;" .. "./?.lua;"
---package.path = ("./data/" .. config.game_data_directory .. "/data/?.lua;") .. ("./data/" .. config.game_data_directory .. "/?/init.lua;") .. package.path
+-- What if I just leave this path alone...?
+-- package.path = "./data/packages/?/init.lua;" .. "./data/packages/?.lua;" .. "./?.lua;" .. package.path
+-- package.path = ("./data/" .. config.game_data_directory .. "/data/?.lua;") .. ("./data/" .. config.game_data_directory .. "/?/init.lua;") .. package.path
 
 config = require("conf")
-engine = require("engine/engine")
-flux = require("flux")
+engine = require("engine.engine")
+flux = require("packages.flux") -- This works and doesn't crash if packaged as a .love file
 
 local screen_width, screen_height = love.graphics.getDimensions()
 local aspect_ratio = screen_width / screen_height
