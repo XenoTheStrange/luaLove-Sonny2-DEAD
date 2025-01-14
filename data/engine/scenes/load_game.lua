@@ -46,11 +46,12 @@ return {
         local bar2 = engine.new(engine.characters.loading_bar)
         local bar3 = engine.new(engine.characters.loading_bar)
         local bar4 = engine.new(engine.characters.loading_bar)
-        local barheight = bar1.parts.background1.sprite:getHeight()
+        -- Get the actual height of the bar, scaled by the global scale factor so sizes remain consistent across screens
+        local barheight = bar1.parts.background1.sprite:getHeight() * gs
         local center = engine.get_screen_center()
         
         -- Loading text in the middle of the screen
-        local font = love.graphics.newFont(48)
+        local font = love.graphics.newFont(48 * gs)
         local drawable = love.graphics.newText(font, "LOADING")
         local LOADING = engine.new(engine.characters.generic)
         LOADING.parts.base.sprite = drawable

@@ -9,7 +9,6 @@ return function()
     for _, character in pairs(data.characters) do
         engine.utils.set_defaults_foreach_in(character.parts, part_defaults)
     end
-    config.global_sprite_scale = 1
 
     -- Launch the intro cutscene
     -- Proceeds to scene pre_title.lua

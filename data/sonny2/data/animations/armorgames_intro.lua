@@ -3,9 +3,9 @@ local frames = sprites.frame_animations.armorgames_intro
 
 coords = engine.get_screen_center()
 -- All the frames in this animation rendered offset so they need tweaked
-character.x = coords.x + 54
-character.y = coords.y - 30
-character.parts.base.sprite = frames["2"]
+character.x = coords.x + (54*gs)
+character.y = coords.y - (30*gs)
+character.parts.base.sprite = frames["1"]
 
 
 local function start()
@@ -24,7 +24,7 @@ local numFrames = 98
 
 local elapsedTime = 0
 local currentFrame = 1
-local frameDuration = total_playtime/numFrames -- 4.3/109 = 0.039449541284404
+local frameDuration = total_playtime/numFrames
 
 local step = 1
 
