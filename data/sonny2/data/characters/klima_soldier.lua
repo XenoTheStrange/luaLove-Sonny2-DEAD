@@ -19,13 +19,13 @@ p.shoulder = {
 
 -- Tweak wonky-looking position values
 
-engine.utils.add(p.head.x, -10)
-engine.utils.add(p.head.y, 80)
-engine.utils.add(p.arm_right_lower.shear_x, -0.15)
+engine.utils.add(p.head, "x", -10)
+engine.utils.add(p.head, "y", 80)
+engine.utils.add(p.arm_right_lower, "shear_x", -0.15)
 -- Legs need moved slightly left
 legparts = {"leg_left_upper", "leg_left_lower", "leg_right_upper", "leg_right_lower", "foot_left", "foot_right"}
 for _, part in ipairs(legparts) do
-  engine.utils.add(p[part]["x"], -40)
+  engine.utils.add(p[part], "x", -40)
 end
 
 s = sprites.klima_soldier

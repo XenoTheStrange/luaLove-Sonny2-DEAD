@@ -1,4 +1,4 @@
-local character = engine.new(data.characters.generic)
+local character = engine.new(engine.characters.generic)
 local frames = sprites.frame_animations.armorgames_intro
 
 coords = engine.get_screen_center()

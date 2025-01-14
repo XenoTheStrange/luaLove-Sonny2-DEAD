@@ -6,7 +6,11 @@ return {
         sounds = {}
         state = {
             sprites_to_draw = {},
-            updaters = {}
+            updaters = {},
+            coroutines = {
+                queue = {},
+                current = nil
+            }
         }
 
         engine.utils = require("engine/scripts/utils") -- Engine is not hot reloaded btw
@@ -18,6 +22,7 @@ return {
         engine.scenes = {}
         engine.loading.simple_load("engine/sprites", engine.sprites)
         engine.loading.simple_load("engine/characters", engine.characters)
+        engine.utils.tpp(engine.characters)
         engine.loading.simple_load("engine/scenes", engine.scenes)
         engine.scenes.load_game.init()
     end,
@@ -77,6 +82,23 @@ return {
             end
         end
     end,
+    erase_all = function(...)
+        local sprites_to_erase = {...}
+        
+        if state.sprites_to_draw == nil then
+            return -- No sprites to remove
+        end
+        
+        for _, sprite_to_erase in ipairs(sprites_to_erase) do
+            -- Find and remove each sprite from state.sprites_to_draw
+            for i, sprite in ipairs(state.sprites_to_draw) do
+                if sprite == sprite_to_erase then
+                    table.remove(state.sprites_to_draw, i)
+                    break -- Break to avoid unnecessary iterations
+                end
+            end
+        end
+    end,
     draw_all = function(...)
         args = {...}
         for _, sprite in pairs(args) do
@@ -84,6 +106,9 @@ return {
         end
     end,
     draw_text = function(func)
+        if state.love_draw_functions == nil then
+            state.love_draw_functions = {}
+        end
         table.insert(state.love_draw_functions, func)
     end,
     erase_text = function(func)
@@ -139,7 +164,56 @@ return {
             prefix = "[CRITICAL] "
         end
         print(prefix .. msg)
+    end,
+    coroutine_manager = function()
+        -- Process the linear queue (state.coroutines.queue)
+        if not state.coroutines.current or coroutine.status(state.coroutines.current) == "dead" then
+            if #state.coroutines.queue > 0 then
+                state.coroutines.current = table.remove(state.coroutines.queue, 1)
+            else
+                state.coroutines.current = nil -- No more coroutines in queue
+            end
+        end
+    
+        if state.coroutines.current and coroutine.status(state.coroutines.current) ~= "dead" then
+            local success, err = coroutine.resume(state.coroutines.current)
+            if not success then
+                print("Queue coroutine error:", err) -- Debugging output for queue coroutine
+            end
+        end
+        -- Guard clause to prevent crash if list is empty
+        if state.coroutines.consecutive == nil then
+            return
+         end
+        -- Process all coroutines in state.coroutines.consecutive simultaneously
+        for i = #state.coroutines.consecutive, 1, -1 do
+            local consecutive_coro = state.coroutines.consecutive[i]
+            
+            -- Resume each consecutive coroutine
+            if coroutine.status(consecutive_coro) ~= "dead" then
+                local success, err = coroutine.resume(consecutive_coro)
+                if not success then
+                    print("Consecutive coroutine error:", err) -- Debugging output for consecutive coroutine
+                end
+            end
+            
+            -- Remove dead coroutines from consecutive
+            if coroutine.status(consecutive_coro) == "dead" then
+                table.remove(state.coroutines.consecutive, i)
+            end
+        end
+    end,
+
+    queue_routine = function(func)
+        -- Automatically wrap the function in a coroutine and enqueue it
+        local coro = coroutine.create(func)
+        table.insert(state.coroutines.queue, coro)
+    end,    
+    do_routine = function(func)
+        local coro = coroutine.create(func)
+        table.insert(state.coroutines.consecutive, coro)
     end
+    
     
     -- load_svg_as_image_data = function(imagePath, imgWidth, imgHeight)
     --     IDEA ABANDONED. Tove didn't render shit right nor work the way I wanted, svglover failed trying to interpret text as RGB data, 

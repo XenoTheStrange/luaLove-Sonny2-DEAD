@@ -27,9 +27,9 @@ local p = zombie1.parts
 engine.utils.map_to_key_in_table(tmp, "sprite", p)
 
 
-engine.utils.add(p.leg_left_lower.scale_y, 0.3)
-engine.utils.add(p.leg_left_lower.scale_x, 0.3)
-engine.utils.add(p.foot_left.x, 100)
-engine.utils.add(p.foot_right.x, 100)
+engine.utils.add(p.leg_left_lower, "scale_y", 0.3)
+engine.utils.add(p.leg_left_lower, "scale_x", 0.3)
+engine.utils.add(p.foot_left, "x", 100)
+engine.utils.add(p.foot_right, "x", 100)
 
 return zombie1

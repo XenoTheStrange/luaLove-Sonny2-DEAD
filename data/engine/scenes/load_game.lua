@@ -22,17 +22,10 @@ local function tracked_load(path, table, load_order, loading_bar)
         update_loading_bar(loading_bar, i)
 
         -- Yield so the screen can be updated
-        coroutine.yield()
-    end
-end
-
-local function coroutine_listener()
-    -- Resume loading coroutine if it exists
-    if loadCoroutine and coroutine.status(loadCoroutine) ~= "dead" then
-        coroutine.resume(loadCoroutine)
-    end
-    if loadCoroutine and coroutine.status(loadCoroutine) == "dead" then
-        engine.remove_listener(coroutine_listener)
+        -- Every 10 files processed so the framerate isn't capping our load speed (as much at least)
+        if i % 10 == 1 then
+            coroutine.yield()
+        end
     end
 end
 
@@ -43,38 +36,60 @@ return {
 
         local data_folders_load_order = require(config.game_data_directory .. "/data/load_order")
 
-        -- Create a loading bar
-        bar1 = engine.new(engine.characters.loading_bar)
-        engine.draw(bar1)
+        
+        -- Create a loading bars
+        local bar1 = engine.new(engine.characters.loading_bar)
+        local bar2 = engine.new(engine.characters.loading_bar)
+        local bar3 = engine.new(engine.characters.loading_bar)
+        local bar4 = engine.new(engine.characters.loading_bar)
+        local barheight = bar1.parts.background1.sprite:getHeight()
+        local center = engine.get_screen_center()
+        
+        -- Loading text in the middle of the screen
+        local font = love.graphics.newFont(48)
+        local drawable = love.graphics.newText(font, "LOADING")
+        local LOADING = engine.new(engine.characters.generic)
+        LOADING.parts.base.sprite = drawable
+        LOADING.x = center.x - drawable:getWidth()/2
+        LOADING.y = center.y - drawable:getHeight()/2
+        LOADING.parts.base.tint = {1,1,1,1}
+        
+        -- Set positions and colors for loading bars
+        bar1.x = center.x
+        bar2.x = center.x
+        bar3.x = center.x
+        bar4.x = center.x
+        bar1.y = center.y - barheight*2 -- Center then up 2 bar widths
+        bar2.y = center.y - barheight*1 -- Center then up 2 bar widths
+        bar3.y = center.y + barheight*1 -- Center then up 2 bar widths
+        bar4.y = center.y + barheight*2 -- Center then up 2 bar widths
+        bar1.parts.bar.scale_x = 0
+        bar2.parts.bar.scale_x = 0
+        bar3.parts.bar.scale_x = 0
+        bar4.parts.bar.scale_x = 0
+        bar1.parts.bar.tint = {0,176/255,1,1} -- Sky blue
+        bar2.parts.bar.tint = {1,102/255,0,1} -- Orange
+        bar3.parts.bar.tint = {60/255,168/255,84/255,1} -- Green
+        bar4.parts.bar.tint = {241/255,196/255,15/255,1} -- yellow
+        engine.draw_all(bar1, bar2, bar3, bar4, LOADING)
 
-        -- Wrap tracked_load in a coroutine
-        loadCoroutine = coroutine.create(function()
-            tracked_load(config.game_data_directory .. "/sprites", sprites, nil, bar1)
-        end)
-        engine.add_listener(coroutine_listener)
+        -- Define our loading functions so they can be turned into coroutines (can be done inline as anonymous functions but I hate it)
+        local load_sprites = function() tracked_load(config.game_data_directory .. "/sprites", sprites, nil, bar1) end
+        local load_sounds = function() tracked_load(config.game_data_directory .. "/sounds", sounds, nil, bar2) end
+        local load_data = function() tracked_load(config.game_data_directory .. "/data", data, data_folders_load_order, bar3) end
+        local load_scripts = function() tracked_load(config.game_data_directory .. "/scripts", scripts, nil, bar4) end
+        local continue = function()
+            engine.erase_all(bar1, bar2, bar3, bar4, LOADING)
+            print("DONE")
+            scripts.init()
+        end
 
-        --engine.loading.simple_load(config.game_data_directory .. "/sprites", sprites)
-        -- engine.loading.simple_load(config.game_data_directory .. "/sounds", sounds)
-        -- engine.loading.simple_load(config.game_data_directory .. "/data", data, data_folders_load_order)
-        -- engine.loading.simple_load(config.game_data_directory .. "/scripts", scripts)
-        -- scripts.init() -- Pass off control to game/scripts/init.lua
+        -- Queue up our loading bars
+        engine.queue_routine(load_sprites) 
+        engine.queue_routine(load_sounds)
+        engine.queue_routine(load_data)
+        engine.queue_routine(load_scripts)
+        engine.queue_routine(continue)
     end
 
 }
-
-
--- local loading_bar = engine.new(data.characters.loading_bar)
-
--- tracked_load = function(path, table, load_order, loading_bar)
---     local data_files
---     if load_order ~= nil then
---         data_files = engine.loading.enumerate_files(path, load_order)
---     else
---         data_files = engine.loading.enumerate_files(path)
---     end
---     local total = #data_files
---     for i, file_info in ipairs(data_files) do
---         engine.loading.load_file_data(file_info, table, engine.loading.file_handlers)
---         update_loading_bar(i)
---     end
--- end

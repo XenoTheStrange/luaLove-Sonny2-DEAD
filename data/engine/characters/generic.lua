@@ -18,7 +18,7 @@ local generic = {
             shear_x = 0,
             shear_y = 0,
             visible = true,
-            sprite = sprites.debug.missing
+            sprite = engine.sprites.missing
         }
     }
 }

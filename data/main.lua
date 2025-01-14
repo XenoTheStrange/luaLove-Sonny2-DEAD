@@ -16,13 +16,17 @@ end
 
 function love.draw()
     if state.love_draw_functions ~= nil then
-        for _, func in state.love_draw_functions do
-            func() --TODO
+        for _, func in ipairs(state.love_draw_functions) do
+            love.graphics.push()  -- Save the current transformation matrix before calling the function
+            func()                -- Run the custom drawing function (e.g., text)
+            love.graphics.pop()   -- Restore the previous transformation matrix after the function
         end
     end
+
     if state.sprites_to_draw == nil then 
         return
     end
+
     if config.show_fps then 
         engine.show_fps()
     end
@@ -46,6 +50,13 @@ function love.draw()
                 -- Apply the global rotation of the sprite (sprite.angle)
                 love.graphics.rotate(sprite.angle * 0.017453292519943)
 
+                if type(piece.sprite) == "userdata" and piece.sprite:typeOf("Text") then
+                    love.graphics.draw(
+                        piece.sprite, 
+                        (piece.x * sprite.scale_x * config.global_sprite_scale) * aspect_ratio, 
+                        piece.y * sprite.scale_y * config.global_sprite_scale
+                    )
+                else
                 -- Now draw the piece, accounting for its local position relative to the sprite center
                 love.graphics.draw(
                     piece.sprite, 
@@ -59,14 +70,14 @@ function love.draw()
                     piece.shear_x,
                     piece.shear_y
                 )
-
-
+            end
                 -- Restore the previous transformation matrix
                 love.graphics.pop()
             end
         end
     end
 end
+
 
 
 
@@ -81,6 +92,8 @@ function love.update(dt)
             func(dt)
         end
     end
+    -- This will handle coroutines that need to be processed linearly
+    engine.coroutine_manager()
 end
 
 

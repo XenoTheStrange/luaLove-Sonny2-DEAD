@@ -38,8 +38,8 @@ return {
         end
     end,
     -- Changes some numerical value in an object by some amount
-    add = function(item, amount)
-        item = item + amount
+    add = function(item, key, amount)
+        item[key] = item[key] + amount
     end,
     -- Takes a table and maps values 1 layer down.
     -- i.e. if "tmp" is an array containing part_name = sprite, 
