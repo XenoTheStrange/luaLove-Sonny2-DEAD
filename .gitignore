@@ -41,3 +41,5 @@ luac.out
 
 # Folders
 /.vscode
+.vscode/settings.json
+/.vscode

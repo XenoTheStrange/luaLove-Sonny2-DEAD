@@ -3,6 +3,8 @@
 -- package.path = "./data/packages/?/init.lua;" .. "./data/packages/?.lua;" .. "./?.lua;" .. package.path
 -- package.path = ("./data/" .. config.game_data_directory .. "/data/?.lua;") .. ("./data/" .. config.game_data_directory .. "/?/init.lua;") .. package.path
 
+
+
 config = require("conf")
 engine = require("engine.engine")
 flux = require("packages.flux") -- This works and doesn't crash if packaged as a .love file
@@ -23,7 +25,7 @@ function love.load()
     engine.restart_game()
 end
 
-function love.draw()
+local function draw_love_graphics()
     if state.love_draw_functions ~= nil then
         for _, func in ipairs(state.love_draw_functions) do
             love.graphics.push()  -- Save the current transformation matrix before calling the function
@@ -31,14 +33,13 @@ function love.draw()
             love.graphics.pop()   -- Restore the previous transformation matrix after the function
         end
     end
+end
 
+local function draw_characters()
     if state.sprites_to_draw == nil then 
         return
     end
 
-    if config.show_fps then 
-        engine.show_fps()
-    end
 
     for _, sprite in ipairs(state.sprites_to_draw) do
         local partsArray = sprite.sorted_parts or {}
@@ -59,13 +60,18 @@ function love.draw()
                 -- Apply the global rotation of the sprite (sprite.angle)
                 love.graphics.rotate(sprite.angle * 0.017453292519943)
 
-                if type(piece.sprite) == "userdata" and piece.sprite:typeOf("Text") then
-                    love.graphics.draw(
-                        piece.sprite, 
-                        (piece.x * sprite.scale_x * gs) * aspect_ratio, 
-                        piece.y * sprite.scale_y * gs
-                    )
-                else
+                -- if type(piece.sprite) == "userdata" and piece.sprite:typeOf("Text") then
+                --     love.graphics.draw(
+                --         piece.sprite, 
+                --         (piece.x * sprite.scale_x * gs) * aspect_ratio, 
+                --         piece.y * sprite.scale_y * gs,
+                --         piece.angle * 0.017453292519943,
+                --         sprite.scale_x * piece.scale_x * gs,
+                --         sprite.scale_y * piece.scale_y * gs,
+                --         piece.sprite:getWidth() / 2,
+
+                --     )
+                -- else
                 -- Now draw the piece, accounting for its local position relative to the sprite center
                 love.graphics.draw(
                     piece.sprite, 
@@ -74,12 +80,12 @@ function love.draw()
                     piece.angle * 0.017453292519943,  -- piece rotation still applies
                     sprite.scale_x * piece.scale_x * gs,
                     sprite.scale_y * piece.scale_y * gs,
-                    piece.sprite:getWidth() / 2,
-                    piece.sprite:getHeight() / 2,
+                    piece.sprite:getWidth() / 2, -- Origin offset x axis
+                    piece.sprite:getHeight() / 2, -- Origin offset y axis
                     piece.shear_x,
                     piece.shear_y
                 )
-            end
+            -- end
                 -- Restore the previous transformation matrix
                 love.graphics.pop()
             end
@@ -87,22 +93,28 @@ function love.draw()
     end
 end
 
+function love.draw()
+    if config.show_fps then 
+        engine.show_fps()
+    end
+    draw_love_graphics()
+    draw_characters()
+end
 
-
-
-
-
--- Runs each frame. Used to update states.
-function love.update(dt)
-    flux.update(dt) -- Needed to use flux
-    -- This should pretty much call an update function tied to whatever scene we're in at the moment. TODO
+-- Call each function in state.updaters (used for all sorts of detections)
+local function call_updaters(dt)
     if state.updaters ~= nil then
         for _, func in ipairs(state.updaters) do
             func(dt)
         end
     end
-    -- This will handle coroutines that need to be processed linearly
-    engine.coroutine_manager()
+end
+
+-- Runs each frame. Used to update states.
+function love.update(dt)
+    flux.update(dt) -- Needed to use flux
+    call_updaters(dt)
+    engine.coroutine_manager(dt) -- Update all routines in state
 end
 
 

@@ -12,5 +12,9 @@ return function()
 
     -- Launch the intro cutscene
     -- Proceeds to scene pre_title.lua
-    data.animations.armorgames_intro()
+    if config.debug.skip_intro then 
+        data.scenes.pre_title.init()
+    else
+        data.animations.armorgames_intro()
+    end
 end

@@ -1,7 +1,7 @@
 local character = engine.new(engine.characters.generic)
 local frames = sprites.frame_animations.armorgames_intro
 
-coords = engine.get_screen_center()
+local coords = engine.get_screen_center()
 -- All the frames in this animation rendered offset so they need tweaked
 character.x = coords.x + (54*gs)
 character.y = coords.y - (30*gs)

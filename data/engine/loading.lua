@@ -23,7 +23,7 @@ return {
     load_file_data = function(file_info, output, handlers)
         local path = file_info.path
         local ext = path:match("([^%.]+)$")
-        if debug then
+        if config.debug.print_loaded_files then
             engine.log("d", "Loading file: " .. path)
         end
     

@@ -53,5 +53,10 @@ end
 -- Game engine configuration
 return {
     game_data_directory = "sonny2",
-    show_fps = true
+    show_fps = true,
+
+    debug = {
+        print_loaded_files = false,
+        skip_intro = true,
+    }
 }

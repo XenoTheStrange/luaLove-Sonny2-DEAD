@@ -55,8 +55,8 @@ return {
         local drawable = love.graphics.newText(font, "LOADING")
         local LOADING = engine.new(engine.characters.generic)
         LOADING.parts.base.sprite = drawable
-        LOADING.x = center.x - drawable:getWidth()/2
-        LOADING.y = center.y - drawable:getHeight()/2
+        LOADING.x = center.x
+        LOADING.y = center.y
         LOADING.parts.base.tint = {1,1,1,1}
         
         -- Set positions and colors for loading bars

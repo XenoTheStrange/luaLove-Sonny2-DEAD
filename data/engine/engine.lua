@@ -22,7 +22,6 @@ return {
         engine.scenes = {}
         engine.loading.simple_load("engine/sprites", engine.sprites)
         engine.loading.simple_load("engine/characters", engine.characters)
-        engine.utils.tpp(engine.characters)
         engine.loading.simple_load("engine/scenes", engine.scenes)
         engine.scenes.load_game.init()
     end,
@@ -165,7 +164,7 @@ return {
         end
         print(prefix .. msg)
     end,
-    coroutine_manager = function()
+    coroutine_manager = function(dt)
         -- Process the linear queue (state.coroutines.queue)
         if not state.coroutines.current or coroutine.status(state.coroutines.current) == "dead" then
             if #state.coroutines.queue > 0 then
@@ -178,7 +177,7 @@ return {
         if state.coroutines.current and coroutine.status(state.coroutines.current) ~= "dead" then
             local success, err = coroutine.resume(state.coroutines.current)
             if not success then
-                print("Queue coroutine error:", err) -- Debugging output for queue coroutine
+                engine.log("e","Queue coroutine error: " .. err) -- Debugging output for queue coroutine
             end
         end
         -- Guard clause to prevent crash if list is empty
