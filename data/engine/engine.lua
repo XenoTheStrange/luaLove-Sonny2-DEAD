@@ -211,7 +211,13 @@ return {
     do_routine = function(func)
         local coro = coroutine.create(func)
         table.insert(state.coroutines.consecutive, coro)
-    end
+    end,
+    getWidth = function(sprite)
+        return sprite:getWidth() * aspect_ratio * gs
+    end,
+    getHeight = function(sprite)
+        return sprite:getHeight() * gs
+    end,
     
     
     -- load_svg_as_image_data = function(imagePath, imgWidth, imgHeight)

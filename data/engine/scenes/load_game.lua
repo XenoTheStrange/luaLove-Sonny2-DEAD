@@ -36,7 +36,7 @@ end
 
 return {
     init = function()
-        print("Starting scene: engine/load_game")
+        engine.log("d", "Starting scene: engine/load_game")
         engine.loading.simple_load("engine/scenes", engine.scenes)
 
         local data_folders_load_order = require(config.game_data_directory .. "/data/load_order")
@@ -85,7 +85,6 @@ return {
         local load_scripts = function() tracked_load(config.game_data_directory .. "/scripts", scripts, nil, bar4) end
         local continue = function()
             engine.erase_all(bar1, bar2, bar3, bar4, LOADING)
-            print("DONE")
             scripts.init()
         end
 

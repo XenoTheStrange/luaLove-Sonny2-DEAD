@@ -12,8 +12,8 @@ flux = require("packages.flux") -- This works and doesn't crash if packaged as a
 -- Set the global scale variable to a percentage to handle when the actual screen is smaller.... not perfect.
 local target_width = 1920
 local target_height = 1080
-local screen_width, screen_height = love.graphics.getDimensions()
-local aspect_ratio = screen_width / screen_height
+screen_width, screen_height = love.graphics.getDimensions()
+aspect_ratio = screen_width / screen_height
 local scale_x = screen_width / target_width
 local scale_y = screen_height / target_height
 
@@ -40,11 +40,24 @@ local function draw_characters()
         return
     end
 
-
     for _, sprite in ipairs(state.sprites_to_draw) do
+        -- Apply any shaders at the sprite level (for the whole character)
+        if sprite.shaders then
+            for _, shaderFunc in ipairs(sprite.shaders) do
+                shaderFunc(sprite)  -- Run shader function
+            end
+        end
+
         local partsArray = sprite.sorted_parts or {}
         for _, piece in ipairs(partsArray) do
             if piece.visible == true then
+                -- Apply any shaders at the part level (for individual parts)
+                if piece.shaders then
+                    for _, shaderFunc in ipairs(piece.shaders) do
+                        shaderFunc(piece, sprite)  -- Run part-specific shader function
+                    end
+                end
+
                 if piece.tint then
                     love.graphics.setColor(piece.tint)
                 else 
@@ -60,18 +73,6 @@ local function draw_characters()
                 -- Apply the global rotation of the sprite (sprite.angle)
                 love.graphics.rotate(sprite.angle * 0.017453292519943)
 
-                -- if type(piece.sprite) == "userdata" and piece.sprite:typeOf("Text") then
-                --     love.graphics.draw(
-                --         piece.sprite, 
-                --         (piece.x * sprite.scale_x * gs) * aspect_ratio, 
-                --         piece.y * sprite.scale_y * gs,
-                --         piece.angle * 0.017453292519943,
-                --         sprite.scale_x * piece.scale_x * gs,
-                --         sprite.scale_y * piece.scale_y * gs,
-                --         piece.sprite:getWidth() / 2,
-
-                --     )
-                -- else
                 -- Now draw the piece, accounting for its local position relative to the sprite center
                 love.graphics.draw(
                     piece.sprite, 
@@ -85,7 +86,7 @@ local function draw_characters()
                     piece.shear_x,
                     piece.shear_y
                 )
-            -- end
+
                 -- Restore the previous transformation matrix
                 love.graphics.pop()
             end

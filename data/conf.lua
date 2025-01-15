@@ -57,6 +57,6 @@ return {
 
     debug = {
         print_loaded_files = false,
-        skip_intro = true,
+        skip_intro = false,
     }
 }
