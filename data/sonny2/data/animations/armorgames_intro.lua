@@ -10,6 +10,7 @@ character.parts.base.sprite = frames["1"]
 
 local function start()
     engine.draw(character)
+    sounds["Armor Games Intro"]:setVolume(0.1) -- Jesus Fucking Christ that was loud
     sounds["Armor Games Intro"]:play()
 end
 

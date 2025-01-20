@@ -29,6 +29,7 @@ local function tracked_load(path, table, load_order, loading_bar, files_per_yiel
             files_per_yield = 10
         end
         if i % files_per_yield == 1 then
+            -- love.timer.sleep(0.2)
             coroutine.yield()
         end
     end
@@ -47,27 +48,26 @@ return {
         local bar3 = engine.new(engine.characters.loading_bar)
         local bar4 = engine.new(engine.characters.loading_bar)
         -- Get the actual height of the bar, scaled by the global scale factor so sizes remain consistent across screens
-        local barheight = bar1.parts.background1.sprite:getHeight() * gs
-        local center = engine.get_screen_center()
+        local barheight = (bar1.parts.background1.sprite:getHeight() * gs) / screen_height -- normalized
         
         -- Loading text in the middle of the screen
         local font = love.graphics.newFont(48 * gs)
         local drawable = love.graphics.newText(font, "LOADING")
         local LOADING = engine.new(engine.characters.generic)
         LOADING.parts.base.sprite = drawable
-        LOADING.x = center.x
-        LOADING.y = center.y
+        LOADING.x = 0.5
+        LOADING.y = 0.5
         LOADING.parts.base.tint = {1,1,1,1}
         
         -- Set positions and colors for loading bars
-        bar1.x = center.x
-        bar2.x = center.x
-        bar3.x = center.x
-        bar4.x = center.x
-        bar1.y = center.y - barheight*2 -- Center then up 2 bar widths
-        bar2.y = center.y - barheight*1 -- Center then up 1 bar width
-        bar3.y = center.y + barheight*1 -- Center then down 1 bar width
-        bar4.y = center.y + barheight*2 -- Center then down 2 bar widths
+        bar1.x = 0.5
+        bar2.x = 0.5
+        bar3.x = 0.5
+        bar4.x = 0.5
+        bar1.y = 0.5 - barheight*2 -- Center then up 2 bar widths
+        bar2.y = 0.5 - barheight -- Center then up 1 bar width
+        bar3.y = 0.5 + barheight -- Center then down 1 bar width
+        bar4.y = 0.5 + barheight*2 -- Center then down 2 bar widths
         bar1.parts.bar.scale_x = 0
         bar2.parts.bar.scale_x = 0
         bar3.parts.bar.scale_x = 0

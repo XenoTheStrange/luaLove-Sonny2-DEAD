@@ -60,8 +60,8 @@ local function shadowEffect(sprite, parent)
     love.graphics.push()  -- Start with the main push
 
     -- Calculate the part's position relative to its parent
-    local partX = sprite.x * sprite.scale_x * gs * aspect_ratio
-    local partY = sprite.y * sprite.scale_y * gs
+    local partX = (sprite.x) * sprite.scale_x * gs
+    local partY = (sprite.y) * sprite.scale_y * gs
 
     -- Apply the glow offset to the transformed position
     local glowX, glowY = partX + glowOffsetX, partY + glowOffsetY
@@ -69,8 +69,8 @@ local function shadowEffect(sprite, parent)
     -- If there's a parent (e.g., a character), apply its position offset as well
     if parent then
         -- Adjust glow position based on the parent's position
-        glowX = glowX + parent.x
-        glowY = glowY + parent.y
+        glowX = glowX + parent.x * screen_width
+        glowY = glowY + parent.y * screen_height
     end
 
     -- Draw the glow by offsetting the sprite multiple times around the original position
@@ -85,7 +85,7 @@ local function shadowEffect(sprite, parent)
         love.graphics.translate(glowX + i, glowY + i)
 
         -- Draw the original sprite (without scaling) for the glow effect
-        love.graphics.draw(sprite.sprite, 0, 0, 0, 1, 1, sprite.sprite:getWidth()/2, sprite.sprite:getHeight()/2)
+        love.graphics.draw(sprite.sprite, 0, 0, 0, 1*gs, 1*gs, sprite.sprite:getWidth()/2, sprite.sprite:getHeight()/2)
 
         love.graphics.pop()  -- Pop after drawing each glow layer
     end
@@ -98,10 +98,10 @@ local function shadowEffect(sprite, parent)
 end
 
 
-function create_texts()
+local function create_texts()
     -- Character to hold all screen scene texts
     local texts = engine.new(engine.characters.generic)
-    texts.x, texts.y = center.x, center.y
+    texts.x, texts.y = 0.5,0.5
 
     -- Initialize the various texts as parts, then nil the base so it doesn't waste calls
     texts.parts.start = engine.new(texts.parts.base)
@@ -109,55 +109,42 @@ function create_texts()
     texts.parts.base = nil
 
     -- Define fonts
-    local font1 = love.graphics.newFont(48 * gs)
-    local font2 = love.graphics.newFont(24 * gs)
+    local font1 = love.graphics.newFont(54 * gs)
+    local font2 = love.graphics.newFont(34 * gs)
 
     -- Set the sprites
     local start = love.graphics.newText(font1, "START")
     local credits = love.graphics.newText(font2, "Credits")
     texts.parts.start.sprite = start
     texts.parts.credits.sprite = credits
+    engine.utils.add(texts.parts.credits, "y", 0.05)
 
     -- Position the texts (relative to each other and the center)
-    engine.utils.add(texts.parts.credits, "y", engine.getHeight(texts.parts.start.sprite) + (50*gs))
     
     -- Add shaders
-    texts.parts.start.shaders = {shadowEffect}--, dropShadowEffect}
+    texts.parts.start.shaders = {shadowEffect}
     return texts
 end
 
 local function create_background()
-    -- Create character (centered)
-    local bg = engine.new(engine.characters.generic)
-    bg.x, bg.y = center.x, center.y
+    -- Parts relative to each other in the model cannot be relative to the size of the screen unless you use a formula containing the aspect_ratio and gs (global size)
+    -- I don't want to do that.... hmmmmmm....
 
-    -- Init parts
-    bg.parts.background = engine.new(bg.parts.base)
-    bg.parts.armorlogo = engine.new(bg.parts.base)
-    --bg.parts.sonnylogo = engine.new(bg.parts.base)
-    bg.parts.splat = engine.new(bg.parts.base)
-    bg.parts.base = nil
+    -- Create characters
+    local char = engine.characters.generic
+    local bg = engine.new(char)
+    local armorlogo = engine.new(char)
+    local splat = engine.new(char)
+    -- local sonnylogo = engine.new(char)
 
     -- Set the sprites
-    bg.parts.background.sprite = sprites.title.background
-    bg.parts.armorlogo.sprite = sprites.logos.armor1
-    --bg.parts.sonnylogo.sprite = engine.sprites.missing
-    bg.parts.splat.sprite = sprites.title.splat
+    bg.parts.base.sprite = sprites.title.background
 
-    -- Set positions and sizes of background elements
-    bg.parts.background.z_index = 0
-    bg.parts.background.scale_y = 1
-    bg.parts.background.scale_x = 1.2
+    bg.scale_y = 1
+    bg.scale_x = 1.2
+    bg.x = 0.5
+    bg.y = 0.5
 
-    -- Top left corner of the screen
-    bg.parts.armorlogo.z_index = 2
-    engine.utils.add(bg.parts.armorlogo, "x", 0 - center.x + engine.getWidth(bg.parts.armorlogo.sprite) - (50*gs))
-    engine.utils.add(bg.parts.armorlogo, "y", 0 - center.y + engine.getHeight(bg.parts.armorlogo.sprite))
-
-    bg.parts.splat.z_index = 1
-    --bg.parts.splat.scale_x,bg.parts.splat.scale_y = 0.9,0.9
-    engine.utils.add(bg.parts.splat, "y", -50*gs)
-    engine.utils.add(bg.parts.splat, "x", -385*gs)
     return bg
 end
 
@@ -165,8 +152,8 @@ local self = {}
 function self.init()
     engine.log("d", "Starting scene: pre_title")
     local texts = create_texts()
-    local background = create_background()
-    engine.draw_all(background, texts)
+    local bg = create_background()
+    engine.draw_all(bg, texts)
 end
 
 return self

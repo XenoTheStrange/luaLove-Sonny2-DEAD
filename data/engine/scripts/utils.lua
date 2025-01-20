@@ -49,9 +49,11 @@ return {
     for name, value in pairs(source) do
         target[name][key] = value
     end
-end
-    
-
-    
-    
+end,
+    atleast = function(val, min)
+        if val < min then
+            val = min
+        end
+        return val
+    end
 }
