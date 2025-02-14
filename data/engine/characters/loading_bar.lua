@@ -48,7 +48,8 @@ local loading_bar = {
             visible = true,
             sprite = engine.sprites.bar
         }
-    }
+    },
+    Draw = engine.draws.Character_Generic
 }
 
 return loading_bar

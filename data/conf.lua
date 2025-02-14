@@ -1,3 +1,4 @@
+-- Love2D engine configuration
 function love.conf(t)
     t.identity = "savedata"             -- The name of the save directory (string)
     t.appendidentity = false            -- Search files in source directory before save directory (boolean)

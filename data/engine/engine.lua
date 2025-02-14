@@ -15,6 +15,7 @@ return {
 
         engine.utils = require("engine/scripts/utils") -- Engine is not hot reloaded btw
         engine.loading = require("engine/loading")
+        engine.draws = require("engine/draws")
 
         -- Order matters. Scenes depend on characters which depend on sprites.
         engine.sprites = {}

@@ -1,4 +1,4 @@
--- This is a template for things that aren't _really_ characters but we want to treat them like characters
+-- This generic character template can be used for things which aren't traditional character dolls
 
 local generic = {
     name = "generic",
@@ -18,9 +18,16 @@ local generic = {
             shear_x = 0,
             shear_y = 0,
             visible = true,
-            sprite = engine.sprites.missing
+            sprite = engine.sprites.missing,
+            shaders = nil -- Optional
         }
-    }
+    },
+    shaders = nil, -- Optional
+    Draw = engine.draws.Character_Generic
 }
 
 return generic
+
+-- SHADERS
+-- shaders = {func, func2, func3}
+-- functions will be run in order on the char as a whole and/or each part as they contain functions
