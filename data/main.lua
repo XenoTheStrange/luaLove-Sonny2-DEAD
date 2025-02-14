@@ -37,17 +37,16 @@ local function draw_characters()
     end
 
     for _, sprite in ipairs(state.sprites_to_draw) do
-        engine.utils.tpp(sprite)
         sprite:Draw()
     end
 end
 
 function love.draw()
+    draw_characters()
+    draw_love_graphics()
     if config.show_fps then 
         engine.show_fps()
     end
-    draw_love_graphics()
-    draw_characters()
 end
 
 -- Call each function in state.updaters (used for all sorts of detections)
