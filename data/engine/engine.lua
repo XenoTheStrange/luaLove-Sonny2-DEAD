@@ -1,4 +1,8 @@
 return {
+    init_game = function()
+        local game_init = require(config.game_data_directory ..  "/init")
+        game_init()
+    end,
     restart_game = function()
         data = {}
         scripts = {}
@@ -24,7 +28,7 @@ return {
         engine.loading.simple_load("engine/sprites", engine.sprites)
         engine.loading.simple_load("engine/characters", engine.characters)
         engine.loading.simple_load("engine/scenes", engine.scenes)
-        engine.scenes.load_game.init()
+        engine.init_game()
     end,
 
     deep_copy = function(tbl)

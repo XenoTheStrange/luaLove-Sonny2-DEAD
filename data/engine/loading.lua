@@ -139,6 +139,33 @@ return {
             engine.loading.load_file_data(file_info, table, engine.loading.file_handlers)
             -- Update loading bar or perform other operations here
         end
+    end,
+    tracked_load = function(path, table, load_order, loading_bar, files_per_yield)
+        local function update_loading_bar(bar, num)
+            bar.current = num
+            bar.parts.bar.progressManager:setProgress(num / bar.total)
+        end
+        
+        local data_files
+        if load_order ~= nil then
+            data_files = engine.loading.enumerate_files(path, load_order)
+        else
+            data_files = engine.loading.enumerate_files(path)
+        end
+        loading_bar.total = #data_files
+        --print("Total files to load:", loading_bar.total)  -- Debug
+    
+        for i, file_info in ipairs(data_files) do
+            engine.loading.load_file_data(file_info, table, engine.loading.file_handlers)
+            update_loading_bar(loading_bar, i)
+            if files_per_yield == nil then
+                files_per_yield = 10
+            end
+            if i % files_per_yield == 1 then
+                coroutine.yield()
+                love.timer.sleep(0.1)
+            end
+        end
     end
     
 }
