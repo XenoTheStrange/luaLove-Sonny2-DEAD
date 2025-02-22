@@ -114,7 +114,7 @@ local function createLoadingBar()
                 progressManager = newRectangleCanvas(600, 100, 0)  -- Fatter bar
             }
         },
-        Draw = engine.draws.Character_Generic,
+        Draw = engine.characters.generic.Draw,
         refreshCanvases = function(self)
             self.parts.bar.progressManager:refresh()
         end  -- Explicitly using `self` here
