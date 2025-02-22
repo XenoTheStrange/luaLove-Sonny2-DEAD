@@ -5,7 +5,7 @@
 local function update_loading_bar(bar, num)
     bar.current = num
     -- Debug to verify values
-    print("Updating loading bar: num =", num, "total =", bar.total, "progress =", num / bar.total)
+    --print("Updating loading bar: num =", num, "total =", bar.total, "progress =", num / bar.total)
     bar.parts.bar.progressManager:setProgress(num / bar.total)
 end
 
@@ -17,7 +17,7 @@ local function tracked_load(path, table, load_order, loading_bar, files_per_yiel
         data_files = engine.loading.enumerate_files(path)
     end
     loading_bar.total = #data_files
-    print("Total files to load:", loading_bar.total)  -- Debug
+    --print("Total files to load:", loading_bar.total)  -- Debug
 
     for i, file_info in ipairs(data_files) do
         engine.loading.load_file_data(file_info, table, engine.loading.file_handlers)
@@ -45,7 +45,7 @@ local function newRectangleCanvas(width, height, initial_progress)
         love.graphics.rectangle("fill", 0, 0, storedWidth * progress, storedHeight)  -- Use parameters
         love.graphics.setColor(1, 1, 1, 1)  -- Reset (debug)
         love.graphics.setCanvas()
-        print("Canvas updated: progress =", progress, "width =", storedWidth * progress, "height =", storedHeight)  -- Debug
+        --print("Canvas updated: progress =", progress, "width =", storedWidth * progress, "height =", storedHeight)  -- Debug
     end
 
     local rectangleCanvas = {
@@ -125,7 +125,7 @@ local function createLoadingBar()
         },
         Draw = engine.draws.Character_Generic,
         refreshCanvases = function(self)
-            self.parts.bar.progressManager.refresh()
+            self.parts.bar.progressManager:refresh()
         end  -- Explicitly using `self` here
     }
 
