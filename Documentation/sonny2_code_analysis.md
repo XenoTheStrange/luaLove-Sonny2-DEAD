@@ -60,7 +60,7 @@ This frame contains like 21 scripts, generally function definitions and stuff. I
 
 13. Defines `createNewUnitKrin` which is a template for information about every game actor whether friend or foe (or bunny rabbit), then proceeds to call that function with custom data to create the game's characters.
     Note: MODEL6 is this ape:
-    ![[Pasted image 20241227130129.png]]
+    ![[gorilla]]
     And ***its sprite contains all of its animations***. I should be able to pull those out into a sprite sheet
 1. Appears to set up the zones and their attributes (the battles they contain, custom loot, etc). Requires further inspection. Defines functions "createNewBattle", `krinAddNewUnit` and `getPNum`. The format in which this file is set up is rather odd.
 2. Defines `getStat`, `givePoints` and `assignPointsStart` which appear to be used throughout the game to calculate stats. One of the things that will be translated to lua and otherwise left alone probably.

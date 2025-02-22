@@ -2,9 +2,9 @@
 local function shadowEffect(sprite, parent)
     -- Default glow properties
     local glowColor = {0, 0, 0, 0.5}  -- Black with some transparency (can be adjusted)
-    local glowOffsetX = 0            -- Horizontal glow offset
-    local glowOffsetY = 0            -- Vertical glow offset
-    local glowSpread = 10            -- How much the glow spreads out (larger values for more blur)
+    local glowOffsetX = 1            -- Horizontal glow offset
+    local glowOffsetY = 1            -- Vertical glow offset
+    local glowSpread = 8            -- How much the glow spreads out (larger values for more blur)
 
     -- Set the glow color (for the glow effect)
     love.graphics.setColor(glowColor)
@@ -52,61 +52,85 @@ end
 
 
 local function create_texts()
-    -- Character to hold all screen scene texts
-    local texts = engine.new(engine.characters.generic)
-    texts.x, texts.y = 0.5,0.5
-
-    -- Initialize the various texts as parts, then nil the base so it doesn't waste calls
-    texts.parts.start = engine.new(texts.parts.base)
-    texts.parts.credits = engine.new(texts.parts.base)
-    texts.parts.base = nil
+    -- Characters to hold various texts
+    local start = engine.new(engine.characters.generic)
+    local credits = engine.new(engine.characters.generic)
+    start.x, start.y = 0.5,0.6
+    credits.x, credits.y = 0.45,0.7
 
     -- Define fonts
-    local font1 = love.graphics.newFont(54 * gs)
-    local font2 = love.graphics.newFont(34 * gs)
+    local font1 = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 104 * gs)
+    local font2 = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 54 * gs)
 
     -- Set the sprites
-    local start = love.graphics.newText(font1, "START")
-    local credits = love.graphics.newText(font2, "Credits")
-    texts.parts.start.sprite = start
-    texts.parts.credits.sprite = credits
-    engine.utils.add(texts.parts.credits, "y", 0.05)
-
-    -- Position the texts (relative to each other and the center)
+    local start_font = love.graphics.newText(font1, "PLAY")
+    local credits_font = love.graphics.newText(font2, "Credits")
+    start.parts.base.sprite = start_font
+    credits.parts.base.sprite = credits_font
     
     -- Add shaders
-    texts.parts.start.shaders = {shadowEffect}
-    return texts
+    start.parts.base.shaders = {shadowEffect}
+    credits.parts.base.shaders = {shadowEffect}
+    return start, credits
 end
 
 local function create_background()
     -- Parts relative to each other in the model cannot be relative to the size of the screen unless you use a formula containing the aspect_ratio and gs (global size)
     -- I don't want to do that.... hmmmmmm....
 
-    -- Create characters
+    -- Create parts
     local char = engine.characters.generic
     local bg = engine.new(char)
+    bg.name = "Background Image"
     local armorlogo = engine.new(char)
+    armorlogo.name = "Armor Logo 1"
     local splat = engine.new(char)
-    -- local sonnylogo = engine.new(char)
+    splat.name = "Title splat"
+    local decal = engine.new(char)
+    decal.name = "Title Decal"
+
+    -- Set levels so everything displays
+    bg.z_index = 0
+    decal.z_index = 1
+    splat.z_index = 2
+    armorlogo.z_index = 3
+
 
     -- Set the sprites
     bg.parts.base.sprite = sprites.title.background
+    armorlogo.parts.base.sprite = sprites.logos.armor1
+    splat.parts.base.sprite = sprites.title.splat
+    decal.parts.base.sprite = sprites.title.decal
 
+    -- Position and scale each char
     bg.scale_y = 1
     bg.scale_x = 1.2
     bg.x = 0.5
     bg.y = 0.5
 
-    return bg
+    decal.scale_y = 1
+    decal.scale_x = 1.2
+    decal.x = 0.5
+    decal.y = 0.5
+
+    armorlogo.x = 0.12
+    armorlogo.y = 0.05
+
+    splat.x = 0.12
+    splat.y = 0.4
+    splat.scale_x = 0.95
+    splat.scale_y = 0.95
+
+
+    return splat, armorlogo, bg, decal
 end
 
 local self = {}
 function self.init()
     engine.log("d", "Starting scene: pre_title")
-    local texts = create_texts()
-    local bg = create_background()
-    engine.draw_all(bg, texts)
+    local start, credits = create_texts()
+    local bg, splat, armorlogo, decal = create_background()
+    engine.draw_all(bg, splat, armorlogo, decal, start, credits)
 end
 
 return self

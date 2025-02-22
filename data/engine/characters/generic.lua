@@ -8,6 +8,10 @@ local generic = {
     scale_x = 1,
     scale_y = 1,
     visible = true,
+    shaders = nil, -- Optional
+    onHover = nil, -- Optional (not used)
+    onClick = nil, -- Optional (not used)
+    Draw = engine.draws.Character_Generic,
     parts = {
         base = {
             x = 0,
@@ -19,11 +23,11 @@ local generic = {
             shear_y = 0,
             visible = true,
             sprite = engine.sprites.missing,
-            shaders = nil -- Optional
+            shaders = nil, -- Optional
+            onHover = nil, -- Optional (not used)
+            onClick = nil -- Optional (not used)
         }
-    },
-    shaders = nil, -- Optional
-    Draw = engine.draws.Character_Generic
+    }
 }
 
 return generic
