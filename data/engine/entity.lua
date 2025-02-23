@@ -36,14 +36,20 @@ function Entity.new(params)
     if params == nil then params = {} end
     local self = setmetatable({}, Entity)
     
+    -- Copy all params to self, letting explicit nils stand
+    for k, v in pairs(params) do
+        self[k] = v
+    end
+
     self.name = (params.name or "entity_") .. tostring(math.random(1000, 9999))
-    self.x = params.x or 0  -- 0-1 range relative to screen
-    self.y = params.y or 0
+    self.x = params.x or 0.5  -- 0-1 range relative to screen
+    self.y = params.y or 0.5
     self.angle = params.angle or 0
     self.scale_x = params.scale_x or 1
     self.scale_y = params.scale_y or 1
     self.visible = params.visible ~= false
     self.shaders = params.shaders or nil
+    self.z_index = params.z_index or nil
     
     self.parent = params.parent or nil
     self.children = {}
@@ -55,7 +61,7 @@ function Entity.new(params)
         end
     else
         self:addPart("base", {
-            x = 0,
+            x = 0, -- Screen center
             y = 0,
             angle = 0,
             scale_x = 1,

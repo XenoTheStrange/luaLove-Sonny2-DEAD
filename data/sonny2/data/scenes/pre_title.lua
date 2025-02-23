@@ -57,6 +57,8 @@ local function create_texts()
     local credits = engine.new(engine.characters.generic)
     start.x, start.y = 0.5,0.6
     credits.x, credits.y = 0.45,0.7
+    start.z_index = 4
+    credits.z_index = 4
 
     -- Define fonts
     local font1 = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 104 * gs)
@@ -79,48 +81,63 @@ local function create_background()
     -- I don't want to do that.... hmmmmmm....
 
     -- Create parts
-    local char = engine.characters.generic
-    local bg = engine.new(char)
-    bg.name = "Background Image"
-    local armorlogo = engine.new(char)
-    armorlogo.name = "Armor Logo 1"
-    local splat = engine.new(char)
-    splat.name = "Title splat"
-    local decal = engine.new(char)
-    decal.name = "Title Decal"
+    local bg = engine.entity.new(
+        {
+            name = "Background Image",
+            z_index = 0,
+            scale_x = 1.2,
+            scale_y = 1,
+            parts = {
+                base = {
+                    sprite = sprites.title.background
+                }
+            }
+        }
+    )
 
-    -- Set levels so everything displays
-    bg.z_index = 0
-    decal.z_index = 1
-    splat.z_index = 2
-    armorlogo.z_index = 3
+    local armorlogo = engine.entity.new(
+        {
+            name = "Armor Logo 1",
+            z_index = 3,
+            x = 0.12,
+            y = 0.05,
+            parts = {
+                base = {
+                    sprite = sprites.logos.armor1
+                }
+            }
+        }
+    )
 
+    local splat = engine.entity.new(
+        {
+            name = "Title splat",
+            z_index = 2,
+            x = 0.12,
+            y = 0.4,
+            scale_x = 0.95,
+            scale_y = 0.95,
+            parts = {
+                base = {
+                    sprite = sprites.title.splat
+                }
+            }
+        }
+    )
 
-    -- Set the sprites
-    bg.parts.base.sprite = sprites.title.background
-    armorlogo.parts.base.sprite = sprites.logos.armor1
-    splat.parts.base.sprite = sprites.title.splat
-    decal.parts.base.sprite = sprites.title.decal
-
-    -- Position and scale each char
-    bg.scale_y = 1
-    bg.scale_x = 1.2
-    bg.x = 0.5
-    bg.y = 0.5
-
-    decal.scale_y = 1
-    decal.scale_x = 1.2
-    decal.x = 0.5
-    decal.y = 0.5
-
-    armorlogo.x = 0.12
-    armorlogo.y = 0.05
-
-    splat.x = 0.12
-    splat.y = 0.4
-    splat.scale_x = 0.95
-    splat.scale_y = 0.95
-
+    local decal = engine.entity.new(
+        {
+            name = "Title decal",
+            z_index = 1,
+            scale_x = 1.2,
+            fuckery = "yeah",
+            parts = {
+                base = {
+                    sprite = sprites.title.decal
+                }
+            }
+        }
+    )
 
     return splat, armorlogo, bg, decal
 end
@@ -128,15 +145,8 @@ end
 local self = {}
 function self.init()
     engine.log("d", "Starting scene: pre_title")
-    local start, credits = create_texts()
-    local bg, splat, armorlogo, decal = create_background()
-
-    local test = engine.new(data.characters.ball)
-    test.x = 0.6
-    test.y = 0.6
-
-    -- the order of these is kinda weird
-    engine.draw_all(bg, splat, armorlogo, decal, start, credits)
+    engine.draw_all(create_texts())
+    engine.draw_all(create_background())
 end
 
 return self

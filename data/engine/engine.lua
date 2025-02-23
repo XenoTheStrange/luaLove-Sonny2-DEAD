@@ -53,8 +53,6 @@ return {
         if state.sprites_to_draw == nil then
             state.sprites_to_draw = {}
         end
-        -- Insert the sprite
-        table.insert(state.sprites_to_draw, sprite)
         
         -- Sort sprite's parts by z_index once
         local partsArray = {}
@@ -67,11 +65,22 @@ return {
         
         -- Store sorted parts back into the sprite
         sprite.sorted_parts = partsArray
-    
+
+        -- Insert the sprite
+        table.insert(state.sprites_to_draw, sprite)
+        
         -- Sort characters by z_index (if needed)
         table.sort(state.sprites_to_draw, function(a, b)
             return (a.z_index or 0) < (b.z_index or 0)
         end)
+    end,
+    -- TIL unpacking values is kind of quirky.
+    -- Try draw_all(var, var, var, var ...) or draw_all(returns_many_sprites())
+    draw_all = function(...)
+        args = {...}
+        for _, sprite in pairs(args) do
+            engine.draw(sprite)
+        end
     end,
     erase = function(sprite)
         if state.sprites_to_draw == nil then
@@ -101,12 +110,6 @@ return {
                     break -- Break to avoid unnecessary iterations
                 end
             end
-        end
-    end,
-    draw_all = function(...)
-        args = {...}
-        for _, sprite in pairs(args) do
-            engine.draw(sprite)
         end
     end,
     draw_text = function(func)
