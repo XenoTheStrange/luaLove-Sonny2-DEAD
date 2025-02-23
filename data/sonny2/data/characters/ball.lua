@@ -1,23 +1,26 @@
-local ball = {
+local params = {
     name = "ball",
-    x = 0,
-    y = 0,
+    x = 0.7,
+    y = 0.7,
     parts = {
         base = {
-            angle = 18,
+            angle = 0,
             tint = {0.2,0.8,0.8,1},
             sprite=sprites.debug.ball
         },
         left = {
-            x=-100,
-            angle = 65
-        },
+            x=-0.1,
+            angle = 0,
+            sprite=sprites.debug.ball
+    },
         right = {
-            x=100,
-            angle=86,
-            tint={0.2, 0, 0.2, 1}
+            x=0.1,
+            angle=0,
+            tint={0.2, 0, 0.2, 1},
+            sprite=sprites.debug.ball
         }
     }
+    
 }
 
-return ball
+return engine.entity.new(params)

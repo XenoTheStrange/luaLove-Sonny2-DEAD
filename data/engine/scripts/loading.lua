@@ -163,7 +163,7 @@ return {
             end
             if i % files_per_yield == 1 then
                 coroutine.yield()
-                love.timer.sleep(0.1)
+                --love.timer.sleep(0.1)
             end
         end
     end

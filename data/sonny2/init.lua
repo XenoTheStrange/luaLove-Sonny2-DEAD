@@ -141,14 +141,14 @@ end
 
 -- ... (rest of update_loading_bar, tracked_load unchanged)
 local function init()
-    engine.log("d", "Starting scene: engine/load_game")
+    engine.log("d", "GAME INIT")
     local data_folders_load_order = require(config.game_data_directory .. "/data/load_order")
 
     -- Create loading bars with unique canvases
-    local bar1 = engine.new(createLoadingBar())
-    local bar2 = engine.new(createLoadingBar())
-    local bar3 = engine.new(createLoadingBar())
-    local bar4 = engine.new(createLoadingBar())
+    local bar1 = createLoadingBar()
+    local bar2 = createLoadingBar()
+    local bar3 = createLoadingBar()
+    local bar4 = createLoadingBar()
     local barheight = (bar1.parts.background1.sprite:getHeight() * gs) / screen_height  -- Normalized
 
     -- Loading text in the middle
@@ -169,10 +169,6 @@ local function init()
     bar2.y = 0.5 - barheight
     bar3.y = 0.5 + barheight
     bar4.y = 0.5 + barheight * 2
-    bar1.parts.bar.progressManager:setProgress(0)
-    bar2.parts.bar.progressManager:setProgress(0)
-    bar3.parts.bar.progressManager:setProgress(0)
-    bar4.parts.bar.progressManager:setProgress(0)
     bar1.parts.bar.tint = {0, 176/255, 1, 1}         -- Sky blue
     bar2.parts.bar.tint = {1, 102/255, 0, 1}         -- Orange
     bar3.parts.bar.tint = {60/255, 168/255, 84/255, 1} -- Green
@@ -182,19 +178,15 @@ local function init()
     -- Define loading functions with canvas refresh
     local load_sprites = function()
         engine.loading.tracked_load(config.game_data_directory .. "/sprites", sprites, nil, bar1)
-        bar1:refreshCanvases()  -- Use colon syntax for method call, ensuring `self` is set
     end
     local load_sounds = function()
         engine.loading.tracked_load(config.game_data_directory .. "/sounds", sounds, nil, bar2)
-        bar2:refreshCanvases()
     end
     local load_data = function()
         engine.loading.tracked_load(config.game_data_directory .. "/data", data, data_folders_load_order, bar3)
-        bar3:refreshCanvases()
     end
     local load_scripts = function()
         engine.loading.tracked_load(config.game_data_directory .. "/scripts", scripts, nil, bar4)
-        bar4:refreshCanvases()
     end
     local continue = function()
         engine.erase_all(bar1, bar2, bar3, bar4, LOADING)

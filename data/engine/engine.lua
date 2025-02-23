@@ -21,10 +21,11 @@ return {
         engine.loading = require("engine/scripts/loading")
 
         -- Order matters. Scenes depend on characters which depend on sprites.
-        engine.sprites = {}
+        engine.assets = {}
         engine.characters = {}
         engine.scenes = {}
-        engine.loading.simple_load("engine/sprites", engine.sprites)
+        engine.entity = require("engine/entity")
+        engine.loading.simple_load("engine/assets", engine.assets)
         engine.loading.simple_load("engine/characters", engine.characters)
         engine.loading.simple_load("engine/scenes", engine.scenes)
         engine.init_game()

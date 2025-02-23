@@ -130,6 +130,12 @@ function self.init()
     engine.log("d", "Starting scene: pre_title")
     local start, credits = create_texts()
     local bg, splat, armorlogo, decal = create_background()
+
+    local test = engine.new(data.characters.ball)
+    test.x = 0.6
+    test.y = 0.6
+
+    -- the order of these is kinda weird
     engine.draw_all(bg, splat, armorlogo, decal, start, credits)
 end
 

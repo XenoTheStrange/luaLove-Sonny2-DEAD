@@ -2,7 +2,38 @@
 local Entity = {}
 Entity.__index = Entity
 
+function Entity:addPart(partName, partParams)
+    -- Ensure self.parts exists, use the existing table or create an empty one
+    self.parts = self.parts or {}
+    
+    -- Define default part properties
+    local defaultPart = {
+        x = 0,
+        y = 0,
+        angle = 0,
+        scale_x = 1,
+        scale_y = 1,
+        shear_x = 0,
+        shear_y = 0,
+        visible = true,
+        sprite = engine.assets.missing, -- Assuming engine.assets.missing is available
+        shaders = nil
+    }
+    
+    -- Merge default properties with any provided parameters
+    local newPart = partParams or {}
+    for k, v in pairs(defaultPart) do
+        if newPart[k] == nil then
+            newPart[k] = v
+        end
+    end
+    
+    -- Add the new part to the parts table with the specified name
+    self.parts[partName] = newPart
+end
+
 function Entity.new(params)
+    if params == nil then params = {} end
     local self = setmetatable({}, Entity)
     
     self.name = (params.name or "entity_") .. tostring(math.random(1000, 9999))
@@ -17,8 +48,13 @@ function Entity.new(params)
     self.parent = params.parent or nil
     self.children = {}
     
-    self.parts = params.parts or {
-        base = {
+    self.parts = {}
+    if params.parts then
+        for partName, partData in pairs(params.parts) do
+            self:addPart(partName, partData)
+        end
+    else
+        self:addPart("base", {
             x = 0,
             y = 0,
             angle = 0,
@@ -27,10 +63,10 @@ function Entity.new(params)
             shear_x = 0,
             shear_y = 0,
             visible = true,
-            sprite = params.sprite or engine.sprites.missing,
+            sprite = params.sprite or engine.assets.missing,
             shaders = nil
-        }
-    }
+        })
+    end
     
     self.events = {
         onMouseDown = nil,
@@ -45,13 +81,13 @@ function Entity.new(params)
         end
     end
     
-    self.draw = params.draw or engine.draws.Character_Generic
+    self.Draw = params.draw or engine.characters.generic.Draw
     self.wasHovered = false  -- For tracking mouse in/out
     
     -- Automatically add to draw list
-    if state.sprites_to_draw then
-        table.insert(state.sprites_to_draw, self)
-    end
+    -- if state.sprites_to_draw then
+    --     table.insert(state.sprites_to_draw, self)
+    -- end
     
     return self
 end
