@@ -11,7 +11,8 @@ windowWidth, windowHeight = love.window.getDesktopDimensions()
 
 -- Runs on program start. Load game data.
 function love.load()
-    push:setupScreen(gameWidth, gameHeight, windowWidth, windowHeight, {resizable=true,streched=true})--fullscreen = true})
+    --push:setupScreen(gameWidth, gameHeight, windowWidth, windowHeight, {resizable=true,streched=true})
+    push:setupScreen(gameWidth, gameHeight, windowWidth, windowHeight, {fullscreen = true})
     --love.resize(1920,1080)
     engine.restart_game()
 end
@@ -77,14 +78,6 @@ function love.keypressed(k)
 end
 
 function love.resize(w,h)
-    -- Set the global scale variable to a percentage to handle when the actual screen is smaller.... not perfect.
-    -- screen_width, screen_height = love.graphics.getDimensions()
-    -- aspect_ratio = screen_width / screen_height
-    -- local scale_x = screen_width / 1920
-    -- local scale_y = screen_height / 1080
-
-    -- config.global_sprite_scale = math.min(scale_x, scale_y)
-    -- gs = config.global_sprite_scale
     return push:resize(w, h)
 end
 

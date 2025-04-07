@@ -84,7 +84,7 @@ local function createLoadingBar()
                 shear_x = 0,
                 shear_y = 0,
                 visible = true,
-                sprite = love.graphics.newCanvas(600, 100)  -- Fatter bar
+                sprite = love.graphics.newCanvas(600, 100)
             },
             background2 = {
                 z_index = 2,
@@ -97,7 +97,7 @@ local function createLoadingBar()
                 shear_x = 0,
                 shear_y = 0,
                 visible = true,
-                sprite = love.graphics.newCanvas(600, 100)  -- Fatter bar
+                sprite = love.graphics.newCanvas(600, 100)
             },
             bar = {
                 z_index = 3,
@@ -111,7 +111,7 @@ local function createLoadingBar()
                 shear_y = 0,
                 visible = true,
                 sprite = nil,  -- Set below
-                progressManager = newRectangleCanvas(600, 100, 0)  -- Fatter bar
+                progressManager = newRectangleCanvas(600, 100, 0)
             }
         },
         Draw = engine.characters.generic.Draw,
@@ -152,7 +152,7 @@ local function init()
     local barheight = (bar1.parts.background1.sprite:getHeight()) / vheight  -- Normalized
 
     -- Loading text in the middle
-    local font = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 68)
+    local font = love.graphics.newFont("sonny2/fonts/2738_Rockwell.ttf", 68)
     local drawable = love.graphics.newText(font, "LOADING")
     local LOADING = engine.new(engine.characters.generic)
     LOADING.parts.base.sprite = drawable

@@ -42,8 +42,8 @@ local function create_texts()
     credits.z_index = 4
 
     -- Define fonts
-    local font1 = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 104)
-    local font2 = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 54)
+    local font1 = love.graphics.newFont("sonny2/fonts/2738_Rockwell.ttf", 104)
+    local font2 = love.graphics.newFont("sonny2/fonts/2738_Rockwell.ttf", 54)
 
     -- Set the sprites
     local start_font = love.graphics.newText(font1, "PLAY")
