@@ -25,18 +25,18 @@ local Draw = function(sprite)
             -- Save the current transformation matrix
             love.graphics.push()
             -- Translate to the sprite's position (before rotation)
-            love.graphics.translate(sprite.x * screen_width, sprite.y * screen_height)
+            love.graphics.translate(sprite.x, sprite.y)
             -- Apply the global rotation of the sprite (sprite.angle)
             love.graphics.rotate(sprite.angle * 0.017453292519943)
 
             -- Now draw the piece, accounting for its local position relative to the sprite center
             love.graphics.draw(
                 piece.sprite, 
-                ((piece.x * screen_width) * sprite.scale_x * gs) * aspect_ratio,
-                (piece.y * screen_height) * sprite.scale_y * gs,
+                (sprite.x * vwidth) + (piece.x * vwidth),
+                (sprite.y * vheight) + (piece.y * vheight),
                 piece.angle * 0.017453292519943,  -- piece rotation still applies
-                sprite.scale_x * piece.scale_x * gs,
-                sprite.scale_y * piece.scale_y * gs,
+                sprite.scale_x * piece.scale_x,
+                sprite.scale_y * piece.scale_y,
                 piece.sprite:getWidth() / 2, -- Origin offset x axis
                 piece.sprite:getHeight() / 2, -- Origin offset y axis
                 piece.shear_x,

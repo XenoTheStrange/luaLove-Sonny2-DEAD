@@ -16,9 +16,11 @@ return {
                 current = nil
             }
         }
-
-        engine.utils = require("engine/scripts/utils") -- Engine is not hot reloaded btw
+        
+        -- Engine is not hot reloaded btw
+        engine.utils = require("engine/scripts/utils") 
         engine.loading = require("engine/scripts/loading")
+        engine.prefabs = require("engine/scripts/prefabs")
 
         -- Order matters. Scenes depend on characters which depend on sprites.
         engine.assets = {}
@@ -153,9 +155,9 @@ return {
         end
     end,
     get_screen_center = function()
-        local screen_width, screen_height = love.graphics.getDimensions()
-        local center_x, center_y = screen_width / 2, screen_height / 2
-        return {x = center_x, y = center_y}
+        -- local screen_width, screen_height = love.graphics.getDimensions()
+        -- local center_x, center_y = screen_width / 2, screen_height / 2
+        -- return {x = center_x, y = center_y}
     end,
     log = function(level, msg)
         local prefix
@@ -221,10 +223,10 @@ return {
         table.insert(state.coroutines.consecutive, coro)
     end,
     getWidth = function(sprite)
-        return sprite:getWidth() * aspect_ratio * gs
+        return sprite:getWidth()
     end,
     getHeight = function(sprite)
-        return sprite:getHeight() * gs
+        return sprite:getHeight()
     end,
     
     

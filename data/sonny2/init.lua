@@ -149,10 +149,10 @@ local function init()
     local bar2 = createLoadingBar()
     local bar3 = createLoadingBar()
     local bar4 = createLoadingBar()
-    local barheight = (bar1.parts.background1.sprite:getHeight() * gs) / screen_height  -- Normalized
+    local barheight = (bar1.parts.background1.sprite:getHeight()) / vheight  -- Normalized
 
     -- Loading text in the middle
-    local font = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 68 * gs)
+    local font = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 68)
     local drawable = love.graphics.newText(font, "LOADING")
     local LOADING = engine.new(engine.characters.generic)
     LOADING.parts.base.sprite = drawable

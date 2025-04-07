@@ -3,16 +3,16 @@
 config = require("conf")
 engine = require("engine.engine")
 flux = require("packages.flux") -- This works and doesn't crash if packaged as a .love file
+push = require("packages.push") -- For resolution bullshit
 
--- Set the global scale variable to a percentage to handle when the actual screen is smaller.... not perfect.
-screen_width = 0
-screen_height = 0
-aspect_ratio = 0
-gs = 0
+local gameWidth, gameHeight = 1920, 1080 --fixed game resolution
+vwidth, vheight = gameWidth, gameHeight
+windowWidth, windowHeight = love.window.getDesktopDimensions()
 
 -- Runs on program start. Load game data.
 function love.load()
-    love.resize()
+    push:setupScreen(gameWidth, gameHeight, windowWidth, windowHeight, {resizable=true,streched=true})--fullscreen = true})
+    --love.resize(1920,1080)
     engine.restart_game()
 end
 
@@ -37,11 +37,13 @@ local function draw_characters()
 end
 
 function love.draw()
+    push:start()
     draw_characters()
     draw_love_graphics()
     if config.show_fps then 
         engine.show_fps()
     end
+    push:finish()
 end
 
 -- Call each function in state.updaters (used for all sorts of detections)
@@ -74,15 +76,16 @@ function love.keypressed(k)
 
 end
 
-function love.resize()
+function love.resize(w,h)
     -- Set the global scale variable to a percentage to handle when the actual screen is smaller.... not perfect.
-    screen_width, screen_height = love.graphics.getDimensions()
-    aspect_ratio = screen_width / screen_height
-    local scale_x = screen_width / 1920
-    local scale_y = screen_height / 1080
+    -- screen_width, screen_height = love.graphics.getDimensions()
+    -- aspect_ratio = screen_width / screen_height
+    -- local scale_x = screen_width / 1920
+    -- local scale_y = screen_height / 1080
 
-    config.global_sprite_scale = math.min(scale_x, scale_y)
-    gs = config.global_sprite_scale
+    -- config.global_sprite_scale = math.min(scale_x, scale_y)
+    -- gs = config.global_sprite_scale
+    return push:resize(w, h)
 end
 
 -- Runs when any ascii key is pressed. Ignores shift so you can type caps & symbols.

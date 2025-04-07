@@ -1,52 +1,33 @@
--- Apply Glow Effect to a sprite (with optional parameters for customization)
-local function shadowEffect(sprite, parent)
+local function shadowEffect(sprite)
+    -- Debug: Check sprite position
+
     -- Default glow properties
-    local glowColor = {0, 0, 0, 0.5}  -- Black with some transparency (can be adjusted)
-    local glowOffsetX = 1            -- Horizontal glow offset
-    local glowOffsetY = 1            -- Vertical glow offset
-    local glowSpread = 8            -- How much the glow spreads out (larger values for more blur)
+    local glowColor = {0, 0, 0, 0.5}
+    local glowOffsetX = 1
+    local glowOffsetY = 1
+    local glowSpread = 8
 
-    -- Set the glow color (for the glow effect)
+    local VIRTUAL_WIDTH = 1920
+    local VIRTUAL_HEIGHT = 1080
+
     love.graphics.setColor(glowColor)
+    love.graphics.push()
 
-    -- Apply the glow effect
-    love.graphics.push()  -- Start with the main push
+    -- Ensure that sprite.x and sprite.y are valid
+    local partX = sprite.x * VIRTUAL_WIDTH
+    local partY = sprite.y * VIRTUAL_HEIGHT
 
-    -- Calculate the part's position relative to its parent
-    local partX = (sprite.x) * sprite.scale_x * gs
-    local partY = (sprite.y) * sprite.scale_y * gs
-
-    -- Apply the glow offset to the transformed position
     local glowX, glowY = partX + glowOffsetX, partY + glowOffsetY
 
-    -- If there's a parent (e.g., a character), apply its position offset as well
-    if parent then
-        -- Adjust glow position based on the parent's position
-        glowX = glowX + parent.x * screen_width
-        glowY = glowY + parent.y * screen_height
-    end
-
-    -- Draw the glow by offsetting the sprite multiple times around the original position
     for i = 1, glowSpread do
-        -- Slightly offset each layer of the glow to create the spread effect
-        love.graphics.push()  -- Push for each individual glow layer
-
-        -- Decrease opacity of the glow as we go outward
+        love.graphics.push()
         love.graphics.setColor(glowColor[1], glowColor[2], glowColor[3], glowColor[4] * (1 - (i / glowSpread)))
-
-        -- Apply a small offset for each glow layer
         love.graphics.translate(glowX + i, glowY + i)
-
-        -- Draw the original sprite (without scaling) for the glow effect
-        love.graphics.draw(sprite.sprite, 0, 0, 0, 1*gs, 1*gs, sprite.sprite:getWidth()/2, sprite.sprite:getHeight()/2)
-
-        love.graphics.pop()  -- Pop after drawing each glow layer
+        love.graphics.draw(sprite.parts.base.sprite, 0, 0, 0, 1, 1, sprite.parts.base.sprite:getWidth()/2, sprite.parts.base.sprite:getHeight()/2)
+        love.graphics.pop()
     end
 
-    -- Restore the original color and transformation matrix
     love.graphics.setColor(1, 1, 1, 1)
-
-    -- Pop the main transformation matrix
     love.graphics.pop()
 end
 
@@ -61,8 +42,8 @@ local function create_texts()
     credits.z_index = 4
 
     -- Define fonts
-    local font1 = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 104 * gs)
-    local font2 = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 54 * gs)
+    local font1 = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 104)
+    local font2 = love.graphics.newFont("sonny2/data/fonts/2738_Rockwell.ttf", 54)
 
     -- Set the sprites
     local start_font = love.graphics.newText(font1, "PLAY")
@@ -71,8 +52,8 @@ local function create_texts()
     credits.parts.base.sprite = credits_font
     
     -- Add shaders
-    start.parts.base.shaders = {shadowEffect}
-    credits.parts.base.shaders = {shadowEffect}
+    start.shaders = {shadowEffect}
+    credits.shaders = {shadowEffect}
     return start, credits
 end
 
@@ -130,7 +111,6 @@ local function create_background()
             name = "Title decal",
             z_index = 1,
             scale_x = 1.2,
-            fuckery = "yeah",
             parts = {
                 base = {
                     sprite = sprites.title.decal

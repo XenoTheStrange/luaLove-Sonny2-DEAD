@@ -1,10 +1,10 @@
 local character = engine.new(engine.characters.generic)
 local frames = sprites.frame_animations.armorgames_intro
 
-local coords = engine.get_screen_center()
+local coords = {x=0.5,y=0.5}
 -- All the frames in this animation rendered offset so they need tweaked
-character.x = coords.x + (54*gs)
-character.y = coords.y - (30*gs)
+character.x = coords.x + (54)
+character.y = coords.y - (30)
 character.parts.base.sprite = frames["1"]
 
 
